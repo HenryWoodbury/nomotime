@@ -1,0 +1,137 @@
+---
+import Base from '../layouts/Base.astro';
+
+const features = [
+  {
+    title: 'Beats, not time signatures',
+    body: 'Set 1 to 16 beats a bar and accent each one however you like. A 7/8 bar is seven beats with the accents where you want them — no notation in the way.',
+  },
+  {
+    title: 'Five accent levels',
+    body: 'Strong, normal, weak, tick, or mute — on beats and subdivisions alike, differing in tone as well as volume. Mute beats deliberately and keep time through the gaps.',
+  },
+  {
+    title: '30 to 420 BPM',
+    body: 'The slider spans 40 BPM at a time, so you get fine control where you actually are, and steps 10 at a time past either end. Tempo markings included, if Andante means more to you than 80.',
+  },
+  {
+    title: 'Drawable subdivisions',
+    body: 'One to eight slots a beat, each independently accented. Draw the tick pattern you need instead of choosing from a menu of the four somebody thought you would want.',
+  },
+  {
+    title: 'Alarm and pause timers',
+    body: 'Every groove carries its own cue and pause timing, so a practice block runs itself while your hands stay on the instrument.',
+  },
+  {
+    title: 'Grooves that stay put',
+    body: 'Save, load, rename, and delete complete setups — tempo, accents, subdivisions, timers. Or hit Let’s Groove and keep something ephemeral.',
+  },
+];
+---
+
+<Base
+  title="Metronomo — a precise, offline metronome for musicians"
+  description="A metronome built on beats and accents rather than time signatures, scheduled against the audio hardware clock so the click does not drift. Free on Android, works entirely offline."
+>
+  <div class="shell">
+    <section class="hero">
+      <div>
+        <h1>The click that doesn’t drift.</h1>
+        <p class="lede">
+          Metronomo schedules every click against your device’s audio hardware clock rather
+          than a JavaScript timer, so there is no audible jitter between beats. It works
+          entirely offline, and it is built around beats and accents instead of time
+          signatures.
+        </p>
+        <a class="cta" href="#">Get it on Google Play</a>
+        <small class="cta-note">Free &middot; No ads &middot; No account &middot; No in-app purchases</small>
+      </div>
+      <div class="hero-shot">
+        <img
+          src="/screens/lets-groove.png"
+          alt="Metronomo's main screen, showing the tempo dial, beat row, and transport controls"
+          width="390"
+          height="844"
+        />
+      </div>
+    </section>
+  </div>
+
+  <div class="shell">
+    <dl class="claims">
+      <div>
+        <dt>30&ndash;420</dt>
+        <dd>BPM, on a 40-BPM slider window</dd>
+      </div>
+      <div>
+        <dt>1&ndash;16</dt>
+        <dd>beats a bar, each independently accented</dd>
+      </div>
+      <div>
+        <dt>0</dt>
+        <dd>accounts, ads, or network calls to make a sound</dd>
+      </div>
+    </dl>
+  </div>
+
+  <div class="shell">
+    <section class="section">
+      <h2>Built for the way you actually practise</h2>
+      <p class="sub">
+        Most metronome apps are a tempo dial with a time-signature dropdown bolted to it.
+        Metronomo starts from what a bar actually is: a number of beats, each with a weight.
+      </p>
+      <ul class="features">
+        {
+          features.map((feature) => (
+            <li>
+              <h3>{feature.title}</h3>
+              <p>{feature.body}</p>
+            </li>
+          ))
+        }
+      </ul>
+    </section>
+  </div>
+
+  <div class="shell">
+    <section class="section split">
+      <div>
+        <h2>Start it and put the phone down</h2>
+        <p class="sub">
+          The click keeps running when you switch apps or lock the screen, and the lock
+          screen shows a playback card with the groove’s name and its tempo marking. Light,
+          dark, and system themes; a volume control that stays out of your system mix.
+        </p>
+      </div>
+      <div class="hero-shot">
+        <img
+          src="/screens/edit-timing.png"
+          alt="Metronomo's groove timing editor, showing alarm and pause timer controls"
+          width="390"
+          height="844"
+        />
+      </div>
+    </section>
+  </div>
+
+  <div class="shell">
+    <section class="section">
+      <h2>Your practice is nobody else’s business</h2>
+      <p class="sub">
+        Metronomo needs no account and no network connection. Everything you save stays on
+        your phone.
+      </p>
+      <ul class="privacy-list">
+        <li>No account, no login, no email address, no personal information of any kind.</li>
+        <li>Your grooves, their names, and your settings never leave your device.</li>
+        <li>No microphone permission. Metronomo makes sound; it never listens.</li>
+        <li>No ads, no advertising ID, no tracking across other apps.</li>
+        <li>
+          Anonymous usage analytics are on by default and can be switched off in Settings —
+          what they cover is spelled out in the <a href="/privacy">Privacy Policy</a>.
+        </li>
+      </ul>
+    </section>
+  </div>
+</Base>

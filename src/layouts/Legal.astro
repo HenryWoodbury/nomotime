@@ -1,0 +1,24 @@
+---
+import Base from './Base.astro';
+
+interface Props {
+  frontmatter: {
+    title: string;
+    description: string;
+    updated: string;
+    version: string;
+  };
+}
+
+const { title, description, updated, version } = Astro.props.frontmatter;
+---
+
+<Base title={`${title} — Metronomo`} description={description}>
+  <div class="shell">
+    <article class="prose">
+      <h1>{title}</h1>
+      <p class="stamp">Version {version} &middot; Last updated {updated}</p>
+      <slot />
+    </article>
+  </div>
+</Base>

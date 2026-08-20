@@ -1,0 +1,73 @@
+---
+import '../styles/global.css';
+import logo from '../nomo-logo.svg?raw';
+
+interface Props {
+  title: string;
+  description: string;
+}
+
+const { title, description } = Astro.props;
+// Build emits /privacy.html; strip it so canonical URLs and nav state use clean paths.
+const path = Astro.url.pathname.replace(/(index)?\.html$/, '').replace(/\/$/, '') || '/';
+
+const nav = [
+  { href: '/privacy', label: 'Privacy' },
+  { href: '/terms', label: 'Terms' },
+  { href: '/support', label: 'Support' },
+];
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/app-icon.png" />
+    <link rel="canonical" href={new URL(path, Astro.site)} />
+    <meta property="og:site_name" content="Metronomo" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content={new URL('/app-icon.png', Astro.site)} />
+    <meta name="twitter:card" content="summary" />
+  </head>
+  <body>
+    <header class="masthead">
+      <div class="shell">
+        <a class="wordmark" href="/">
+          <Fragment set:html={logo} />
+          Metronomo
+        </a>
+        <nav>
+          {
+            nav.map((item) => (
+              <a href={item.href} aria-current={path === item.href ? 'page' : undefined}>
+                {item.label}
+              </a>
+            ))
+          }
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <slot />
+    </main>
+
+    <footer class="colophon">
+      <div class="shell">
+        <span>&copy; {new Date().getFullYear()} Henry Woodbury. All rights reserved.</span>
+        <nav>
+          <a href="/privacy">Privacy</a>
+          <a href="/terms">Terms</a>
+          <a href="/support">Support</a>
+          <a href="mailto:support@nomotime.com">support@nomotime.com</a>
+        </nav>
+      </div>
+    </footer>
+  </body>
+</html>
