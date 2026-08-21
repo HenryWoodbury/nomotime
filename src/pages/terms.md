@@ -93,7 +93,7 @@ uninstalling Metronomo. Sections 5, 6, and 10 survive termination.
 
 ## 10. Governing law
 
-These terms are governed by the laws of **[JURISDICTION — insert your state and country]**,
+These terms are governed by the laws of the **Commonwealth of Massachusetts, United States**,
 without regard to its conflict-of-laws rules, and the courts located there have exclusive
 jurisdiction over any dispute. If you are a consumer resident elsewhere, this does not
 deprive you of the protection of mandatory consumer-protection law in your country of

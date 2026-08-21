@@ -50,6 +50,6 @@ here.
 ## Publishing checklist
 
 - [ ] `support@nomotime.com` alias exists and forwards to a real inbox
-- [ ] Governing-law jurisdiction filled in at `src/pages/terms.md` (§10 has a placeholder)
+- [x] Governing-law jurisdiction filled in at `src/pages/terms.md` §10 — Massachusetts, US
 - [ ] Google Play badge in `src/pages/index.astro` linked to the real listing URL
 - [ ] Screenshots in `public/screens/` replaced with real device captures
