@@ -11,7 +11,7 @@ version: '1.0'
 > on your phone. The one thing it sends anywhere is anonymous usage analytics, which you
 > can switch off in **Settings → Analytics**.
 
-This policy covers the Metronomo mobile app for Android (`com.henrywoodbury.metronomo`) and
+This policy covers the Metronomo mobile app for Android (`com.nomotime.metronomo`) and
 this website. Metronomo is made by Henry Woodbury, an independent developer. Contact:
 [support@nomotime.com](mailto:support@nomotime.com).
 

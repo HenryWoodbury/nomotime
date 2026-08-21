@@ -1,7 +1,7 @@
 # nomotime.com
 
 The marketing and legal site for **Metronomo**, the Android metronome app
-(`com.henrywoodbury.metronomo`). Astro, no runtime JavaScript, deployed to Netlify.
+(`com.nomotime.metronomo`). Astro, no runtime JavaScript, deployed to Netlify.
 
 Four pages:
 
