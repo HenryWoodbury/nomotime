@@ -9,7 +9,7 @@ version: '1.0'
 > **The short version.** Metronomo is a metronome. It works entirely offline. It has no
 > account, no login, and asks for no personal information. Your grooves and settings stay
 > on your phone. The one thing it sends anywhere is anonymous usage analytics, which you
-> can switch off in **Settings → Analytics**.
+> can switch off in **Settings** → **Analytics**.
 
 This policy covers the Metronomo mobile app for Android (`com.nomotime.metronomo`) and
 this website. Metronomo is made by Henry Woodbury, an independent developer. Contact:
@@ -54,7 +54,7 @@ Settings. Metronomo has no cloud backup and no sync.
 Metronomo sends anonymous usage analytics to **PostHog**, a product-analytics service
 operated by PostHog, Inc. in the United States. This helps a solo developer see which
 features musicians actually use and whether anything is broken. **You can turn it off at any
-time in Settings → Analytics.**
+time in Settings** → **Analytics.**
 
 ### What is sent
 
@@ -71,7 +71,7 @@ time in Settings → Analytics.**
 - **A random Install ID** — a meaningless string generated on your device when you first
   install Metronomo. It is not your name, your email, your phone number, or any advertising
   or device serial ID, and it is never connected to a real identity. You can see yours in
-  **Settings → Install ID**.
+  **Settings** → **Install ID**.
 - **Your IP address**, which PostHog's servers necessarily see when your phone connects to
   them, as with any internet request. It is not used to identify you.
 

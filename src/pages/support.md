@@ -19,9 +19,9 @@ feature requests are both genuinely welcome.
 
 Including these four things turns most bug reports into one round trip instead of four:
 
-1. **Metronomo version** — shown in **Settings → App version**.
+1. **Metronomo version** — shown in **Settings** → **App version**.
 2. **Your device and Android version** — for example, "Pixel 8, Android 15".
-3. **Your Install ID** — in **Settings → Install ID**. Tap and hold to copy it. It is an
+3. **Your Install ID** — in **Settings** → **Install ID**. Tap and hold to copy it. It is an
    anonymous string, not personal information, and it lets a report be matched to what
    actually happened.
 4. **What you expected, and what happened instead** — including the tempo, beat count, and
@@ -69,7 +69,7 @@ the app does. The only data it ever sends is optional anonymous analytics.
 
 ### How do I turn off analytics?
 
-**Settings → Analytics → off.** Nothing further is sent from that point, including on the
+**Settings** → **Analytics** → **off.** Nothing further is sent from that point, including on the
 next launch. Every feature keeps working. See the [Privacy Policy](/privacy) for exactly
 what is collected while it is on.
 
@@ -86,8 +86,8 @@ never listens.
 
 ## Deleting your data
 
-**Data on your device.** Uninstall Metronomo, or go to Android **Settings → Apps →
-Metronomo → Storage → Clear storage**. That removes every groove, session, and setting
+**Data on your device.** Uninstall Metronomo, or go to Android **Settings** → **Apps** →
+**Metronomo** → **Storage** → **Clear storage**. That removes every groove, session, and setting
 immediately and permanently.
 
 **Analytics data.** Email [support@nomotime.com](mailto:support@nomotime.com) with the
@@ -97,7 +97,7 @@ request without it cannot be fulfilled. Deletion is completed within 30 days and
 by reply. You can also ask what has been collected under your Install ID, and it will be
 sent to you.
 
-To stop any further collection right away, switch **Settings → Analytics** off. That takes
+To stop any further collection right away, switch **Settings** → **Analytics** off. That takes
 effect immediately and does not require emailing anyone.
 
 ## Reporting a security issue
