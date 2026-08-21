@@ -1,8 +1,10 @@
 ---
-import Base from '../layouts/Base.astro';
+import { Image } from 'astro:assets';
 
-// Play gives this out once the closed test exists; it is not the public listing URL.
-const BETA_URL = '#';
+import Base from '../layouts/Base.astro';
+import editTiming from '../assets/edit-timing.png';
+import letsGroove from '../assets/lets-groove.png';
+import { BETA_URL, IS_BETA } from '../site';
 
 const features = [
   {
@@ -39,7 +41,7 @@ const features = [
   <div class="shell">
     <section class="hero">
       <div>
-        <p class="beta-banner">Now in beta testing</p>
+        {IS_BETA && <p class="beta-banner">Now in beta testing</p>}
         <h1>The click that doesn’t drift.</h1>
         <p class="lede">
           Metronomo schedules every click against your device’s audio hardware clock rather
@@ -53,11 +55,12 @@ const features = [
         </small>
       </div>
       <div class="hero-shot">
-        <img
-          src="/screens/lets-groove.png"
+        <Image
+          src={letsGroove}
+          width={672}
           alt="Metronomo's main screen, showing the tempo dial, beat row, and transport controls"
-          width="390"
-          height="844"
+          widths={[336, 672]}
+          sizes="(max-width: 46rem) 17rem, 21rem"
         />
       </div>
     </section>
@@ -111,11 +114,13 @@ const features = [
         </p>
       </div>
       <div class="hero-shot">
-        <img
-          src="/screens/edit-timing.png"
+        <Image
+          src={editTiming}
+          width={608}
           alt="Metronomo's groove timing editor, showing alarm and pause timer controls"
-          width="390"
-          height="844"
+          widths={[304, 608]}
+          sizes="(max-width: 46rem) 17rem, 19rem"
+          loading="lazy"
         />
       </div>
     </section>

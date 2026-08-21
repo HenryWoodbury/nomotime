@@ -11,6 +11,12 @@ interface Props {
 }
 
 const { title, description, updated, version } = Astro.props.frontmatter;
+
+// Markdown frontmatter is untyped YAML; the Props interface above documents it
+// but nothing enforces it. These two are cited in the Play listing.
+for (const [key, value] of Object.entries({ title, description, updated, version })) {
+  if (!value) throw new Error(`${Astro.url.pathname}: frontmatter is missing "${key}"`);
+}
 ---
 
 <Base title={`${title} — Metronomo`} description={description}>

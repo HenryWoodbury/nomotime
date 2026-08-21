@@ -1,6 +1,7 @@
 ---
 import '../styles/global.css';
 import logo from '../nomo-logo.svg?raw';
+import { IS_BETA, LEGAL_PAGES, SITE_NAME, SUPPORT_EMAIL } from '../site';
 
 interface Props {
   title: string;
@@ -8,17 +9,9 @@ interface Props {
 }
 
 const { title, description } = Astro.props;
-// Build emits /privacy.html; strip it so canonical URLs and nav state use clean paths.
-const path = Astro.url.pathname.replace(/(index)?\.html$/, '').replace(/\/$/, '') || '/';
-
-// One switch for the whole site: flip to false when the Play listing goes public.
-const IS_BETA = true;
-
-const nav = [
-  { href: '/privacy', label: 'Privacy' },
-  { href: '/terms', label: 'Terms' },
-  { href: '/support', label: 'Support' },
-];
+// Astro.url.pathname is /privacy.html under build.format 'file'; routePattern is
+// already the clean route.
+const path = Astro.routePattern;
 ---
 
 <!doctype html>
@@ -52,7 +45,7 @@ const nav = [
     />
     <link rel="apple-touch-icon" href="/app-icon.png" />
     <link rel="canonical" href={new URL(path, Astro.site)} />
-    <meta property="og:site_name" content="Metronomo" />
+    <meta property="og:site_name" content={SITE_NAME} />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:type" content="website" />
@@ -64,12 +57,12 @@ const nav = [
       <div class="shell">
         <a class="wordmark" href="/">
           <Fragment set:html={logo} />
-          Metronomo
+          {SITE_NAME}
         </a>
         {IS_BETA && <span class="beta-tag">Beta</span>}
         <nav>
           {
-            nav.map((item) => (
+            LEGAL_PAGES.map((item) => (
               <a href={item.href} aria-current={path === item.href ? 'page' : undefined}>
                 {item.label}
               </a>
@@ -87,10 +80,8 @@ const nav = [
       <div class="shell">
         <span>&copy; {new Date().getFullYear()} Henry Woodbury. All rights reserved.</span>
         <nav>
-          <a href="/privacy">Privacy</a>
-          <a href="/terms">Terms</a>
-          <a href="/support">Support</a>
-          <a href="mailto:support@nomotime.com">support@nomotime.com</a>
+          {LEGAL_PAGES.map((item) => <a href={item.href}>{item.label}</a>)}
+          <a href={`mailto:${SUPPORT_EMAIL}`}>{SUPPORT_EMAIL}</a>
         </nav>
       </div>
     </footer>
