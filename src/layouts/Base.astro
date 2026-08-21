@@ -29,6 +29,13 @@ const nav = [
     <title>{title}</title>
     <meta name="description" content={description} />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link
+      rel="preload"
+      href="/fonts/Lato-Bold-latin.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
     <link rel="apple-touch-icon" href="/app-icon.png" />
     <link rel="canonical" href={new URL(path, Astro.site)} />
     <meta property="og:site_name" content="Metronomo" />
