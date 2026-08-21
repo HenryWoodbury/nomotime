@@ -51,5 +51,8 @@ here.
 
 - [ ] `support@nomotime.com` alias exists and forwards to a real inbox
 - [x] Governing-law jurisdiction filled in at `src/pages/terms.md` §10 — Massachusetts, US
-- [ ] Google Play badge in `src/pages/index.astro` linked to the real listing URL
+- [ ] `BETA_URL` in `src/pages/index.astro` set to the Play tester opt-in link
+- [ ] At public launch: flip `IS_BETA` to `false` in `src/layouts/Base.astro`, swap the CTA
+      to a Google Play badge on the real listing URL, and drop the beta note from
+      `src/pages/support.md`
 - [ ] Screenshots in `public/screens/` replaced with real device captures

@@ -1,6 +1,9 @@
 ---
 import Base from '../layouts/Base.astro';
 
+// Play gives this out once the closed test exists; it is not the public listing URL.
+const BETA_URL = '#';
+
 const features = [
   {
     title: 'Beats, not time signatures',
@@ -36,6 +39,7 @@ const features = [
   <div class="shell">
     <section class="hero">
       <div>
+        <p class="beta-banner">Now in beta testing</p>
         <h1>The click that doesn’t drift.</h1>
         <p class="lede">
           Metronomo schedules every click against your device’s audio hardware clock rather
@@ -43,8 +47,10 @@ const features = [
           entirely offline, and it is built around beats and accents instead of time
           signatures.
         </p>
-        <a class="cta" href="#">Get it on Google Play</a>
-        <small class="cta-note">Free &middot; No ads &middot; No account &middot; No in-app purchases</small>
+        <a class="cta" href={BETA_URL}>Join the beta</a>
+        <small class="cta-note">
+          Free &middot; No ads &middot; No account &middot; Works entirely offline
+        </small>
       </div>
       <div class="hero-shot">
         <img

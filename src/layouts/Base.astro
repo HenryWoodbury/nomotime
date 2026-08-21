@@ -11,6 +11,9 @@ const { title, description } = Astro.props;
 // Build emits /privacy.html; strip it so canonical URLs and nav state use clean paths.
 const path = Astro.url.pathname.replace(/(index)?\.html$/, '').replace(/\/$/, '') || '/';
 
+// One switch for the whole site: flip to false when the Play listing goes public.
+const IS_BETA = true;
+
 const nav = [
   { href: '/privacy', label: 'Privacy' },
   { href: '/terms', label: 'Terms' },
@@ -42,6 +45,7 @@ const nav = [
           <Fragment set:html={logo} />
           Metronomo
         </a>
+        {IS_BETA && <span class="beta-tag">Beta</span>}
         <nav>
           {
             nav.map((item) => (

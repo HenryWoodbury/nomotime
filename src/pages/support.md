@@ -6,6 +6,10 @@ updated: 20 August 2026
 version: '1.0'
 ---
 
+**Metronomo is in beta testing.** Some rough edges are expected, and reports of them are
+the whole point — if something sounds wrong, drifts, or stops when it shouldn't, that is
+worth an email even if you are not sure it is a bug.
+
 Metronomo is built and supported by one person. Email
 **[support@nomotime.com](mailto:support@nomotime.com)** and you will get a real reply —
 usually within a few days, though it may take longer during a busy week. Bug reports and
