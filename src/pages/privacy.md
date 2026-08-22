@@ -1,14 +1,14 @@
 ---
 layout: ../layouts/Legal.astro
 title: Privacy Policy
-description: What Metronomo stores on your device, what anonymous usage data it sends, and how to turn that off.
+description: What Metronomo stores on your device, what anonymous usage data it collects, and how to turn that off.
 updated: 20 August 2026
 version: '1.0'
 ---
 
-> **The short version.** Metronomo is a metronome. It works entirely offline. It has no
+> **The short version.** Metronomo is a metronome. It works entirely offline. It requires no
 > account, no login, and asks for no personal information. Your grooves and settings stay
-> on your phone. The one thing it sends anywhere is anonymous usage analytics, which you
+> on your phone. It does collect anonymous usage analytics, which you
 > can switch off in **Settings** → **Analytics**.
 
 This policy covers the Metronomo mobile app for Android (`com.nomotime.metronomo`) and
@@ -19,7 +19,7 @@ this website. Metronomo is made by Henry Woodbury, an independent developer. Con
 
 Metronomo never collects, and has no technical means of collecting:
 
-- your name, email address, phone number, or any account credentials — there are no accounts
+- your name, email address, phone number, or any account credentials
 - your location
 - your contacts, calendar, messages, photos, or files
 - **audio.** Metronomo produces sound; it does not record it. The app never requests
@@ -31,30 +31,28 @@ for advertising or for tracking you across other apps or websites.
 
 ## What stays on your device
 
-Everything you create in Metronomo is written to your phone's private app storage and is
+Everything you create in Metronomo is written to your device's private app storage and is
 never uploaded:
 
 | What | What it holds |
 | --- | --- |
 | Your settings | Theme, beat sound, tempo-slider behaviour, pause-timer behaviour, volume |
 | Your grooves | Every groove you save — its name, tempo, beats, accents, subdivisions, and timers |
-| Your session lists | Ordered lists of grooves, if that feature is enabled for you |
-| Your last working groove | So the app opens where you left it |
+| Your working state | The app opens where you left it |
 
-The names you give your grooves and sessions are the only free text in the app, and they
-**never leave your device**. Metronomo also writes a small temporary image to your phone's
-cache folder to draw the tempo marking on the lock-screen player; it is replaced each time
+The names you give your grooves **never leave your device**. Metronomo does write a small temporary 
+image to your phone's cache folder to draw the tempo marking on the lock-screen player; it is replaced each time
 and never transmitted.
 
-All of this is removed when you uninstall the app or clear its storage from Android
+Local data is removed when you uninstall the app or clear its storage via Android
 Settings. Metronomo has no cloud backup and no sync.
 
 ## Anonymous usage analytics
 
 Metronomo sends anonymous usage analytics to **PostHog**, a product-analytics service
-operated by PostHog, Inc. in the United States. This helps a solo developer see which
-features musicians actually use and whether anything is broken. **You can turn it off at any
-time in Settings** → **Analytics.**
+operated by PostHog Inc. in the United States. This provides insight into which
+features musicians most use and where to target product improvments. **You can off this 
+analytics mechanism at any time in Settings** → **Analytics.**
 
 ### What is sent
 
@@ -77,7 +75,7 @@ time in Settings** → **Analytics.**
 
 ### What is never sent
 
-The names of your grooves and sessions, your saved grooves themselves, your tick patterns,
+The names of your grooves, your saved grooves themselves, your tick patterns,
 and anything else you type are **deliberately excluded** and never transmitted. Metronomo
 does not record your screen, does not capture your taps automatically, and does not read
 anything outside the app.
@@ -88,12 +86,6 @@ Open **Settings** in Metronomo and set **Analytics** to off. Nothing further is 
 that point, including when you next open the app. Metronomo continues to work exactly the
 same way — analytics is not required for any feature to function.
 
-## Remote feature configuration
-
-Metronomo also uses PostHog to decide which optional features are switched on. This means a
-feature may appear or disappear without you installing an update. If you turn analytics off,
-optional features stay at their default setting, which for now means off.
-
 ## Permissions Metronomo requests, and why
 
 | Permission | Why |
@@ -102,7 +94,6 @@ optional features stay at their default setting, which for now means off.
 | Foreground service &amp; media playback | To keep the click playing when you switch apps or lock the phone |
 | Notifications | To show the playback card with your groove's name and tempo. Metronomo never sends marketing or promotional notifications |
 | Wake lock | To keep audio running accurately while the screen is off |
-| Vibrate | Standard Android system permission included with the app framework |
 
 Metronomo requests **no microphone, camera, location, contacts, or storage permissions.**
 
@@ -126,9 +117,8 @@ child has somehow provided personal information through Metronomo, email
 Depending on where you live, you may have additional rights over your data under laws such
 as the GDPR or the CCPA — including access, correction, deletion, and objection. The
 lawful basis for the analytics described here is legitimate interest in maintaining and
-improving the app, and you may object at any time by switching analytics off. Write to the
-address above to exercise any of these rights; you will not be treated differently for doing
-so.
+improving the app. You may switch analytics off at any time and request captured data be
+deleted as described above; you will not be treated differently for doing so.
 
 ## International transfer
 
