@@ -2,8 +2,8 @@
 layout: ../layouts/Legal.astro
 title: Support
 description: How to get help with Metronomo, report a bug, request a feature, or have your analytics data deleted.
-updated: 20 August 2026
-version: '1.0'
+updated: 22 August 2026
+version: '1.0.0-beta.1'
 ---
 
 **Metronomo is in beta testing.** Some rough edges are expected, and reports of them are
@@ -11,13 +11,12 @@ the whole point — if something sounds wrong, drifts, or stops when it shouldn'
 worth an email even if you are not sure it is a bug.
 
 Metronomo is built and supported by one person. Email
-**[support@nomotime.com](mailto:support@nomotime.com)** and you will get a real reply —
-usually within a few days, though it may take longer during a busy week. Bug reports and
+**[support@nomotime.com](mailto:support@nomotime.com)** and your communication will be reviewed. Bug reports and
 feature requests are both genuinely welcome.
 
 ## Before you write
 
-Including these four things turns most bug reports into one round trip instead of four:
+For bug reports, include the following information to streamline corrective action:
 
 1. **Metronomo version** — shown in **Settings** → **App version**.
 2. **Your device and Android version** — for example, "Pixel 8, Android 15".
@@ -31,10 +30,9 @@ Including these four things turns most bug reports into one round trip instead o
 
 ### Why can't I set a time signature?
 
-Metronomo asks for **beats per bar** (1 to 16) and lets you accent each one independently,
-which is the same information a time signature carries, minus the notation. A 7/8 bar is
-seven beats with the accents where you want them. Compound meters are built by setting
-subdivisions and accenting the group heads. It is fewer decisions, and it handles meters
+Metronomo defines timing as **beats per bar** (1 to 16) and lets you accent each one independently.
+This is the same information a time signature carries, minus the notation. Compound meters are built by setting
+subdivisions and accenting the group heads. This makes for fewer decisions and handles meters
 that standard notation makes awkward.
 
 ### What do the five accent levels do?
@@ -46,16 +44,16 @@ one for practice: silence beats deliberately and make yourself keep time through
 
 ### What tempos does it cover?
 
-**20 to 480 BPM.** The slider spans a 40-BPM window at a time so you get fine control where
+**20 to 480 BPM.** The slider spans a 20 to 60 BPM window (configurable in settings) so you get fine control where
 you actually are, and it steps 10 BPM at a time past either end of that window. Tempos also
-carry natural-language markings, so you can find *Andante* without knowing it means 80.
+carry natural-language markings, so you can find *Andante* where convention places it.
 
 ### Does the click keep going when I switch apps or lock the screen?
 
 Yes. Metronomo keeps playing in the background and shows a playback card on the lock screen
 with the groove's name and tempo marking, so you can start it and put the phone down.
 
-### Is my timing accurate?
+### Is the timing accurate?
 
 Clicks are scheduled against the device's audio hardware clock rather than JavaScript
 timers, which is what keeps them from drifting audibly. That said, timing still depends on
@@ -87,7 +85,7 @@ never listens.
 ## Deleting your data
 
 **Data on your device.** Uninstall Metronomo, or go to Android **Settings** → **Apps** →
-**Metronomo** → **Storage** → **Clear storage**. That removes every groove, session, and setting
+**Metronomo** → **Storage** → **Clear storage**. That removes every groove and setting
 immediately and permanently.
 
 **Analytics data.** Email [support@nomotime.com](mailto:support@nomotime.com) with the
@@ -103,5 +101,4 @@ effect immediately and does not require emailing anyone.
 ## Reporting a security issue
 
 If you have found a security or privacy problem in Metronomo, email
-[support@nomotime.com](mailto:support@nomotime.com) with the details rather than posting
-them publicly, and you will get a response as quickly as possible.
+[support@nomotime.com](mailto:support@nomotime.com) with the details and you will get a response as quickly as possible.

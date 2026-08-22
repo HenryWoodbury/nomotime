@@ -2,8 +2,8 @@
 layout: ../layouts/Legal.astro
 title: Privacy Policy
 description: What Metronomo stores on your device, what anonymous usage data it collects, and how to turn that off.
-updated: 20 August 2026
-version: '1.0'
+updated: 22 August 2026
+version: '1.0.0-beta.1'
 ---
 
 > **The short version.** Metronomo is a metronome. It works entirely offline. It requires no
@@ -40,7 +40,7 @@ never uploaded:
 | Your grooves | Every groove you save — its name, tempo, beats, accents, subdivisions, and timers |
 | Your working state | The app opens where you left it |
 
-The names you give your grooves **never leave your device**. Metronomo does write a small temporary 
+The names you give your grooves **never leave your device**. Metronomo does write a small temporary
 image to your phone's cache folder to draw the tempo marking on the lock-screen player; it is replaced each time
 and never transmitted.
 
@@ -50,19 +50,23 @@ Settings. Metronomo has no cloud backup and no sync.
 ## Anonymous usage analytics
 
 Metronomo sends anonymous usage analytics to **PostHog**, a product-analytics service
-operated by PostHog Inc. in the United States. This provides insight into which
-features musicians most use and where to target product improvments. **You can off this 
-analytics mechanism at any time in Settings** → **Analytics.**
+operated by PostHog, Inc. in the United States. This provides insight into which
+features musicians most use and where to target product improvements. **You can turn this
+off at any time in Settings** → **Analytics.**
 
 ### What is sent
 
 - **Which screens you open** — the app's own screen names only, such as the main screen or
-  Settings.
+  Settings, together with the screen you came from.
 - **Which features you use** — for example, that the metronome was started or stopped, that
   a groove was saved, loaded, renamed, or deleted, or that you changed the theme, beat
-  sound, tempo-slider range, or pause-timer behaviour.
+  sound, tempo-slider range or behaviour, or pause-timer behaviour.
 - **Musical settings as plain numbers** — the tempo, beat count, and subdivision in use when
-  the metronome starts, so it is possible to see what tempos and meters people work at.
+  you start the metronome or save or load a groove, so it is possible to see what tempos and
+  meters people work at.
+- **A random groove ID** — a meaningless string the app generates for each groove you save,
+  so that repeat use of one groove can be counted. It carries nothing of the groove itself,
+  and never its name.
 - **Whether the app was opened, backgrounded, installed, or updated.**
 - **Basic technical details** — app version and build number, Android version, device type,
   screen size, language, and time zone.
@@ -75,16 +79,22 @@ analytics mechanism at any time in Settings** → **Analytics.**
 
 ### What is never sent
 
-The names of your grooves, your saved grooves themselves, your tick patterns,
-and anything else you type are **deliberately excluded** and never transmitted. Metronomo
-does not record your screen, does not capture your taps automatically, and does not read
-anything outside the app.
+The names of your grooves, your saved grooves themselves, your tick patterns — the app
+records only whether a groove has one, never what it is — and anything else you type are
+**deliberately excluded** and never transmitted. Metronomo does not record your screen,
+does not capture your taps automatically, and does not read anything outside the app.
+
+### Remote configuration
+
+Metronomo also asks PostHog which optional features are switched on, using the same Install
+ID. This happens when the app starts. Turning analytics off stops these requests, and optional features
+stay at their default setting.
 
 ### Turning it off
 
-Open **Settings** in Metronomo and set **Analytics** to off. Nothing further is sent from
-that point, including when you next open the app. Metronomo continues to work exactly the
-same way — analytics is not required for any feature to function.
+Open **Settings** in Metronomo and choose **Don't share** under **Analytics**. Nothing
+further is sent from that point, including when you next open the app. Metronomo continues
+to work exactly the same way — analytics is not required for any feature to function.
 
 ## Permissions Metronomo requests, and why
 
@@ -93,9 +103,11 @@ same way — analytics is not required for any feature to function.
 | Internet | Only to send the anonymous analytics described above, and only while they are enabled |
 | Foreground service &amp; media playback | To keep the click playing when you switch apps or lock the phone |
 | Notifications | To show the playback card with your groove's name and tempo. Metronomo never sends marketing or promotional notifications |
-| Wake lock | To keep audio running accurately while the screen is off |
+| Draw over other apps &amp; Vibrate | Declared by the Android app framework Metronomo is built with; Metronomo uses neither |
+| Legacy storage access (Android 12 and earlier) | Declared by a file-handling library and capped at Android 12. Metronomo writes only inside its own private storage and never asks you to grant this at runtime |
 
-Metronomo requests **no microphone, camera, location, contacts, or storage permissions.**
+Notifications is the only permission Metronomo ever asks you to grant. Metronomo requests
+**no microphone, camera, location, or contacts access.**
 
 ## Children
 

@@ -2,8 +2,8 @@
 layout: ../layouts/Legal.astro
 title: Terms of Use
 description: The terms covering your use of the Metronomo app for Android.
-updated: 20 August 2026
-version: '1.0'
+updated: 22 August 2026
+version: '1.0.0-beta.1'
 ---
 
 These terms are an agreement between you and **Henry Woodbury** ("we", "us") covering your
@@ -27,7 +27,7 @@ Play Terms of Service.
 
 ## 3. Your content
 
-Grooves, sessions, and their names are yours. They are stored on your device and we neither
+Grooves and their names are yours. They are stored on your device and we neither
 receive them nor claim any right in them. Keeping them is your responsibility: Metronomo has
 no cloud backup, so uninstalling the app or clearing its storage deletes them permanently.
 
@@ -49,8 +49,8 @@ or implied, including any implied warranty of merchantability, fitness for a par
 purpose, accuracy, or non-infringement.
 
 Specifically, and importantly: **Metronomo is a practice and performance aid, not a
-certified timing instrument.** Its timing depends on your device's hardware, its operating
-system, its audio configuration, background activity, and battery state, none of which are
+certified timing instrument.** Its timing depends on your device's hardware, operating
+system, audio configuration, background activity, and battery state, none of which are
 under our control. Do not rely on Metronomo where inaccurate timing could cause loss,
 injury, or liability — including synchronising recordings or live production you cannot
 afford to have drift, or any safety-critical use. Verify anything that matters against an
