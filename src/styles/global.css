@@ -372,11 +372,9 @@ h2 {
   color: var(--brand);
   margin: 0 0 1rem;
 }
-/* The privacy list's dashes without its rules: short claims, not a table of them. */
 .cta-list {
   list-style: none;
   padding: 0;
-  /* Matches the lede's margin, so the button sits in equal space above and below. */
   margin: 2rem 0 0;
   font-size: 1.15rem;
   color: var(--ink-muted);
@@ -385,7 +383,6 @@ h2 {
   position: relative;
   padding-left: 1.6rem;
 }
-/* On the following items only, so the gap under the button stays the lede's 2rem. */
 .cta-list li + li {
   margin-top: 0.4rem;
 }
@@ -466,7 +463,6 @@ h2 {
 .privacy-list {
   list-style: none;
   padding: 0;
-  /* The lead-in ends in a colon, so the list reads as its continuation, not a new block. */
   margin: 1rem 0 0;
   max-width: var(--measure);
   color: var(--ink-muted);
