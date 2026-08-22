@@ -46,7 +46,7 @@ one for practice: silence beats deliberately and make yourself keep time through
 
 ### What tempos does it cover?
 
-**30 to 420 BPM.** The slider spans a 40-BPM window at a time so you get fine control where
+**20 to 480 BPM.** The slider spans a 40-BPM window at a time so you get fine control where
 you actually are, and it steps 10 BPM at a time past either end of that window. Tempos also
 carry natural-language markings, so you can find *Andante* without knowing it means 80.
 

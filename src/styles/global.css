@@ -324,7 +324,7 @@ h2 {
 .hero {
   /* vh, so a wide-and-short window closes the gap instead of pushing the h1 off
      screen; the rem bounds keep it from collapsing or running away. */
-  padding: clamp(2rem, 10vh, 5rem) 0 clamp(1.75rem, 8vh, 4rem);
+  padding: clamp(1.25rem, 5vh, 2.5rem) 0 clamp(1.75rem, 8vh, 4rem);
   display: grid;
   grid-template-columns: 1fr min(21rem, 38%);
   gap: 3rem;
@@ -372,11 +372,27 @@ h2 {
   color: var(--brand);
   margin: 0 0 1rem;
 }
-.cta-note {
-  display: block;
-  margin-top: 0.85rem;
-  font-size: 0.85rem;
-  color: var(--ink-faint);
+/* The privacy list's dashes without its rules: short claims, not a table of them. */
+.cta-list {
+  list-style: none;
+  padding: 0;
+  /* Matches the lede's margin, so the button sits in equal space above and below. */
+  margin: 2rem 0 0;
+  font-size: 1.15rem;
+  color: var(--ink-muted);
+}
+.cta-list li {
+  position: relative;
+  padding-left: 1.6rem;
+}
+/* On the following items only, so the gap under the button stays the lede's 2rem. */
+.cta-list li + li {
+  margin-top: 0.4rem;
+}
+.cta-list li::before {
+  content: '—';
+  position: absolute;
+  left: 0;
 }
 
 /* The claim strip: three facts, monospaced, rule-separated. */
@@ -450,21 +466,22 @@ h2 {
 .privacy-list {
   list-style: none;
   padding: 0;
-  margin: 2.5rem 0 0;
+  /* The lead-in ends in a colon, so the list reads as its continuation, not a new block. */
+  margin: 1rem 0 0;
   max-width: var(--measure);
+  color: var(--ink-muted);
 }
 .privacy-list li {
-  padding: 0.7rem 0 0.7rem 1.6rem;
-  border-bottom: 1px solid var(--rule);
-  color: var(--ink-muted);
   position: relative;
-  font-size: 0.95rem;
+  padding-left: 1.6rem;
+}
+.privacy-list li + li {
+  margin-top: 0.4rem;
 }
 .privacy-list li::before {
   content: '—';
   position: absolute;
   left: 0;
-  color: var(--brand);
 }
 
 @media (max-width: 46rem) {
@@ -474,7 +491,7 @@ h2 {
     gap: 2.5rem;
   }
   .hero {
-    padding: clamp(1.5rem, 6vh, 3rem) 0 clamp(1.25rem, 5vh, 2.5rem);
+    padding: clamp(1rem, 4vh, 2rem) 0 clamp(1.25rem, 5vh, 2.5rem);
   }
   .hero-shot {
     max-width: 17rem;
