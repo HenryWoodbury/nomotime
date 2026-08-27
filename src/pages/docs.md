@@ -25,7 +25,8 @@ It is a plain UTF-8 JSON document, indented two spaces, and you can open it in a
 editor. Nothing in it is encrypted, compressed, or encoded — a backup you cannot read is a
 backup you cannot check.
 
-The top level is an object with four keys:
+The top level is an object with five keys. `grooves` is shown empty here and detailed
+below; a real file with an empty `grooves` is rejected on import:
 
 ```json
 {
@@ -51,7 +52,7 @@ Each entry in `grooves` is one saved Groove:
 
 ```json
 {
-  "id": "mesnnnx8-4f2a91",
+  "id": "mt1d6i07-4f2a91",
   "name": "Shuffle",
   "bpm": 96,
   "beats": 4,
@@ -79,20 +80,20 @@ Each entry in `grooves` is one saved Groove:
   "pause": {
     "enabled": false
   },
-  "createdAt": 1756132951004,
-  "updatedAt": 1756219351004
+  "createdAt": 1787220902311,
+  "updatedAt": 1787752724902
 }
 ```
 
 | Field | Type | Meaning |
 | --- | --- | --- |
-| `id` | string | Unique within the library. A collision on import re-mints the incoming one so both Grooves survive. |
+| `id` | string | Unique within the library. A collision on import re-mints the incoming one and renames it `<name> (imported)`, so both Grooves survive. |
 | `name` | string | What you named it. A Groove with no name is skipped on import. |
 | `bpm` | number | Tempo, 20–480. |
 | `beats` | number | Beats per bar, 1–16. There are no time signatures. |
 | `accents` | array | One level per beat; the length matches `beats`. |
 | `subdivision` | number | Slots per beat, 1–8, the beat included and first. `1` is no subdivision. |
-| `subdivisionPattern` | object or null | A tick pattern drawn for one subdivision count. `null` means every slot at `tick`. |
+| `subdivisionPattern` | object or null | A tick pattern drawn for one subdivision count. `null` means the undrawn default — every subdivision at `tick`, slot 0 aside. |
 | `countIn` | number | Bars counted in before the practice clock starts, 0–8. `0` is no count-in. |
 | `alarm` | object | Off, or an interval rule carrying `mode` and `seconds`. `mode` is `every` to repeat, `at` to fire once. |
 | `pause` | object | Off, or a rule carrying `seconds`, after which the transport stops itself. |
@@ -105,11 +106,20 @@ is always `mute`, because the beat sounds from `accents` instead.
 
 ### Editing the file by hand
 
-You can, and import will not punish you for it. Every Groove is repaired on the way in:
-numbers outside their range are clamped, an unrecognized accent level becomes `normal`, an
+You can, and import repairs most of what you get wrong. A number outside its range is
+clamped; a number that is missing or unreadable takes the app's default rather than the
+nearest bound, so deleting `"countIn"` gives you a four-bar count-in, not none, and
+deleting `"bpm"` gives you 120. An unrecognized accent level becomes `normal`, an
 `accents` array of the wrong length is trimmed or padded, and keys the app does not know
 are dropped rather than stored. A Groove that survives import is one the app could have
 created itself.
 
-Two things are not repairable. A Groove without a usable `name` or `beats` is skipped, and
-a file whose `format` is wrong is not a backup at all.
+Three things are not repaired that way.
+
+- A Groove with no usable `name`, or no usable `beats`, is skipped entirely.
+- A `subdivisionPattern` is kept only if it still describes its own count exactly. If
+  `subdivision` is outside 1–8, if `levels` is not exactly that long, or if any level is
+  unrecognized, the whole pattern is dropped and the Groove imports with its ticks
+  undrawn. Unlike `accents`, it is never trimmed or padded to fit.
+- A file whose `format` is not `metronomo.backup` is not a backup at all, and nothing in
+  it is read.
