@@ -262,13 +262,40 @@ h2 {
 .prose li {
   margin-bottom: 0.4rem;
 }
-.prose code {
+/* Inline code only. A `code` inside `pre` is still an inline box, so this pill
+   would repaint once per line and Shiki's own colors would sit under it. */
+.prose :not(pre) > code {
   font-family: var(--mono);
   font-size: 0.86em;
   background: var(--paper-sunk);
   border: 1px solid var(--rule);
   border-radius: 4px;
   padding: 0.1em 0.35em;
+}
+
+/* Shiki paints the block's colors inline; the frame around them is ours. */
+.prose pre {
+  margin: 1.4rem 0;
+  padding: 1rem 1.15rem;
+  border: 1px solid var(--rule);
+  border-radius: 6px;
+  overflow-x: auto;
+  font-size: 0.84rem;
+  line-height: 1.6;
+  tab-size: 2;
+}
+.prose pre code {
+  font-family: var(--mono);
+  background: none;
+  border: 0;
+  padding: 0;
+  font-size: inherit;
+}
+/* Shiki writes its theme background inline, which lands on white and vanishes
+   against the page. Its token colors are the part worth keeping; the ground the
+   block sits on is the site's. */
+.prose pre.astro-code {
+  background-color: var(--paper-sunk) !important;
 }
 .prose blockquote {
   margin: 1.5rem 0;
@@ -505,5 +532,14 @@ h2 {
   }
   .section {
     padding: 3rem 0;
+  }
+}
+
+/* `shikiConfig.themes` emits the light theme inline and the dark one as custom
+   properties; this is what turns the dark half on. */
+@media (prefers-color-scheme: dark) {
+  .prose .astro-code,
+  .prose .astro-code span {
+    color: var(--shiki-dark) !important;
   }
 }
