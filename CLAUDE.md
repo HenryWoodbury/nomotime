@@ -1,12 +1,13 @@
 # nomotime.com
 
 Astro marketing and legal site for **Metronomo**, the Android app in `~/zzz/met`. `README.md`
-covers the build, the deploy, and the privacy-policy sourcing rule.
+covers the build, the deploy, and the two sourcing rules — one for the privacy policy,
+one for the export file format.
 
 ## Copy
 
 `docs/copy.md` governs every word on `src/pages/index.astro`, and the claim layer of the
-legal and support pages. Read it before drafting or editing copy.
+docs, legal, and support pages. Read it before drafting or editing copy.
 
 Voice and claims are Henry's. Mechanics are Claude's, and get a pass after any hand edit.
 

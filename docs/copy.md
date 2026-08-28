@@ -1,7 +1,7 @@
 # Copy
 
-Rules for the marketing copy in `src/pages/index.astro`. The legal and support pages run on
-a different register — see **Register by page** below.
+Rules for the marketing copy in `src/pages/index.astro`. The docs, legal, and support pages
+run on their own registers — see **Register by page** below.
 
 ## Voice
 
@@ -48,6 +48,7 @@ Every number, feature name, and negation in the copy is a factual assertion abou
 - tempo range — `met/src/metronome/tempoMarkings.ts` (`MIN_BPM`, `MAX_BPM`)
 - beats a bar, subdivision slots, accent levels — `met/src/metronome/`
 - what the app sends — the sources listed under **Keeping the privacy policy true** in `README.md`
+- the export file — the sources listed under **Keeping the export format true** in `README.md`
 
 Product nouns match the app's own UI labels. The app says **count-in**, so the site says
 count-in.
@@ -62,6 +63,7 @@ A promise that needs a qualifier gets the qualifier: *Free foundational engine*.
 | --- | --- |
 | `/` | Compressed. One sentence where two would fit. Rhetorical questions and an exclamation are in range. |
 | `/support` | Expository. Full explanations, mechanism included, second person throughout. |
+| `/docs` | Reference. Expository prose around tables and samples. Describes behavior rather than recommending it, and states what the app does wrong as readily as what it does. |
 | `/privacy`, `/terms` | Plain and literal. The claim layer rules apply hardest here. |
 
 ## Mechanics

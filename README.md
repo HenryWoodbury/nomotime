@@ -3,11 +3,12 @@
 The marketing and legal site for **Metronomo**, the Android metronome app
 (`com.nomotime.metronomo`). Astro, no runtime JavaScript, deployed to Netlify.
 
-Four pages:
+Five pages:
 
 | Path | Purpose |
 | --- | --- |
 | `/` | Landing page |
+| `/docs` | How the app works, and the export file format |
 | `/privacy` | Privacy Policy — **the URL the Play Console requires** |
 | `/terms` | Terms of Use |
 | `/support` | Support, FAQ, and the data-deletion request process |
@@ -46,6 +47,22 @@ claims are only true as long as the app's analytics code matches them. The autho
 contains must update `src/pages/privacy.md` in this repo and bump the `version` and
 `updated` fields in its frontmatter.** `met/docs/build/analytics.md` carries a pointer back
 here.
+
+## Keeping the export format true
+
+`src/pages/docs.md` documents the backup file field by field, and a reader checks it
+against a file the app wrote. The authority is:
+
+- `met/src/storage/backup.ts` — `BACKUP_FORMAT`, `BACKUP_VERSION`, the `Backup` shape,
+  what `parseBackup` rejects, and what `repairGroove` repairs rather than skips
+- `met/src/storage/backupFile.ts` — the filename and its collision rule
+- `met/src/metronome/types.ts`, `defaults.ts`, `accents.ts`, `subdivisions.ts`,
+  `subLevels.ts` — every field's type, range, and default
+
+**Any PR to `met` that adds or removes a `Groove` field, changes a range or default,
+changes what import repairs, or bumps `BACKUP_VERSION` must update the Export section of
+`src/pages/docs.md`.** The JSON samples on that page are `JSON.stringify(_, null, 2)`
+output, not hand-written, and are regenerated rather than edited in place.
 
 ## Publishing checklist
 
