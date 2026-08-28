@@ -11,6 +11,7 @@ export const IS_BETA = true;
 export const BETA_URL = '#';
 
 export const LEGAL_PAGES = [
+  { href: '/docs', label: 'Docs' },
   { href: '/privacy', label: 'Privacy' },
   { href: '/terms', label: 'Terms' },
   { href: '/support', label: 'Support' },
