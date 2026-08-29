@@ -2,7 +2,7 @@
 layout: ../layouts/Legal.astro
 title: Documentation
 description: How Metronomo works — grooves, beats, subdivisions, accents, tempo, and the settings behind them.
-updated: 26 August 2026
+updated: 28 August 2026
 version: '1.0.0-beta.1'
 ---
 
@@ -12,9 +12,10 @@ of the app does and how the parts fit together.
 ## Export
 
 **Settings** → **Utilities** → **Export** writes your saved Grooves to a file you
-choose the folder for. The file is named `metronomo-backup-yyyy-mm-dd.json`, dated so a
-folder of them sorts in order; a second export on the same day becomes
-`metronomo-backup-yyyy-mm-dd (2).json` rather than overwriting the first.
+choose the folder for. The file is named `metronomo-yyyy-mm-dd-hhmmss.json`, stamped in
+UTC to the second so a folder of them sorts oldest to newest; if that name is somehow
+taken, the new file becomes `metronomo-yyyy-mm-dd-hhmmss (2).json` rather than
+overwriting the one already there.
 
 The file holds your **saved Groove library and nothing else**. Preferences and whatever is
 currently loaded in the editor belong to the device, not the file.
