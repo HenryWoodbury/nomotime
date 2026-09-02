@@ -2,34 +2,33 @@
 import { Image } from 'astro:assets';
 
 import Base from '../layouts/Base.astro';
-import editTiming from '../assets/edit-timing.png';
 import letsGroove from '../assets/lets-groove.png';
 import { BETA_URL, IS_BETA } from '../site';
 
 const features = [
   {
-    title: 'The hardware clock',
-    body: 'Metronomo uses your device’s audio clock so beats stay on time and work offline.',
+    title: 'Hardware clock',
+    body: 'Practice against your device’s audio clock for the best precision, even offline.',
   },
   {
-    title: 'Rhythm not notation',
-    body: 'Set up to 16 beats a bar and accent each beat and subdivision however you like.',
+    title: '16 beats a bar',
+    body: 'Accent each beat to generate unique rhythms.',
   },
   {
     title: '20 to 480 BPM',
-    body: 'Fine tune to specific BPM with easy jumps to faster and slower tempos.',
+    body: 'Quickly fine-tune to specific tempos.',
   },
   {
-    title: 'Customizable subdivisions',
-    body: 'One to eight slots per beat, each independently accented.',
+    title: 'Custom subdivisions',
+    body: 'Select one to eight subdivisions per beat on their own pattern.',
   },
   {
     title: 'Multiple timers',
-    body: 'Elapsed time, alarm, and pause timing include count-in bars, so you can pick up wherever you left off.',
+    body: 'Set alarm and pause timers, as well as count-in bars.',
   },
   {
     title: 'Grooves you re-use',
-    body: 'Save any set of tempo, accents, subdivisions, and timers. Or hit “Let’s Groove” and go with the flow.',
+    body: 'Save any set of tempo, accents, subdivisions, and timers.',
   },
 ];
 ---
@@ -50,8 +49,8 @@ const features = [
         </p>
         <a class="cta" href={BETA_URL}>Join the beta</a>
         <ul class="cta-list">
-          <li>Free foundational engine</li>
-          <li>No ads, no PII</li>
+          <li>Free foundational engine, 20&ndash;480 BPM</li>
+          <li>No ads, no signup, no personal info</li>
           <li>Local, offline, on-the-go</li>
         </ul>
       </div>
@@ -68,69 +67,28 @@ const features = [
   </div>
 
   <div class="shell">
-    <dl class="claims">
-      <div>
-        <dt>20&ndash;480</dt>
-        <dd>BPM on a fine-tuned slider window</dd>
-      </div>
-      <div>
-        <dt>1&ndash;16</dt>
-        <dd>beats a bar, each independently accented</dd>
-      </div>
-      <div>
-        <dt>0</dt>
-        <dd>ads or signup hurdles to make a sound</dd>
-      </div>
+    <dl class="features">
+      {
+        features.map((feature) => (
+          <div>
+            <dt>{feature.title}</dt>
+            <dd>{feature.body}</dd>
+          </div>
+        ))
+      }
     </dl>
   </div>
 
   <div class="shell">
     <section class="section">
-      <h2>Built for making music, not for reading music</h2>
+      <h2>Play and put the phone aside</h2>
       <p class="sub">
-        Most metronome apps start with presets and time signatures.
-        Metronomo prioritizes rhythm over rote: your choice of beats and subdivisions each with a customizable weight.
+        Practice needs your full attention.
+        Metronomo keeps running when your screen sleeps.
+        Other features that match your method?
+        Light and dark themes; independent volume control;
+        percussive or tonal beats; more to come!
       </p>
-      <ul class="features">
-        {
-          features.map((feature) => (
-            <li>
-              <h3>{feature.title}</h3>
-              <p>{feature.body}</p>
-            </li>
-          ))
-        }
-      </ul>
-    </section>
-  </div>
-
-  <div class="shell">
-    <section class="section split">
-      <div>
-        <h2>Play and put the phone aside</h2>
-        <p class="sub">
-          Practice needs your full attention.
-          Metronomo keeps running when your screen sleeps.
-          Other features that match your method?
-          Light and dark themes; independent volume control;
-          percussive or tonal beats; more to come!
-        </p>
-      </div>
-      <div class="hero-shot">
-        <Image
-          src={editTiming}
-          width={608}
-          alt="Metronomo's groove timing editor, showing alarm and pause timer controls"
-          widths={[304, 608]}
-          sizes="(max-width: 46rem) 17rem, 19rem"
-          loading="lazy"
-        />
-      </div>
-    </section>
-  </div>
-
-  <div class="shell">
-    <section class="section">
       <h2>Your practice is your business</h2>
       <p class="sub">
         Metronomo needs no buy-in, other than the buy-in of giving it a try:

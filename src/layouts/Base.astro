@@ -63,7 +63,16 @@ const path = Astro.routePattern;
         <nav>
           {
             LEGAL_PAGES.map((item) => (
-              <a href={item.href} aria-current={path === item.href ? 'page' : undefined}>
+              <a
+                href={item.href}
+                aria-current={
+                  path === item.href
+                    ? 'page'
+                    : path.startsWith(`${item.href}/`)
+                      ? 'true'
+                      : undefined
+                }
+              >
                 {item.label}
               </a>
             ))

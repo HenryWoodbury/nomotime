@@ -1,0 +1,59 @@
+---
+import Base from './Base.astro';
+import { DOC_PAGES } from '../site';
+
+interface Props {
+  frontmatter: {
+    title: string;
+    description: string;
+  };
+}
+
+const { title, description } = Astro.props.frontmatter;
+
+// Markdown frontmatter is untyped YAML; the Props interface above documents it
+// but nothing enforces it. Docs pages carry no stamp — /docs holds the only one.
+for (const [key, value] of Object.entries({ title, description })) {
+  if (!value) throw new Error(`${Astro.url.pathname}: frontmatter is missing "${key}"`);
+}
+
+const path = Astro.routePattern;
+const index = DOC_PAGES.findIndex((item) => item.href === path);
+// A page absent from DOC_PAGES renders without prev/next rather than throwing;
+// the sidebar omitting it is the visible symptom.
+const previous = index > 0 ? DOC_PAGES[index - 1] : undefined;
+const next = index >= 0 ? DOC_PAGES[index + 1] : undefined;
+---
+
+<Base title={`${title} — Metronomo`} description={description}>
+  <div class="shell doc-shell">
+    <article class="prose">
+      <p class="doc-crumb"><a href="/docs">Docs</a></p>
+      <h1>{title}</h1>
+      <slot />
+      {
+        (previous || next) && (
+          <nav class="doc-foot">
+            {previous ? <a rel="prev" href={previous.href}>&larr; {previous.label}</a> : <span />}
+            {next && <a rel="next" href={next.href}>{next.label} &rarr;</a>}
+          </nav>
+        )
+      }
+    </article>
+
+    <nav class="doc-nav" aria-label="Documentation">
+      <p class="doc-nav-title">Documentation</p>
+      <ul>
+        {
+          DOC_PAGES.map((item) => (
+            <li>
+              <a href={item.href} aria-current={path === item.href ? 'page' : undefined}>
+                {item.label}
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+    </nav>
+  </div>
+</Base>

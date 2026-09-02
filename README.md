@@ -3,12 +3,16 @@
 The marketing and legal site for **Metronomo**, the Android metronome app
 (`com.nomotime.metronomo`). Astro, no runtime JavaScript, deployed to Netlify.
 
-Five pages:
+`/docs` is a hub over one page per functional area of the app, ordered and
+described by `DOC_PAGES` in `src/site.ts` — which is also what the sidebar and the
+prev/next links are built from. Adding a section means adding the `.md` file and the
+`DOC_PAGES` entry, and nothing else.
 
 | Path | Purpose |
 | --- | --- |
 | `/` | Landing page |
-| `/docs` | How the app works, and the export file format |
+| `/docs` | Documentation hub, and the one version stamp the docs set carries |
+| `/docs/*` | One page per functional area — see `DOC_PAGES` for the list |
 | `/privacy` | Privacy Policy — **the URL the Play Console requires** |
 | `/terms` | Terms of Use |
 | `/support` | Support, FAQ, and the data-deletion request process |
@@ -50,7 +54,7 @@ here.
 
 ## Keeping the export format true
 
-`src/pages/docs.md` documents the backup file field by field, and a reader checks it
+`src/pages/docs/export.md` documents the backup file field by field, and a reader checks it
 against a file the app wrote. The authority is:
 
 - `met/src/storage/backup.ts` — `BACKUP_FORMAT`, `BACKUP_VERSION`, the `Backup` shape,
@@ -60,9 +64,28 @@ against a file the app wrote. The authority is:
   `subLevels.ts` — every field's type, range, and default
 
 **Any PR to `met` that adds or removes a `Groove` field, changes a range or default,
-changes what import repairs, or bumps `BACKUP_VERSION` must update the Export section of
-`src/pages/docs.md`.** The JSON samples on that page are `JSON.stringify(_, null, 2)`
+changes what import repairs, or bumps `BACKUP_VERSION` must update
+`src/pages/docs/export.md`.** The JSON samples on that page are `JSON.stringify(_, null, 2)`
 output, not hand-written, and are regenerated rather than edited in place.
+
+## Keeping the docs true
+
+`src/pages/docs/*` describes the app's behavior page by page, and every number, label, and
+range on those pages is checked against `~/zzz/met` rather than against an earlier draft of
+the site. The per-page authorities are the same ones the claim-layer list in `docs/copy.md`
+names.
+
+Two things in `met` are deliberately **not** documented, because they are not reachable in
+the shipping app. Both would be easy to write up from the source and wrong to publish:
+
+- **Sessions.** Gated on the `sessions_enabled` PostHog flag (`met/src/featureFlags.ts`);
+  `met/app/sessions.tsx` redirects to `/` when the flag is off, and the tab bar in
+  `met/src/components/AppFrame.tsx` holds two destinations, not three.
+- **Tap tempo.** `met/src/metronome/tapTempo.ts` and the `tap` action in
+  `met/src/state/metronomeStore.ts` both exist, but no control calls it.
+
+**When either ships, it gets a page and a `DOC_PAGES` entry.** Until then, a docs page
+that mentions them is a claim the app does not hold.
 
 ## Publishing checklist
 

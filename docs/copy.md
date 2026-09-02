@@ -35,8 +35,9 @@ Charm concentrates at the entry point and drains out through the body.
 
 - **`h1`** — a phrase with sound in it. No terminal period.
 - **`h2`** — a plain claim, often an antithesis: *Built for making music, not for reading music*.
-- **`h3` (feature titles)** — flat labels. The conventional word beats the coined one:
-  *Customizable subdivisions*, not *Drawable subdivisions*.
+- **`dt` (feature titles)** — flat labels. The conventional word beats the coined one:
+  *Customizable subdivisions*, not *Drawable subdivisions*. They set the six cells of the
+  feature strip, so a title that wraps to three lines is too long for the column.
 - **feature bodies** — one sentence, roughly fifteen words. A fact, not an argument. No
   *so you can* clause unless the payoff is not obvious from the fact.
 
@@ -63,7 +64,8 @@ A promise that needs a qualifier gets the qualifier: *Free foundational engine*.
 | --- | --- |
 | `/` | Compressed. One sentence where two would fit. Rhetorical questions and an exclamation are in range. |
 | `/support` | Expository. Full explanations, mechanism included, second person throughout. |
-| `/docs` | Reference. Expository prose around tables and samples. Describes behavior rather than recommending it, and states what the app does wrong as readily as what it does. |
+| `/docs` | Orientation. A few sentences and the section list — the hub says where a thing is documented, not what it does. |
+| `/docs/*` | Reference. Expository prose around tables and samples. Describes behavior rather than recommending it, and states what the app does wrong as readily as what it does. |
 | `/privacy`, `/terms` | Plain and literal. The claim layer rules apply hardest here. |
 
 ## Mechanics

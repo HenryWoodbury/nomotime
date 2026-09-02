@@ -1,0 +1,33 @@
+---
+import Base from '../../layouts/Base.astro';
+import { DOC_PAGES, DOCS_UPDATED, DOCS_VERSION } from '../../site';
+
+const title = 'Documentation';
+const description =
+  'How Metronomo works — grooves, beats, subdivisions, accents, tempo, and the settings behind them.';
+---
+
+<Base title={`${title} — Metronomo`} description={description}>
+  <div class="shell">
+    <article class="prose">
+      <h1>{title}</h1>
+      <p class="stamp">Version {DOCS_VERSION} &middot; Last updated {DOCS_UPDATED}</p>
+      <p>
+        Metronomo is designed to be customized. These pages cover what
+        each part of the app does and how the parts fit together.
+      </p>
+      <dl class="doc-index">
+        {
+          DOC_PAGES.map((item) => (
+            <div>
+              <dt>
+                <a href={item.href}>{item.label}</a>
+              </dt>
+              <dd>{item.blurb}</dd>
+            </div>
+          ))
+        }
+      </dl>
+    </article>
+  </div>
+</Base>
