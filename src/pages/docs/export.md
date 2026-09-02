@@ -1,15 +1,10 @@
 ---
-layout: ../layouts/Legal.astro
-title: Documentation
-description: How Metronomo works — grooves, beats, subdivisions, accents, tempo, and the settings behind them.
-updated: 28 August 2026
-version: '1.0.0-beta.1'
+layout: ../../layouts/Doc.astro
+title: Export and import
+description: Metronomo’s backup file, field by field — what Export writes, how Import merges or replaces, and what it refuses.
 ---
 
-Metronomo is a metronome you build rather than configure. This page covers what each part
-of the app does and how the parts fit together.
-
-## Export
+## Exporting
 
 **Settings** → **Utilities** → **Export** writes your saved Grooves to a file you
 choose the folder for. The file is named `metronomo-yyyy-mm-dd-hhmmss.json`, stamped in
@@ -20,7 +15,7 @@ overwriting the one already there.
 The file holds your **saved Groove library and nothing else**. Preferences and whatever is
 currently loaded in the editor belong to the device, not the file.
 
-### The file is JSON
+## The file is JSON
 
 It is a plain UTF-8 JSON document, indented two spaces, and you can open it in any text
 editor. Nothing in it is encrypted, compressed, or encoded — a backup you cannot read is a
@@ -47,7 +42,7 @@ below; a real file with an empty `grooves` is rejected on import:
 | `appVersion` | string | The app version and build that wrote the file, for example `1.0.0 (4)`. Also informational. |
 | `grooves` | array | The saved Grooves. Import fails if this is empty. |
 
-### A Groove
+## A Groove
 
 Each entry in `grooves` is one saved Groove:
 
@@ -75,7 +70,6 @@ Each entry in `grooves` is one saved Groove:
   "countIn": 4,
   "alarm": {
     "enabled": true,
-    "mode": "every",
     "seconds": 300
   },
   "pause": {
@@ -96,8 +90,8 @@ Each entry in `grooves` is one saved Groove:
 | `subdivision` | number | Slots per beat, 1–8, the beat included and first. `1` is no subdivision. |
 | `subdivisionPattern` | object or null | A tick pattern drawn for one subdivision count. `null` means the undrawn default — every subdivision at `tick`, slot 0 aside. |
 | `countIn` | number | Bars counted in before the practice clock starts, 0–8. `0` is no count-in. |
-| `alarm` | object | Off, or an interval rule carrying `mode` and `seconds`. `mode` is `every` to repeat, `at` to fire once. |
-| `pause` | object | Off, or a rule carrying `seconds`, after which the transport stops itself. |
+| `alarm` | object | `{ "enabled": false }`, or `enabled` with `seconds`. It repeats on every multiple of `seconds` of practice; there is no fire-once form. 0–7259, where 7259 is 120:59 and 0 is an alarm that stays on and never sounds. |
+| `pause` | object | `{ "enabled": false }`, or `enabled` with `seconds`, after which the transport stops itself. 1–7259: the same ceiling as `alarm`, but 0 switches it off rather than keeping it on. |
 | `createdAt` | number | Unix milliseconds. |
 | `updatedAt` | number | Unix milliseconds. |
 
@@ -105,7 +99,50 @@ An accent level — on a beat or a subdivision slot — is one of `strong`, `nor
 `tick`, or `mute`. In a `subdivisionPattern`, slot 0 is the beat’s own place in the grid and
 is always `mute`, because the beat sounds from `accents` instead.
 
-### Editing the file by hand
+## Importing
+
+**Settings** → **Utilities** → **Import** reads one file back. The picker accepts any file
+type, because file managers routinely report a `.json` as `text/plain`; the parser is the
+real gate on whether a file is one of Metronomo's.
+
+A file that parses opens a dialog with two modes, and the dialog counts up what each one
+would do before you commit to it:
+
+- **Merge** adds the file's Grooves to your library. Nothing you have already saved is
+  changed or dropped.
+- **Replace** discards your library and installs the file's in its place. This cannot be
+  undone.
+
+Under either mode, the Groove you are working on is left alone and can still be saved
+afterward. So are your preferences and your analytics choice — importing a file from
+someone else's phone does not import their settings.
+
+### Names and ids
+
+A backup is a restore, not a second opinion, so nothing already on the device is
+overwritten:
+
+- An **id** the library already holds belongs to some other Groove. The incoming one is
+  given a fresh id and its name becomes `<name> (imported)`, and both survive.
+- A **name** already taken gets a number: `Shuffle` arriving against a `Shuffle` becomes
+  `Shuffle (2)`, then `Shuffle (3)`.
+
+### When the whole file is refused
+
+Four conditions stop an import before anything is read. In each case nothing on the device
+changes:
+
+| What you see | What it means |
+| --- | --- |
+| That file isn't readable as JSON. | It did not parse. |
+| That file isn't a Metronomo backup. | `format` is missing or is not `metronomo.backup`, or `version` is missing or below `1`. |
+| That backup was written by a newer version of Metronomo. | `version` is above the format version this app knows. |
+| That backup has no Grooves in it. | `grooves` was empty, or every Groove in it was skipped. |
+
+The last one is a guard on **Replace** more than on Merge: replacing against a file with
+no Grooves in it is a wipe, and nothing further down could tell it from a restore.
+
+## Editing the file by hand
 
 You can, and import repairs most of what you get wrong. A number outside its range is
 clamped; a number that is missing or unreadable takes the app's default rather than the
@@ -115,12 +152,18 @@ deleting `"bpm"` gives you 120. An unrecognized accent level becomes `normal`, a
 are dropped rather than stored. A Groove that survives import is one the app could have
 created itself.
 
-Three things are not repaired that way.
+Four things are not repaired that way.
 
 - A Groove with no usable `name`, or no usable `beats`, is skipped entirely.
 - A `subdivisionPattern` is kept only if it still describes its own count exactly. If
   `subdivision` is outside 1–8, if `levels` is not exactly that long, or if any level is
   unrecognized, the whole pattern is dropped and the Groove imports with its ticks
-  undrawn. Unlike `accents`, it is never trimmed or padded to fit.
+  undrawn. Unlike `accents`, it is never trimmed or padded to fit. Slot 0 is the one
+  exception: whatever it holds is pinned back to `mute`, since the beat sounds from
+  `accents`. A pattern that is only the default once that pin lands — every other slot at
+  `tick` — is stored as `null`, because an undrawn pattern is no pattern.
 - A file whose `format` is not `metronomo.backup` is not a backup at all, and nothing in
   it is read.
+- An `alarm` or `pause` whose `seconds` is missing or unreadable is switched **off**, not
+  set to a default. This is the one place the fallback goes to nothing rather than to the
+  app's own value, so deleting `"seconds"` from an enabled rule loses the rule.
