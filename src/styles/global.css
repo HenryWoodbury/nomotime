@@ -66,11 +66,13 @@
     U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 
-/* Brand accent mirrors met/src/theme/brand.ts; orange is reserved for the mark. */
+/* Brand accent mirrors met/src/theme/brand.ts; orange is the wordmark, and only that. */
 :root {
   color-scheme: light dark;
-  --brand: #cb6a0a;
-  --ink: #151515;
+  --brand: #da6300;
+  --ink: #121311;
+  --button: #3276c2;
+  --button-hover: #2b65a6;
   --ink-muted: #5a5a5a;
   --ink-faint: #8a8a8a;
   --paper: #ffffff;
@@ -109,9 +111,11 @@
   :root {
     --brand: #fa8f21;
     --ink: #f2f0ed;
+    --button: #6098d6;
+    --button-hover: #7caadd;
     --ink-muted: #a8a49e;
     --ink-faint: #7c7873;
-    --paper: #151515;
+    --paper: #121311;
     --paper-sunk: #1e1e1e;
     --rule: #302e2c;
     --shadow-lift: 0 24px 60px -28px rgb(0 0 0 / 0.85);
@@ -301,7 +305,7 @@ h3 {
   margin: 1.5rem 0;
   padding: 1rem 1.25rem;
   background: var(--paper-sunk);
-  border-left: 3px solid var(--brand);
+  border-left: 3px solid var(--ink-faint);
   border-radius: 0 6px 6px 0;
 }
 .prose blockquote p {
@@ -464,7 +468,7 @@ h3 {
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  background: var(--ink);
+  background: var(--button);
   color: var(--paper);
   font-weight: 700;
   font-size: var(--text-sm);
@@ -472,11 +476,18 @@ h3 {
   border-radius: 10px;
   text-decoration: none;
 }
+/* Hover moves the button away from the page it sits on -- darker on paper,
+   lighter on the dark ground -- so the gesture reads the same in both schemes.
+   color: var(--paper) inverts with the scheme, which is why the light button is
+   the darker blue (white text on it) and the dark one the lighter (ink text). */
+.cta:hover {
+  background: var(--button-hover);
+}
 .beta-banner {
   display: inline-block;
   font-size: var(--text-xs);
   font-weight: 700;
-  color: var(--brand);
+  color: var(--ink-muted);
   margin: 0 0 1rem;
 }
 .cta-list {
