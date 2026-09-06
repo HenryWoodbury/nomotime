@@ -2,13 +2,13 @@
 layout: ../layouts/Legal.astro
 title: Support
 description: How to get help with Metronomo, report a bug, request a feature, or have your analytics data deleted.
-updated: 22 August 2026
-version: '1.0.0-beta.1'
+updated: 6 September 2026
+version: '1.0.0-beta.2'
 ---
 
-**Metronomo is in beta testing.** Some rough edges are expected, and reports of them are
-the whole point — if something sounds wrong, drifts, or stops when it shouldn't, that is
-worth an email even if you are not sure it is a bug.
+**Metronomo is coming soon.** Some rough edges are expected at launch, and reports of
+them are the whole point — if something sounds wrong, drifts, or stops when it shouldn't,
+that is worth an email even if you are not sure it is a bug.
 
 Metronomo is built and supported by one person. Email
 **[support@nomotime.com](mailto:support@nomotime.com)** and your communication will be reviewed. Bug reports and

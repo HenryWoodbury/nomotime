@@ -91,8 +91,10 @@ that mentions them is a claim the app does not hold.
 
 - [ ] `support@nomotime.com` alias exists and forwards to a real inbox
 - [x] Governing-law jurisdiction filled in at `src/pages/terms.md` §10 — Massachusetts, US
-- [ ] `BETA_URL` in `src/pages/index.astro` set to the Play tester opt-in link
-- [ ] At public launch: flip `IS_BETA` to `false` in `src/layouts/Base.astro`, swap the CTA
+- [ ] `BETA_URL` in `src/site.ts` set to the Play tester opt-in link, `LAUNCH_PHASE` moved
+      from `'soon'` to `'beta'`, and the lead sentence in `src/pages/support.md` moved from
+      coming soon back to beta testing
+- [ ] At public launch: set `LAUNCH_PHASE` to `'live'` in `src/site.ts`, swap the CTA
       to a Google Play badge on the real listing URL, and drop the beta note from
       `src/pages/support.md`
 - [ ] Screenshots in `public/screens/` replaced with real device captures
