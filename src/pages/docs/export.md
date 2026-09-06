@@ -59,12 +59,17 @@ Each entry in `grooves` is one saved Groove:
     "normal"
   ],
   "subdivision": 3,
-  "subdivisionPattern": {
-    "subdivision": 3,
-    "levels": [
+  "subdivisionPatterns": {
+    "3": [
       "mute",
       "tick",
       "weak"
+    ],
+    "4": [
+      "mute",
+      "tick",
+      "strong",
+      "tick"
     ]
   },
   "countIn": 4,
@@ -88,7 +93,7 @@ Each entry in `grooves` is one saved Groove:
 | `beats` | number | Beats per bar, 1–16. There are no time signatures. |
 | `accents` | array | One level per beat; the length matches `beats`. |
 | `subdivision` | number | Slots per beat, 1–8, the beat included and first. `1` is no subdivision. |
-| `subdivisionPattern` | object or null | A tick pattern drawn for one subdivision count. `null` means the undrawn default — every subdivision at `tick`, slot 0 aside. |
+| `subdivisionPatterns` | object | The tick patterns drawn, keyed by the subdivision count each was drawn for. A count with no key is undrawn — every subdivision at `tick`, slot 0 aside — and `{}` means nothing is drawn at all. Only the selected `subdivision`’s pattern sounds; the rest travel with the Groove and come back when you select their count. |
 | `countIn` | number | Bars counted in before the practice clock starts, 0–8. `0` is no count-in. |
 | `alarm` | object | `{ "enabled": false }`, or `enabled` with `seconds`. It repeats on every multiple of `seconds` of practice; there is no fire-once form. 0–7259, where 7259 is 120:59 and 0 is an alarm that stays on and never sounds. |
 | `pause` | object | `{ "enabled": false }`, or `enabled` with `seconds`, after which the transport stops itself. 1–7259: the same ceiling as `alarm`, but 0 switches it off rather than keeping it on. |
@@ -96,8 +101,12 @@ Each entry in `grooves` is one saved Groove:
 | `updatedAt` | number | Unix milliseconds. |
 
 An accent level — on a beat or a subdivision slot — is one of `strong`, `normal`, `weak`,
-`tick`, or `mute`. In a `subdivisionPattern`, slot 0 is the beat’s own place in the grid and
-is always `mute`, because the beat sounds from `accents` instead.
+`tick`, or `mute`. In a `subdivisionPatterns` entry, slot 0 is the beat’s own place in the
+grid and is always `mute`, because the beat sounds from `accents` instead.
+
+Files written by Metronomo 1.0 carry a single `subdivisionPattern` object — one count’s
+pattern, with its own `subdivision` and `levels` — in place of `subdivisionPatterns`.
+Import reads it as that one count’s entry, so an older backup loses nothing.
 
 ## Importing
 
@@ -155,13 +164,14 @@ created itself.
 Four things are not repaired that way.
 
 - A Groove with no usable `name`, or no usable `beats`, is skipped entirely.
-- A `subdivisionPattern` is kept only if it still describes its own count exactly. If
-  `subdivision` is outside 1–8, if `levels` is not exactly that long, or if any level is
-  unrecognized, the whole pattern is dropped and the Groove imports with its ticks
-  undrawn. Unlike `accents`, it is never trimmed or padded to fit. Slot 0 is the one
+- A `subdivisionPatterns` entry is kept only if it still describes its own count exactly.
+  If the key is outside 1–8, if the array is not exactly that long, or if any level is
+  unrecognized, that entry is dropped and the Groove imports with that count’s ticks
+  undrawn. Every other count is repaired on its own, so one bad entry costs you only
+  itself. Unlike `accents`, an entry is never trimmed or padded to fit. Slot 0 is the one
   exception: whatever it holds is pinned back to `mute`, since the beat sounds from
-  `accents`. A pattern that is only the default once that pin lands — every other slot at
-  `tick` — is stored as `null`, because an undrawn pattern is no pattern.
+  `accents`. An entry that is only the default once that pin lands — every other slot at
+  `tick` — is dropped too, because an undrawn pattern is no pattern.
 - A file whose `format` is not `metronomo.backup` is not a backup at all, and nothing in
   it is read.
 - An `alarm` or `pause` whose `seconds` is missing or unreadable is switched **off**, not

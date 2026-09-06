@@ -15,7 +15,7 @@ Groove — whether or not it has been saved.
 | Name | What you called it. Names are unique in your library, ignoring case and surrounding spaces. |
 | Tempo | 20–480 BPM. See [Tempo](/docs/tempo). |
 | Beats and accents | 1–16 beats, one accent level each. See [Beats and accents](/docs/beats). |
-| Subdivision | 1–8 slots per beat, and the drawn tick pattern if there is one. See [Subdivisions](/docs/subdivisions). |
+| Subdivision | 1–8 slots per beat, and the drawn tick pattern for each count you have drawn one for. See [Subdivisions](/docs/subdivisions). |
 | Count in | 0–8 bars. See [Count-in and timers](/docs/timers). |
 | Alarm and Pause | Off, or a time each. |
 

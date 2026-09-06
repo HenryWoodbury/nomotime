@@ -21,8 +21,12 @@ the thing it affects; this is the map.
 | **Appearance** | System, Light, Dark | Below. |
 | **Beat** | Percussive, Tonal | [Sound and volume](/docs/sound) |
 | **BPM slider resolution** | 20, 30, 40, 50, 60 | [Tempo](/docs/tempo) |
-| **Tempo** | Apply while sliding, Set after slide | [Tempo](/docs/tempo) |
-| **Pause timer** | Reset and play, Reset and wait | [Count-in and timers](/docs/timers) |
+| **Tempo: Apply while sliding** | On, off | [Tempo](/docs/tempo) |
+| **Pause: Play after rest** | On, off | [Count-in and timers](/docs/timers) |
+| **Pause: Customize alerts** | On, off — off by default | [Count-in and timers](/docs/timers) |
+
+The last three are switches, and each one's label is part of its target: press the word or
+the switch.
 
 **Appearance** sets light or dark for the app. **System** — the default — follows whatever
 your phone is set to, including a scheduled switch at dusk.

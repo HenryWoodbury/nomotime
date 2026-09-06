@@ -35,24 +35,26 @@ where a beat rests at **Strong**:
 
 **Tick → Weak → Normal → Strong → Mute → Tick**
 
-Slot 0 is the beat's own place in the grid. It is drawn as an inert placeholder and cannot
+Slot 0 is the beat’s own place in the grid. It is drawn as an inert placeholder and cannot
 be set here, because the beat already sounds from its accent in the bar. In the stored
 pattern that slot always reads `mute`, which is what keeps this layer silent on it.
 
 Changes apply live, so a pattern can be heard while it is drawn. **Cancel**, a tap on the
 backdrop, and leaving the dialog all put back the ticks as they stood when the hold
-landed — including the count the hold moved you off.
+landed — including the count the hold moved you off, and any drawing you made on a count
+you stepped onto while the dialog was open.
 
-## A pattern belongs to one count
+## Every count keeps its own pattern
 
-A drawn pattern is tied to the number of slots it was drawn for. Change **Subs** to a
-different count and the pattern is not lost, only dormant: the row falls back to every
-slot at **Tick**, and returning to the count it was drawn for brings the drawing back.
-The **Subs** row marks the count a pattern exists for.
+A drawn pattern is tied to the number of slots it was drawn for, and a Groove saves one
+for **each** count. Draw your triplets one way and your sixteenths another: both are kept,
+and choosing a count in the **Subs** row brings that count’s drawing back rather than
+replacing the last one.
 
-A Groove stores **one** pattern. While the dialog is open you can move between counts and
-each drawing is held, but the one saved with the Groove is the count you end on.
+The counts you are not on lie dormant, not lost. The row falls back to every slot at
+**Tick** for a count you have not drawn for, and the **Subs** row marks every count a
+pattern exists for, selected or not.
 
-Drawing every slot back to **Tick** clears the pattern rather than storing it. An undrawn
-pattern is no pattern — it would mark the **Subs** row and leave the Groove looking edited
-when nothing about it had changed.
+Drawing every slot of a count back to **Tick** clears that count’s pattern rather than
+storing it, leaving the rest alone. An undrawn pattern is no pattern — it would mark the
+**Subs** row and leave the Groove looking edited when nothing about it had changed.
