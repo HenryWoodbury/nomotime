@@ -4,7 +4,7 @@ import { getImage } from 'astro:assets';
 import Base from '../layouts/Base.astro';
 import darkShot from '../assets/MetronomoDarkMode.png';
 import lightShot from '../assets/MetronomoLightMode.png';
-import { BETA_URL, IS_BETA } from '../site';
+import { BETA_URL, IS_BETA, IS_SOON } from '../site';
 
 // The shot is themed against the page rather than with it: the dark screenshot
 // carries the light page, and the light screenshot carries the dark one. Both
@@ -54,14 +54,15 @@ const features = [
   <div class="shell">
     <section class="hero">
       <div>
-        {IS_BETA && <p class="beta-banner">Now in beta testing</p>}
+        {IS_SOON && <p class="hero-status">Coming soon</p>}
+        {IS_BETA && <p class="hero-status">Now in beta testing</p>}
         <h1>The bot that bops</h1>
         <p class="lede">
           Metronomo wraps hardware clock timing
           around custom beats.
           Jump over the noise and syncopate your groove.
         </p>
-        <a class="cta" href={BETA_URL}>Join the beta</a>
+        {!IS_SOON && <a class="cta" href={BETA_URL}>Join the beta</a>}
         <ul class="cta-list">
           <li>Free foundational engine, 20&ndash;480 BPM</li>
           <li>No ads, no signup, no personal info</li>

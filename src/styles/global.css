@@ -484,7 +484,7 @@ h3 {
 .cta:hover {
   background: var(--button-hover);
 }
-.beta-banner {
+.hero-status {
   display: inline-block;
   font-size: var(--text-xs);
   font-weight: 700;
