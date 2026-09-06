@@ -66,7 +66,8 @@
     U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 
-/* Brand accent mirrors met/src/theme/brand.ts; orange is the wordmark, and only that. */
+/* Brand accent: dark mirrors met/src/theme/brand.ts; light deliberately diverges
+   from the app's #CB6A0A. Orange is the wordmark, and only that. */
 :root {
   color-scheme: light dark;
   --brand: #da6300;
