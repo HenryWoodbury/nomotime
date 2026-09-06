@@ -8,7 +8,8 @@ import { BETA_URL, IS_BETA } from '../site';
 
 // The shot is themed against the page rather than with it: the dark screenshot
 // carries the light page, and the light screenshot carries the dark one. Both
-// crops are 0.45 wide-to-tall, so the swap costs no layout shift.
+// are 1080x2400, so one width/height on the img reserves the box for either and
+// the swap costs no layout shift; keep them the same size when either is redrawn.
 const shot = {
   width: 672,
   widths: [336, 672],
