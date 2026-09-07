@@ -20,10 +20,11 @@ labels — the app says **count-in**, so the site says count-in.
 ### The mechanics pass
 
 `src/pages/index.astro` is raw markup and gets no typographic substitution. The `.md` pages
-run through smartypants, so straight quotes in them are correct.
+run through smartypants, so straight quotes in them are correct. HTML entities do not decode
+inside `.astro` expressions, so prose characters there are literal.
 
 - Typographic quotes and apostrophes in `.astro`: `’`, `“ ”`
-- `&ndash;` for ranges, em dash for asides
+- Literal – for ranges, — for asides
 - American spelling
 - No trailing whitespace
 - Subject-verb agreement across compound subjects

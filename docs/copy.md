@@ -70,6 +70,6 @@ A promise that needs a qualifier gets the qualifier: *Free foundational engine*.
 
 ## Mechanics
 
-Typographic quotes and apostrophes throughout: `’`, `“ ”`. Ranges use `&ndash;`, asides use
+Typographic quotes and apostrophes throughout: `’`, `“ ”`. Ranges use a literal –, asides use
 an em dash. American spelling. No trailing whitespace. Source lines break at clause
 boundaries rather than at a fixed column.

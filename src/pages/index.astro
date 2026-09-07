@@ -22,27 +22,27 @@ const onDark = await getImage({ src: lightShot, ...shot });
 const features = [
   {
     title: 'Hardware clock',
-    body: 'Practice against your device’s audio clock for the best precision, even offline.',
+    body: 'Uses your device’s audio clock for the best precision.',
   },
   {
     title: '16 beats a bar',
     body: 'Accent each beat to generate unique rhythms.',
   },
   {
-    title: '20 to 480 BPM',
+    title: '20–480 BPM',
     body: 'Quickly fine-tune to specific tempos.',
   },
   {
     title: 'Custom subdivisions',
-    body: 'Select one to eight subdivisions per beat on their own pattern.',
+    body: 'Add a custom subdivision pattern to the beat of up to eight ticks.',
   },
   {
     title: 'Multiple timers',
-    body: 'Set alarm and pause timers, as well as count-in bars.',
+    body: 'Set count-in, alarm, and pause timers to match your routine.',
   },
   {
-    title: 'Grooves you re-use',
-    body: 'Save any set of tempo, accents, subdivisions, and timers.',
+    title: 'Grooves you reuse',
+    body: 'Save any pattern of tempo, accents, subdivisions, and timers for later.',
   },
 ];
 ---
@@ -58,15 +58,14 @@ const features = [
         {IS_BETA && <p class="hero-status">Now in beta testing</p>}
         <h1>The bot that bops</h1>
         <p class="lede">
-          Metronomo wraps hardware clock timing
-          around custom beats.
-          Jump over the noise and syncopate your groove.
+          Metronomo plays back your beats from bar and subdivision patterns you set yourself.
+          Avoid the noise and syncopate your groove.
         </p>
         {!IS_SOON && <a class="cta" href={BETA_URL}>Join the beta</a>}
         <ul class="cta-list">
-          <li>Free foundational engine, 20&ndash;480 BPM</li>
+          <li>Free foundational engine, 20–480 BPM</li>
           <li>No ads, no signup, no personal info</li>
-          <li>Local, offline, on-the-go</li>
+          <li>Local to your device; no signal is no problem</li>
         </ul>
       </div>
       <div class="hero-shot">
@@ -83,7 +82,7 @@ const features = [
             sizes={shot.sizes}
             width={onLight.attributes.width}
             height={onLight.attributes.height}
-            alt="Metronomo’s main screen, showing the tempo slider, beat row, and transport controls"
+            alt="Metronomo’s main screen, showing the beat row, tempo slider, and transport controls"
             decoding="async"
           />
         </picture>
@@ -111,13 +110,12 @@ const features = [
         Metronomo needs no buy-in, other than the buy-in of giving it a try:
       </p>
       <ul class="privacy-list">
-        <li>No name, no email address, no personal information of any kind.</li>
-        <li>No creative work saved in the cloud. Your grooves stay on your device.</li>
-        <li>No microphone permission. Metronomo makes sound; it never listens.</li>
-        <li>No ads, no tracking.</li>
+        <li>No name, no email address, no personal information of any kind</li>
+        <li>No creative work saved in the cloud; your grooves stay on your device</li>
+        <li>No microphone permission; Metronomo makes sound; it never listens</li>
+        <li>No ads, no tracking</li>
         <li>
-          Yes to some anonymous analytics. Analytics can be switched off in Settings —
-          what they cover is spelled out in the <a href="/privacy">Privacy Policy</a>.
+          Yes to anonymous, optional, analytics (see <a href="/privacy">Privacy Policy</a>)
         </li>
       </ul>
     </section>
