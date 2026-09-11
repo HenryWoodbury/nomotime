@@ -10,7 +10,9 @@ export const SUPPORT_EMAIL = 'support@nomotime.com';
 // in every phase. Internal and closed testing stay at 'soon': those testers are
 // recruited directly, so the public page has nothing to hand them.
 export type LaunchPhase = 'soon' | 'beta' | 'live';
-export const LAUNCH_PHASE: LaunchPhase = 'soon';
+// Asserted, not annotated: TypeScript narrows an annotated const to its initializer,
+// which makes every comparison below the current phase a ts(2367) error.
+export const LAUNCH_PHASE = 'soon' as LaunchPhase;
 
 export const IS_SOON = LAUNCH_PHASE === 'soon';
 export const IS_BETA = LAUNCH_PHASE === 'beta';
