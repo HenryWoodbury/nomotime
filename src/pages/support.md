@@ -71,7 +71,7 @@ the app does. The only data it ever sends is optional anonymous analytics.
 
 ### How do I turn off analytics?
 
-**Settings** → **About** → **Analytics** → **off.** Nothing further is sent from that point, including on the
+**Settings** → **About** → **Analytics** → **Don't share.** Nothing further is sent from that point, including on the
 next launch. Every feature keeps working. See the [Privacy Policy](/privacy) for exactly
 what is collected while it is on.
 
@@ -85,8 +85,9 @@ is how you move a library to a new device or keep a copy before clearing the app
 
 ### Does Metronomo use my microphone?
 
-No. It requests no microphone permission and contains no recording code. It makes sound; it
-never listens.
+No. It asks for no microphone access and contains no recording code. On iOS it carries a
+microphone usage string because its audio engine links Apple's audio APIs, which nothing
+in Metronomo calls. It makes sound; it never listens.
 
 ## Deleting your data
 
@@ -101,8 +102,8 @@ Install ID is the only way to find your records — nothing else connects them t
 request without it cannot be fulfilled. Deletion is completed within 30 days and confirmed
 by reply.
 
-To stop any further collection right away, switch **Settings** → **About** →
-**Analytics** off. That takes
+To stop any further collection right away, choose **Don't share** under **Settings** →
+**About** → **Analytics**. That takes
 effect immediately and does not require emailing anyone.
 
 ## Reporting a security issue

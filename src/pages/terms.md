@@ -90,7 +90,7 @@ they grant you. A list of components and their licenses is available on request 
 ## 9. Termination
 
 This license ends automatically if you breach these terms, and you may end it at any time by
-uninstalling Metronomo. Sections 5, 6, and 10 survive termination.
+uninstalling Metronomo. Sections 5, 6, 10, and 12 survive termination.
 
 ## 10. Governing law
 

@@ -48,9 +48,16 @@ claims are only true as long as the app's analytics code matches them. The autho
 - `met/src/metronome/format.ts` — which groove properties are attached to events
 - every `posthog.capture(...)` call site in `met/src` and `met/app`
 
-**Any PR to `met` that changes the event list, adds an SDK, or changes what a property
-contains must update `src/pages/privacy.md` in this repo and bump the `version` and
-`updated` fields in its frontmatter.** `met/docs/build/analytics.md` carries a pointer back
+The policy also claims what each platform asks of you, and that has its own authority:
+
+- `met/android/app/src/main/AndroidManifest.xml` — the permissions Android declares
+- `met/ios/Metronomo/Info.plist` — the usage strings iOS ships, microphone included
+- `met/app.json` — the plugin config those two are generated from, including
+  `iosMicrophonePermission`
+
+**Any PR to `met` that changes the event list, adds an SDK, changes what a property
+contains, or adds a permission or usage string must update `src/pages/privacy.md` in this
+repo and bump the `version` and `updated` fields in its frontmatter.** `met/docs/build/analytics.md` carries a pointer back
 here.
 
 ## Keeping the export format true

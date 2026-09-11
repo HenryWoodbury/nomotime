@@ -9,7 +9,8 @@ version: '1.0.0-beta.3'
 > **The short version.** Metronomo is a metronome. It works entirely offline. It requires no
 > account, no login, and asks for no personal information. Your Grooves and settings stay
 > on your device unless you export them to a file yourself. It does collect anonymous usage
-> analytics, which you can switch off in **Settings** → **About** → **Analytics**.
+> analytics, which you can switch off with **Don't share** in **Settings** → **About** →
+> **Analytics**.
 
 This policy covers the Metronomo mobile app for iOS and Android — `com.nomotime.metronomo`
 on both — and this website. Metronomo is made by Henry Woodbury, an independent developer.
@@ -25,7 +26,9 @@ Metronomo never collects, and has no technical means of collecting:
 Regarding **audio**:
 
 - Metronomo produces sound; it does not record it
-- The app never requests microphone permission, and no recording code exists in it
+- The app never asks for microphone access, and no recording code exists in it. iOS
+  carries a microphone usage string only because the audio engine links Apple's audio
+  APIs; Metronomo never calls them to listen
 
 Regarding **files**:
 
@@ -133,7 +136,7 @@ it ever asks you to grant:
 | Notifications | To show the playback card with your Groove's name and tempo. Metronomo never sends marketing or promotional notifications |
 | Draw over other apps &amp; Vibrate | Metronomo uses neither |
 
-On neither platform does Metronomo request **microphone, camera, location, or contacts
+On neither platform does Metronomo ask you for **microphone, camera, location, or contacts
 access.**
 
 ## Children

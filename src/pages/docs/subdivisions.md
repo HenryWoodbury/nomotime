@@ -1,27 +1,26 @@
 ---
 layout: ../../layouts/Doc.astro
 title: Subdivisions
-description: One to eight evenly spaced slots per beat in Metronomo, each independently accented, drawn per subdivision count.
+description: Up to 8 evenly spaced ticks per beat in Metronomo, the beat included, each independently accented, drawn per subdivision count.
 ---
 
-A subdivision divides each beat into evenly spaced slots. The **Subs** row sets how many,
-and holding a count opens the editor where you draw what each slot sounds like.
+A subdivision divides each beat into evenly spaced ticks. The **Subs** row sets how many,
+and holding a count opens the editor where you draw what each one sounds like.
 
 ## Choosing a count
 
-**Subs** runs from **1 to 8**. The count includes the beat itself, which is always the
-first slot:
+**Subs** runs from **1 to 8** ticks, the beat itself included and always the first:
 
 | Subs | What lands between beats |
 | --- | --- |
 | 1 | Nothing. The beat alone — the default for a new Groove. |
-| 2 | One slot, halfway. Eighths against a quarter-note pulse. |
-| 3 | Two slots. Triplets. |
-| 4 | Three slots. Sixteenths. |
-| 5–8 | Four through seven slots, evenly spaced. |
+| 2 | One tick, halfway. Eighths against a quarter-note pulse. |
+| 3 | Two ticks. Triplets. |
+| 4 | Three ticks. Sixteenths. |
+| 5–8 | Four through seven ticks, evenly spaced. |
 
-The slots are spaced evenly across the beat. There is no swing setting; an uneven feel is
-made by muting slots rather than by moving them.
+The ticks are spaced evenly across the beat. There is no swing setting; an uneven feel is
+made by muting them rather than by moving them.
 
 The row shows **five counts at a time**. The chevrons at either end scroll it by one, and
 holding a chevron jumps to that end of the scale. A chevron disables itself once the row
@@ -35,7 +34,7 @@ where a beat rests at **Strong**:
 
 **Tick → Soft → Medium → Strong → Mute → Tick**
 
-Slot 0 is the beat’s own place in the grid. It is drawn as an inert placeholder and cannot
+The first tick — slot 0 in the stored pattern — is the beat’s own place in the grid. It is drawn as an inert placeholder and cannot
 be set here, because the beat already sounds from its accent in the bar. In the stored
 pattern that slot always reads `mute`, which is what keeps this layer silent on it.
 

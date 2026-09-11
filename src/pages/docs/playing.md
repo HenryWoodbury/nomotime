@@ -77,5 +77,6 @@ Metronomo's Android manifest declares nine permissions. None of them prompt you 
 | `SYSTEM_ALERT_WINDOW` | The same — a framework default, not a feature. |
 | `READ_EXTERNAL_STORAGE`, `WRITE_EXTERNAL_STORAGE` | The same, and both capped at Android 12. [Export and import](/docs/export) use the system file picker, which needs no storage permission. |
 
-Metronomo declares **no use of the microphone** on either platform, and contains no
-recording code. It makes sound; it never listens.
+Metronomo asks for **no microphone access** on either platform, and contains no recording
+code. The usage string iOS requires is in the app only because its audio engine links
+Apple's audio APIs, which nothing in Metronomo calls. It makes sound; it never listens.
