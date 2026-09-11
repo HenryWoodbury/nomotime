@@ -4,7 +4,7 @@ import { getImage } from 'astro:assets';
 import Base from '../layouts/Base.astro';
 import darkShot from '../assets/MetronomoDarkMode.png';
 import lightShot from '../assets/MetronomoLightMode.png';
-import { BETA_URL, IS_BETA, IS_SOON } from '../site';
+import { IS_BETA, IS_SOON, PLAY_BETA_URL, TESTFLIGHT_URL } from '../site';
 
 // The shot is themed against the page rather than with it: the dark screenshot
 // carries the light page, and the light screenshot carries the dark one. Both
@@ -22,19 +22,19 @@ const onDark = await getImage({ src: lightShot, ...shot });
 const features = [
   {
     title: 'Hardware clock',
-    body: 'Uses your device’s audio clock for the best precision.',
+    body: 'Clicks queued to your device’s audio clock, not to a software timer.',
   },
   {
     title: '16 beats a bar',
-    body: 'Accent each beat to generate unique rhythms.',
+    body: 'Set each beat strong, medium, soft, tick, or mute to build any rhythm.',
   },
   {
     title: '20–480 BPM',
-    body: 'Quickly fine-tune to specific tempos.',
+    body: 'Sweep to the range you want, then fine-tune to the exact tempo.',
   },
   {
     title: 'Custom subdivisions',
-    body: 'Add a custom subdivision pattern to the beat of up to eight ticks.',
+    body: 'Up to 8 ticks including the beat, each accented independently.',
   },
   {
     title: 'Multiple timers',
@@ -42,14 +42,14 @@ const features = [
   },
   {
     title: 'Grooves you reuse',
-    body: 'Save any pattern of tempo, accents, subdivisions, and timers for later.',
+    body: 'Save any pattern of tempo, accents, subdivisions, and timers.',
   },
 ];
 ---
 
 <Base
   title="Metronomo — a precise, offline metronome for musicians"
-  description="A metronome built on beats and accents, scheduled against the audio hardware clock so the click does not drift. Free on Android, works entirely offline."
+  description="A metronome for any meter, built on beats and accents, scheduled against the audio hardware clock so the click does not drift. Free on iOS and Android, works entirely offline."
 >
   <div class="shell">
     <section class="hero">
@@ -58,10 +58,23 @@ const features = [
         {IS_BETA && <p class="hero-status">Now in beta testing</p>}
         <h1>The bot that bops</h1>
         <p class="lede">
-          Metronomo lets you set the beats and subdivisions for your personal practice requirements.
-          Avoid the noise and syncopate your groove.
+          Metronomo is a metronome for any meter. Set the beats, accent them however you like,
+          add a custom subdivision pattern, and syncopate your groove.
         </p>
-        {!IS_SOON && <a class="cta" href={BETA_URL}>Join the beta</a>}
+        {!IS_SOON && (PLAY_BETA_URL || TESTFLIGHT_URL) && (
+          <div class="cta-row">
+            {PLAY_BETA_URL && (
+              <a class="cta" href={PLAY_BETA_URL}>
+                Join the Android beta
+              </a>
+            )}
+            {TESTFLIGHT_URL && (
+              <a class="cta" href={TESTFLIGHT_URL}>
+                Join the iOS beta
+              </a>
+            )}
+          </div>
+        )}
         <ul class="cta-list">
           <li>Free foundational engine, 20–480 BPM</li>
           <li>No ads, no signup, no personal info</li>
@@ -111,11 +124,11 @@ const features = [
       </p>
       <ul class="privacy-list">
         <li>No name, no email address, no personal information of any kind</li>
-        <li>No creative work saved in the cloud; your grooves stay on your device</li>
-        <li>No microphone permission; Metronomo makes sound; it never listens</li>
+        <li>No cloud; your Grooves stay on your device</li>
+        <li>No recording — Metronomo makes sound, it never listens</li>
         <li>No ads, no tracking</li>
         <li>
-          Yes to anonymous, optional, analytics (see <a href="/privacy">Privacy Policy</a>)
+          Yes to anonymous, optional analytics (see <a href="/privacy">Privacy Policy</a>)
         </li>
       </ul>
     </section>

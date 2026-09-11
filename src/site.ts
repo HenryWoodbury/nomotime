@@ -6,16 +6,21 @@ export const SUPPORT_EMAIL = 'support@nomotime.com';
 // Launch state, in the order the site moves through it. 'soon' is the pre-announcement
 // page: no masthead tag, no CTA, and the status line reads Coming soon. 'beta' recruits
 // testers. 'live' drops the tag and the status line but keeps the CTA, which is swapped
-// to a Play badge by hand. The sentence in support.md is prose and stays a manual edit
-// in every phase.
+// to store badges by hand. The sentence in support.md is prose and stays a manual edit
+// in every phase. Internal and closed testing stay at 'soon': those testers are
+// recruited directly, so the public page has nothing to hand them.
 export type LaunchPhase = 'soon' | 'beta' | 'live';
-export const LAUNCH_PHASE: LaunchPhase = 'soon';
+// Asserted, not annotated: TypeScript narrows an annotated const to its initializer,
+// which makes every comparison below the current phase a ts(2367) error.
+export const LAUNCH_PHASE = 'soon' as LaunchPhase;
 
 export const IS_SOON = LAUNCH_PHASE === 'soon';
 export const IS_BETA = LAUNCH_PHASE === 'beta';
 
-// Play issues this once the tester opt-in exists. It is not the listing URL.
-export const BETA_URL = '#';
+// The tester opt-in links: Play's closed-testing URL and TestFlight's public link.
+// Neither is a listing URL. An empty string hides that store's CTA.
+export const PLAY_BETA_URL = '';
+export const TESTFLIGHT_URL = '';
 
 export const LEGAL_PAGES = [
   { href: '/docs', label: 'Docs' },
@@ -24,10 +29,12 @@ export const LEGAL_PAGES = [
   { href: '/support', label: 'Support' },
 ] as const;
 
-// The docs set. /docs is a hub over these; the sub-pages carry no stamp of their
-// own, so the two constants below date the whole set and are bumped with it.
-export const DOCS_VERSION = '1.0.0-beta.1';
-export const DOCS_UPDATED = '1 September 2026';
+// The docs set. /docs is a hub over these; the sub-pages carry no stamp of their own.
+// DOCS_VERSION is the app version the set describes: `expo.version` in met/app.json at
+// the tagged store release (`v1.0.0`), never a version of the docs themselves.
+// DOCS_UPDATED is bumped whenever the set changes.
+export const DOCS_VERSION = '1.0.0';
+export const DOCS_UPDATED = '11 September 2026';
 
 export const DOC_PAGES = [
   {

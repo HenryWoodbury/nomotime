@@ -54,16 +54,16 @@ Each entry in `grooves` is one saved Groove:
   "beats": 4,
   "accents": [
     "strong",
-    "normal",
-    "weak",
-    "normal"
+    "medium",
+    "soft",
+    "medium"
   ],
   "subdivision": 3,
   "subdivisionPatterns": {
     "3": [
       "mute",
       "tick",
-      "weak"
+      "soft"
     ],
     "4": [
       "mute",
@@ -100,13 +100,9 @@ Each entry in `grooves` is one saved Groove:
 | `createdAt` | number | Unix milliseconds. |
 | `updatedAt` | number | Unix milliseconds. |
 
-An accent level — on a beat or a subdivision slot — is one of `strong`, `normal`, `weak`,
+An accent level — on a beat or a subdivision slot — is one of `strong`, `medium`, `soft`,
 `tick`, or `mute`. In a `subdivisionPatterns` entry, slot 0 is the beat’s own place in the
 grid and is always `mute`, because the beat sounds from `accents` instead.
-
-Files written by Metronomo 1.0 carry a single `subdivisionPattern` object — one count’s
-pattern, with its own `subdivision` and `levels` — in place of `subdivisionPatterns`.
-Import reads it as that one count’s entry, so an older backup loses nothing.
 
 ## Importing
 
@@ -124,7 +120,7 @@ would do before you commit to it:
 
 Under either mode, the Groove you are working on is left alone and can still be saved
 afterward. So are your preferences and your analytics choice — importing a file from
-someone else's phone does not import their settings.
+someone else's device does not import their settings.
 
 ### Names and ids
 
@@ -156,7 +152,7 @@ no Grooves in it is a wipe, and nothing further down could tell it from a restor
 You can, and import repairs most of what you get wrong. A number outside its range is
 clamped; a number that is missing or unreadable takes the app's default rather than the
 nearest bound, so deleting `"countIn"` gives you a four-bar count-in, not none, and
-deleting `"bpm"` gives you 120. An unrecognized accent level becomes `normal`, an
+deleting `"bpm"` gives you 120. An unrecognized accent level becomes `medium`, an
 `accents` array of the wrong length is trimmed or padded, and keys the app does not know
 are dropped rather than stored. A Groove that survives import is one the app could have
 created itself.

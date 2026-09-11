@@ -2,17 +2,18 @@
 layout: ../layouts/Legal.astro
 title: Privacy Policy
 description: What Metronomo stores on your device, what data you can export, what anonymous usage data it collects, and how to turn that off.
-updated: 6 September 2026
-version: '1.0.0-beta.2'
+updated: 11 September 2026
+version: '1.0.0-beta.3'
 ---
 
 > **The short version.** Metronomo is a metronome. It works entirely offline. It requires no
-> account, no login, and asks for no personal information. Your grooves and settings stay
-> on your phone unless you export them to a file yourself. It does collect anonymous usage
-> analytics, which you can switch off in **Settings** → **About** → **Analytics**.
+> account, no login, and asks for no personal information. Your Grooves and settings stay
+> on your device unless you export them to a file yourself. It does collect anonymous usage
+> analytics, which you can switch off with **Don't share** in **Settings** → **About** →
+> **Analytics**.
 
-This policy covers the Metronomo mobile app for Android (`com.nomotime.metronomo`) and
-this website. Metronomo is made by Henry Woodbury, an independent developer.
+This policy covers the Metronomo mobile app for iOS and Android — `com.nomotime.metronomo`
+on both — and this website. Metronomo is made by Henry Woodbury, an independent developer.
 
 ## What Metronomo does not collect
 
@@ -24,15 +25,17 @@ Metronomo never collects, and has no technical means of collecting:
 
 Regarding **audio**:
 
-- Metronomo produces sound; it does not record it 
-- The app never requests microphone permission, and no recording code exists in it
+- Metronomo produces sound; it does not record it
+- The app never asks for microphone access, and no recording code exists in it. iOS
+  carries a microphone usage string only because the audio engine links Apple's audio
+  APIs; Metronomo never calls them to listen
 
 Regarding **files**:
 
-- Metronomo may export or import "groove" files, only when instructed by you
+- Metronomo may export or import "Groove" files, only when instructed by you
 
 Metronomo does not sell your data, does not share it with data brokers, and does not use it
-for advertising or for tracking you across other apps or websites. 
+for advertising or for tracking you across other apps or websites.
 There are no ads and no advertising SDKs in Metronomo.
 
 ## What stays on your device
@@ -43,29 +46,29 @@ never uploaded:
 | What | What it holds |
 | --- | --- |
 | Your settings | Theme, beat sound, tempo-slider behavior, pause-timer behavior, volume |
-| Your grooves | Name, tempo, beats, accents, subdivisions, timers |
+| Your Grooves | Name, tempo, beats, accents, subdivisions, timers |
 | Your working state | The app opens where you left it |
 
-The names and settings you give your grooves are **never transmitted without your permission**.
+The names and settings you give your Grooves are **never transmitted without your permission**.
 They leave your device only if you export them yourself (described below).
-Metronomo does write a small temporary image to your phone's cache folder to draw the tempo
+Metronomo does write a small temporary image to your device's cache folder to draw the tempo
 marking on the lock-screen player. The system may clear it at any time as cache.
 
-Local data is removed when you uninstall the app or clear its storage via Android
-Settings. Metronomo has no cloud backup and no sync.
+Local data is removed when you uninstall the app; on Android you can also clear it in
+place, via Settings. Metronomo has no cloud backup and no sync.
 
-### Exporting and importing your grooves
+### Exporting and importing your Grooves
 
-**Settings** → **Utilities** lets you save your grooves to a file, and read one back. This
-is how you move a groove library to a new phone, or keep a copy before clearing the app.
+**Settings** → **Utilities** lets you save your Grooves to a file, and read one back. This
+is how you move a Groove library to a new device, or keep a copy before clearing the app.
 
-The file holds your saved grooves and nothing else. It does **not** contain your settings or
+The file holds your saved Grooves and nothing else. It does **not** contain your settings or
 Install ID, and will not overwrite settings when imported into a new or existing app install.
 
 Metronomo does not upload the file, and has nowhere to upload it to.
 
-Once written, the grooves file is **no longer under
-Metronomo's control**. It contains your groove names and settings in readable form. It is not removed
+Once written, the Grooves file is **no longer under
+Metronomo's control**. It contains your Groove names and settings in readable form. It is not removed
 when you uninstall Metronomo or clear the app's storage, and where you copy or back it up
 is your choice. Note that other services will have their own privacy policies.
 
@@ -80,27 +83,27 @@ off at any time in **Settings** → **About** → **Analytics.**
 
 - **Which screens you open** — the app's own screen names only, such as the main screen or
   Settings, along with the name of the screen you came from
-- **Which actions you trigger** — metronome start and stop; groove save, load, rename, 
+- **Which actions you trigger** — metronome start and stop; Groove save, load, rename,
   and delete; data export and import; changes to settings
 - **Musical settings as plain numbers** — the tempo, beat count, and subdivision in use when
-  you start the metronome or save or load a groove
-- **A random groove ID** — a meaningless string the app generates for each groove you save,
-  to count repeated use. This ID carries no information about the groove itself
-- **Export and import** — analytics track a count of export and import 
+  you start the metronome or save or load a Groove
+- **A random Groove ID** — a meaningless string the app generates for each Groove you save,
+  to count repeated use. This ID carries no information about the Groove itself
+- **Export and import** — analytics track a count of export and import
   actions and a count of entries in each file, but not the actual file names or locations
 - **Whether the app was opened, backgrounded, installed, or updated**
-- **Basic technical details** — app version and build number, Android version, device type,
-  screen size, language, and time zone
+- **Basic technical details** — app version and build number, operating system and its
+  version, device type, screen size, language, and time zone
 - **A random Install ID** — a meaningless string generated on your device when you first
   install Metronomo
-- **Your IP address**, which PostHog's servers necessarily see when your phone connects to
+- **Your IP address**, which PostHog's servers necessarily see when your device connects to
   them, as with any internet request. It is not used to identify you
 
 The **Install ID** is never connected to a real identity. You can see yours in **Settings** → **About** → **Install ID**.
 
 ### What is never sent
 
-The names of your grooves, your saved grooves themselves, beat and subdivision patterns, and anything 
+The names of your Grooves, your saved Grooves themselves, beat and subdivision patterns, and anything
 else you enter or select are **deliberately excluded**. Metronomo does not record your screen,
 does not capture your audio output, and does not read anything outside the app.
 
@@ -118,15 +121,23 @@ to work as expected; analytics is not required for any feature to function.
 
 ## Permissions Metronomo requests, and why
 
+**On iOS, Metronomo asks you for nothing.** Playing in the background and showing the
+player on your lock screen and in Control Center come from the audio session the app
+declares, which needs no permission from you. Nothing else in the app has a permission to
+ask for, so iOS never prompts you at all.
+
+On Android, Metronomo declares the permissions below. Notification access is the only one
+it ever asks you to grant:
+
 | Permission | Why |
 | --- | --- |
 | Internet | Only to send the anonymous analytics records described above, and only while they are enabled |
-| Foreground service &amp; media playback | To keep the click playing when you switch apps or lock the phone |
-| Notifications | To show the playback card with your groove's name and tempo. Metronomo never sends marketing or promotional notifications |
+| Foreground service &amp; media playback | To keep the click playing when you switch apps or lock the screen |
+| Notifications | To show the playback card with your Groove's name and tempo. Metronomo never sends marketing or promotional notifications |
 | Draw over other apps &amp; Vibrate | Metronomo uses neither |
 
-Notifications is the only permission Metronomo ever asks you to grant. Metronomo never requests
-**microphone, camera, location, or contacts access.**
+On neither platform does Metronomo ask you for **microphone, camera, location, or contacts
+access.**
 
 ## Children
 
@@ -138,18 +149,19 @@ child has somehow provided personal information through Metronomo, email
 ## Your choices and your rights
 
 - **Turn analytics off** — Settings → About → Analytics; the complete opt-out
-- **Delete everything local** — uninstall Metronomo, or use Android Settings → Apps →
-  Metronomo → Storage → Clear storage. Exported files are outside this scope; delete them yourself if you no longer want them
+- **Delete everything local** — uninstall Metronomo, which on iOS removes its data with it;
+  on Android you can instead use Settings → Apps → Metronomo → Storage → Clear storage.
+  Exported files are outside this scope; delete them yourself if you no longer want them
 - **Ask what has been collected, or have it deleted** — email
   [support@nomotime.com](mailto:support@nomotime.com) with the **Install ID** shown in
   Settings → About
 
-The Install ID is the only way to locate your analytics records, since nothing else ties them to you. Requests are honoured within 30 days.
+The Install ID is the only way to locate your analytics records, since nothing else ties them to you. Requests are honored within 30 days.
 
 Depending on where you live, you may have additional rights over your data under laws such
 as the GDPR or the CCPA — including access, correction, deletion, and objection. The
 lawful basis for the analytics described here is legitimate interest in maintaining and
-improving the app. You may switch analytics trackiing off at any time and request captured data be
+improving the app. You may switch analytics tracking off at any time and request captured data be
 deleted as described above; you will not be treated differently for doing so.
 
 ## International transfer
@@ -165,9 +177,9 @@ file you exported is kept until you delete that file.
 
 ## Security
 
-Analytics are transmitted over HTTPS. Data on your device is protected by Android's
-app-sandbox isolation, which prevents other apps from reading it. No method of transmission
-or storage is perfectly secure, and no absolute guarantee is offered.
+Analytics are transmitted over HTTPS. Data on your device is protected by the app sandbox
+that iOS and Android each enforce, which prevents other apps from reading it. No method of
+transmission or storage is perfectly secure, and no absolute guarantee is offered.
 
 ## Changes to this policy
 
