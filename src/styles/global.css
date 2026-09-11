@@ -477,6 +477,12 @@ h3 {
   border-radius: 10px;
   text-decoration: none;
 }
+/* Two CTAs when a beta runs on both stores; one, and the row is a row of one. */
+.cta-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
 /* Hover moves the button away from the page it sits on -- darker on paper,
    lighter on the dark ground -- so the gesture reads the same in both schemes.
    color: var(--paper) inverts with the scheme, which is why the light button is

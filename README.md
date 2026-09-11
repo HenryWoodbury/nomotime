@@ -99,10 +99,10 @@ that mentions them is a claim the app does not hold.
 
 - [ ] `support@nomotime.com` alias exists and forwards to a real inbox
 - [x] Governing-law jurisdiction filled in at `src/pages/terms.md` §10 — Massachusetts, US
-- [ ] `BETA_URL` in `src/site.ts` set to the tester opt-in link — Play's, or a TestFlight
-      public link — `LAUNCH_PHASE` moved from `'soon'` to `'beta'`, and the lead sentence in
-      `src/pages/support.md` moved from coming soon back to beta testing. One constant holds
-      one link; recruiting on both stores at once needs a second constant and a second CTA
+- [ ] `PLAY_BETA_URL` and `TESTFLIGHT_URL` in `src/site.ts` set to the tester opt-in links —
+      neither is a listing URL, and either left empty hides that store's CTA — `LAUNCH_PHASE`
+      moved from `'soon'` to `'beta'`, and the lead sentence in `src/pages/support.md` moved
+      from coming soon back to beta testing
 - [ ] At public launch: set `LAUNCH_PHASE` to `'live'` in `src/site.ts`, swap the CTA
       to Google Play and App Store badges on the real listing URLs, and drop the beta note
       from `src/pages/support.md`

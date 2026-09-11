@@ -15,9 +15,10 @@ export const LAUNCH_PHASE: LaunchPhase = 'soon';
 export const IS_SOON = LAUNCH_PHASE === 'soon';
 export const IS_BETA = LAUNCH_PHASE === 'beta';
 
-// The tester opt-in link — Play's, or TestFlight's public link. It is not a listing URL,
-// and it is one link: a two-store beta needs a second constant and a second CTA.
-export const BETA_URL = '#';
+// The tester opt-in links: Play's closed-testing URL and TestFlight's public link.
+// Neither is a listing URL. An empty string hides that store's CTA.
+export const PLAY_BETA_URL = '';
+export const TESTFLIGHT_URL = '';
 
 export const LEGAL_PAGES = [
   { href: '/docs', label: 'Docs' },

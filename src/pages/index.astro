@@ -4,7 +4,7 @@ import { getImage } from 'astro:assets';
 import Base from '../layouts/Base.astro';
 import darkShot from '../assets/MetronomoDarkMode.png';
 import lightShot from '../assets/MetronomoLightMode.png';
-import { BETA_URL, IS_BETA, IS_SOON } from '../site';
+import { IS_BETA, IS_SOON, PLAY_BETA_URL, TESTFLIGHT_URL } from '../site';
 
 // The shot is themed against the page rather than with it: the dark screenshot
 // carries the light page, and the light screenshot carries the dark one. Both
@@ -61,7 +61,20 @@ const features = [
           Metronomo is a metronome for any meter. Set the beats, accent them however you like,
           add a custom subdivision pattern, and syncopate your groove.
         </p>
-        {!IS_SOON && <a class="cta" href={BETA_URL}>Join the beta</a>}
+        {!IS_SOON && (PLAY_BETA_URL || TESTFLIGHT_URL) && (
+          <div class="cta-row">
+            {PLAY_BETA_URL && (
+              <a class="cta" href={PLAY_BETA_URL}>
+                Join the Android beta
+              </a>
+            )}
+            {TESTFLIGHT_URL && (
+              <a class="cta" href={TESTFLIGHT_URL}>
+                Join the iOS beta
+              </a>
+            )}
+          </div>
+        )}
         <ul class="cta-list">
           <li>Free foundational engine, 20–480 BPM</li>
           <li>No ads, no signup, no personal info</li>
