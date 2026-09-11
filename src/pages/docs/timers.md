@@ -69,7 +69,7 @@ Both are saved with the Groove, so one Groove can carry a break and another none
 
 When the countdown reaches its length the transport stops and the break opens over the app.
 **Continue** is the only way out, and it is shut until the forced wait reaches **0:00** —
-the backdrop and the Android back gesture do nothing. While the wait runs, a clear button
+the backdrop and the system back gesture do nothing. While the wait runs, a clear button
 beside the countdown gives it up: the reading drops to 0:00 and Continue comes alive.
 
 Leaving a break starts nothing. Playing again, or restarting the countdown, is done back on

@@ -1,40 +1,41 @@
 ---
 layout: ../layouts/Legal.astro
 title: Terms of Use
-description: The terms covering your use of the Metronomo app for Android.
-updated: 22 August 2026
-version: '1.0.0-beta.1'
+description: The terms covering your use of the Metronomo app for iOS and Android.
+updated: 11 September 2026
+version: '1.0.0-beta.2'
 ---
 
 These terms are an agreement between you and **Henry Woodbury** ("we", "us") covering your
-use of the **Metronomo** app for Android and this website. By installing or using Metronomo,
-you accept them. If you do not accept them, do not use the app.
+use of the **Metronomo** app for iOS and Android, and this website. By installing or using
+Metronomo, you accept them. If you do not accept them, do not use the app.
 
-## 1. Your licence
+## 1. Your license
 
 Metronomo is licensed to you, not sold. You get a personal, non-exclusive,
-non-transferable, revocable licence to install and use Metronomo on devices you own or
+non-transferable, revocable license to install and use Metronomo on devices you own or
 control, for any purpose, personal or professional. Playing along to Metronomo in a
-rehearsal, a lesson, a session, or a paid performance is exactly what it is for, and we
+rehearsal, lesson, session, or paid performance is exactly what it is for, and we
 claim nothing over the music you make with it.
 
 ## 2. What you may not do
 
 You may not sell, rent, sublicense, or redistribute Metronomo itself; reverse-engineer,
 decompile, or disassemble it except where that right cannot lawfully be excluded; remove or
-obscure any attribution notices; or use it in violation of applicable law or of the Google
-Play Terms of Service.
+obscure any attribution notices; or use it in violation of applicable law or of the terms of
+the store you obtained it from — Google Play or the Apple App Store.
 
 ## 3. Your content
 
-Grooves and their names are yours. They are stored on your device and we neither
-receive them nor claim any right in them. Keeping them is your responsibility: Metronomo has
-no cloud backup, so uninstalling the app or clearing its storage deletes them permanently.
+Grooves and the names and settings you give them are yours. They are stored on your device
+and we neither receive them nor claim any right in them. Keeping them is your
+responsibility: Metronomo has no cloud backup, so uninstalling the app — or clearing its
+storage, on Android — deletes your Grooves permanently.
 
 ## 4. Price and changes to the app
 
 Metronomo is currently free with no advertising and no in-app purchases. We may change this
-in future, but any change will apply to new purchases or new versions, not retroactively to
+in the future. Any change will apply to new purchases or new versions, not retroactively to
 software already installed on your device.
 
 Metronomo is under active development. Features may be added, changed, or withdrawn, and
@@ -61,7 +62,7 @@ independent reference.
 To the fullest extent permitted by law, we are not liable for any indirect, incidental,
 special, consequential, or punitive damages, or for any loss of data, revenue, profits,
 performances, or opportunities, arising out of or relating to your use of or inability to
-use Metronomo — even if advised of the possibility.
+use Metronomo, even if advised of the possibility.
 
 Where liability cannot be excluded, our total aggregate liability to you is limited to the
 greater of the amount you paid for Metronomo in the twelve months before the claim (which,
@@ -81,14 +82,14 @@ these terms.
 ## 8. Open-source components
 
 Metronomo is built on open-source software, including React Native, the Expo SDK, and other
-components, each licensed by its own authors under the MIT licence or a comparable permissive
-licence. Those licences govern those components and nothing in these terms limits the rights
-they grant you. A list of components and their licences is available on request from
+components, each licensed by its own authors under the MIT license or a comparable permissive
+license. Those licenses govern those components and nothing in these terms limits the rights
+they grant you. A list of components and their licenses is available on request from
 [support@nomotime.com](mailto:support@nomotime.com).
 
 ## 9. Termination
 
-This licence ends automatically if you breach these terms, and you may end it at any time by
+This license ends automatically if you breach these terms, and you may end it at any time by
 uninstalling Metronomo. Sections 5, 6, and 10 survive termination.
 
 ## 10. Governing law
@@ -107,6 +108,25 @@ are the entire agreement between us regarding Metronomo, and supersede any earli
 understanding. We may update them; material changes will be posted here with a new version
 number and date, and continuing to use Metronomo after that constitutes acceptance. We may
 assign these terms in connection with a transfer of the app; you may not assign them.
+
+## 12. If you obtained Metronomo from the App Store
+
+Your license under section 1 is also subject to the Usage Rules in Apple's Media Services
+Terms and Conditions.
+
+These terms are between you and us. Apple is not a party to them, and is not responsible
+for Metronomo or its content. Apple has no obligation to provide maintenance or support for
+Metronomo. If Metronomo fails to conform to any warranty, you may notify Apple, and Apple
+will refund the purchase price, which, while the app is free, is nothing; to the maximum
+extent permitted by law, Apple has no other warranty obligation. Apple is not responsible
+for addressing any claim you or anyone else makes about Metronomo — product liability, a
+failure to meet a legal requirement, a claim under consumer-protection or privacy law, or a
+claim that Metronomo infringes intellectual property rights.
+
+You confirm that you are not located in a country subject to a United States Government
+embargo or designated by it as terrorist-supporting, and that you are not on any United
+States Government list of prohibited or restricted parties. Apple and its subsidiaries are
+third-party beneficiaries of these terms and may enforce them against you.
 
 ## Contact
 

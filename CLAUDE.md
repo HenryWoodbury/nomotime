@@ -1,7 +1,7 @@
 # nomotime.com
 
-Astro marketing and legal site for **Metronomo**, the Android app in `~/zzz/met`. `README.md`
-covers the build, the deploy, and the two sourcing rules — one for the privacy policy,
+Astro marketing and legal site for **Metronomo**, the iOS and Android app in `~/zzz/met`.
+`README.md` covers the build, the deploy, and the two sourcing rules — one for the privacy policy,
 one for the export file format.
 
 ## Copy

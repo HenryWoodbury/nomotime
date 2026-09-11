@@ -90,6 +90,6 @@ The question is asked on the way *into* the library. The **Let's Just Groove** b
 library screen itself acts immediately, on the grounds that you already answered for it to
 get there.
 
-Grooves live in Metronomo's private storage on your phone. Uninstalling the app or
-clearing its storage deletes them permanently; there is no cloud copy. That is what
-[Export](/docs/export) is for.
+Grooves live in Metronomo's private storage on your device. Uninstalling the app — or
+clearing its storage, on Android — deletes them permanently; there is no cloud copy.
+That is what [Export](/docs/export) is for.

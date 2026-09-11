@@ -31,18 +31,24 @@ promise.
 
 ## When the screen sleeps
 
-Playback continues when you leave Metronomo or your screen goes dark. Two things keep it
-going. The app runs its audio as media playback, which is what stops Android from killing
-it in the background; and while the transport is running it holds a *partial* wake lock,
-which keeps the CPU clocked so the scheduler does not freeze when the screen turns off.
+Playback continues when you leave Metronomo or your screen goes dark. Both systems are told
+the same thing — that this is media playback — and each keeps it going its own way.
+
+On **Android**, declaring the audio as media playback is what stops the system from killing
+it in the background, and while the transport is running the app also holds a *partial*
+wake lock, which keeps the CPU clocked so the scheduler does not freeze when the screen
+turns off.
 
 A partial wake lock holds the processor, not the display. Your screen still sleeps on its
 own schedule — that is the point of taking a partial one rather than a full one — and the
 click keeps going after it does. The lock is taken when you press play and released when
 you stop.
 
-While it plays, a card appears on your lock screen and in your notification shade, with
-three lines:
+On **iOS**, the app runs a playback audio session, and that on its own keeps the app and
+its scheduler running with the screen locked. No wake lock is needed, and none is taken.
+
+While it plays, a card appears on your lock screen — and in the notification shade on
+Android, or Control Center on iOS — with three lines:
 
 | Line | What it shows |
 | --- | --- |
@@ -51,6 +57,11 @@ three lines:
 | Third line | The [tempo marking](/docs/tempo) for that tempo, such as *Allegro*. |
 
 ## Permissions
+
+**On iOS, Metronomo asks for nothing.** The audio session described above needs no
+permission to run, and the lock-screen and Control Center player comes with it rather than
+being granted separately. Nothing else in the app has a permission to ask for, so iOS
+never prompts you.
 
 Metronomo's Android manifest declares nine permissions. None of them prompt you except
 `POST_NOTIFICATIONS`, which Android asks about the first time the playback card appears.
@@ -66,5 +77,5 @@ Metronomo's Android manifest declares nine permissions. None of them prompt you 
 | `SYSTEM_ALERT_WINDOW` | The same — a framework default, not a feature. |
 | `READ_EXTERNAL_STORAGE`, `WRITE_EXTERNAL_STORAGE` | The same, and both capped at Android 12. [Export and import](/docs/export) use the system file picker, which needs no storage permission. |
 
-It declares **no microphone permission** and contains no recording code. It makes sound; it
-never listens.
+Metronomo declares **no use of the microphone** on either platform, and contains no
+recording code. It makes sound; it never listens.

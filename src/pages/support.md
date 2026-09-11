@@ -2,61 +2,65 @@
 layout: ../layouts/Legal.astro
 title: Support
 description: How to get help with Metronomo, report a bug, request a feature, or have your analytics data deleted.
-updated: 6 September 2026
-version: '1.0.0-beta.2'
+updated: 11 September 2026
+version: '1.0.0-beta.3'
 ---
 
-**Metronomo is coming soon.** Some rough edges are expected at launch, and reports of
-them are the whole point — if something sounds wrong, drifts, or stops when it shouldn't,
-that is worth an email even if you are not sure it is a bug.
-
-Metronomo is built and supported by one person. Email
-**[support@nomotime.com](mailto:support@nomotime.com)** and your communication will be reviewed. Bug reports and
-feature requests are both genuinely welcome.
+**Metronomo is coming soon.** Some rough edges are expected, and feedback is appreciated.
+Email **[support@nomotime.com](mailto:support@nomotime.com)** with bug reports and
+feature requests.
 
 ## Before you write
 
 For bug reports, include the following information to streamline corrective action:
 
-1. **Metronomo version** — shown in **Settings** → **App version**.
-2. **Your device and Android version** — for example, "Pixel 8, Android 15".
-3. **Your Install ID** — in **Settings** → **Install ID**. Tap and hold to copy it. It is an
-   anonymous string, not personal information, and it lets a report be matched to what
-   actually happened.
+1. **Metronomo version** — shown in **Settings** → **About** → **App version**.
+2. **Your device and its system version** — for example, "Pixel 8, Android 15" or
+   "iPhone 15, iOS 26".
+3. **Your Install ID** — in **Settings** → **About** → **Install ID**. Tap and hold to
+   copy it. It is an anonymous string, not personal information, and it lets a report be
+   matched to what actually happened.
 4. **What you expected, and what happened instead** — including the tempo, beat count, and
    subdivision you were using, if the problem is about timing or sound.
 
 ## Frequently asked
 
+### What does Metronomo run on?
+
+iPhone, iPad, and Android phones and tablets. It is the same app on both platforms, with the
+same features; where the two systems differ, the difference is in what the system asks of
+you rather than in what Metronomo does. On Android it asks for notification access so the
+click can keep playing with the screen locked. On iOS it asks for nothing.
+
 ### Why can't I set a time signature?
 
 Metronomo defines timing as **beats per bar** (1 to 16) and lets you accent each one independently.
 This is the same information a time signature carries, minus the notation. Compound meters are built by setting
-subdivisions and accenting the group heads. This makes for fewer decisions and handles meters
-that standard notation makes awkward.
+subdivisions and accenting the group heads.
 
 ### What do the five accent levels do?
 
-Each beat — and each subdivision within a beat — can be set to **strong**, **normal**,
-**weak**, **tick**, or **mute**. They differ in both volume and tone, so a bar has real
-shape rather than one loud click and a row of identical quiet ones. **Mute** is the useful
-one for practice: silence beats deliberately and make yourself keep time through the gaps.
+Each beat — and each subdivision within a beat — can be set to **strong**, **medium**,
+**soft**, **tick**, or **mute**. They differ in both volume and tone. **Mute** lets you
+syncopate a bar, or challenge your inner clock by silencing beats deliberately.
 
 ### What tempos does it cover?
 
-**20 to 480 BPM.** The slider spans a 20 to 60 BPM window (configurable in settings) so you get fine control where
-you actually are, and it steps 10 BPM at a time past either end of that window. Tempos also
-carry natural-language markings, so you can find *Andante* where convention places it.
+**20 to 480 BPM.** Rather than put the whole range under one thumb, the slider shows a
+window of the scale — 20 to 60 BPM wide, your choice in settings — so you get fine control
+where you actually are, and holding past either end shifts the window 10 BPM at a time.
+Tempos also carry natural-language markings, so *Andante* is findable where convention
+places it.
 
 ### Does the click keep going when I switch apps or lock the screen?
 
 Yes. Metronomo keeps playing in the background and shows a playback card on the lock screen
-with the groove's name and tempo marking, so you can start it and put the phone down.
+with the Groove's name and tempo marking, so you can start it and put the phone down.
 
 ### Is the timing accurate?
 
-Clicks are scheduled against the device's audio hardware clock rather than JavaScript
-timers, which is what keeps them from drifting audibly. That said, timing still depends on
+Clicks are scheduled against the device's audio hardware clock rather than software
+timers, which is what keeps them from audibly drifting. That said, timing still depends on
 your device and its audio configuration — see the [Terms of Use](/terms) for what that does
 and does not promise.
 
@@ -67,15 +71,17 @@ the app does. The only data it ever sends is optional anonymous analytics.
 
 ### How do I turn off analytics?
 
-**Settings** → **Analytics** → **off.** Nothing further is sent from that point, including on the
+**Settings** → **About** → **Analytics** → **off.** Nothing further is sent from that point, including on the
 next launch. Every feature keeps working. See the [Privacy Policy](/privacy) for exactly
 what is collected while it is on.
 
-### Where are my grooves stored, and can I back them up?
+### Where are my Grooves stored, and can I back them up?
 
-On your phone, in Metronomo's private storage. There is no cloud backup or export yet, so
-uninstalling the app or clearing its storage deletes your grooves permanently. Export is on
-the list.
+On your device, in Metronomo's private storage. There is no cloud backup, so uninstalling
+the app deletes your Grooves permanently. **Settings** → **Utilities** → **Export** writes
+your saved library to a file, in a folder you choose, and **Import** reads one back — that
+is how you move a library to a new device or keep a copy before clearing the app. See
+[Export and import](/docs/export) for what the file holds.
 
 ### Does Metronomo use my microphone?
 
@@ -84,18 +90,19 @@ never listens.
 
 ## Deleting your data
 
-**Data on your device.** Uninstall Metronomo, or go to Android **Settings** → **Apps** →
-**Metronomo** → **Storage** → **Clear storage**. That removes every groove and setting
-immediately and permanently.
+**Data on your device.** Uninstall Metronomo. On iOS that deletes its data along with it;
+on Android you can also clear the data in place, at **Settings** → **Apps** → **Metronomo**
+→ **Storage** → **Clear storage**. Either removes every Groove and setting immediately and
+permanently.
 
 **Analytics data.** Email [support@nomotime.com](mailto:support@nomotime.com) with the
 subject **"Data deletion request"** and include the **Install ID** from Settings. The
 Install ID is the only way to find your records — nothing else connects them to you, so a
 request without it cannot be fulfilled. Deletion is completed within 30 days and confirmed
-by reply. You can also ask what has been collected under your Install ID, and it will be
-sent to you.
+by reply.
 
-To stop any further collection right away, switch **Settings** → **Analytics** off. That takes
+To stop any further collection right away, switch **Settings** → **About** →
+**Analytics** off. That takes
 effect immediately and does not require emailing anyone.
 
 ## Reporting a security issue

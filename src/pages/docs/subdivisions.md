@@ -33,7 +33,7 @@ is against an end.
 dialog is tapped to advance it, and the order is its own — a subdivision rests at **Tick**
 where a beat rests at **Strong**:
 
-**Tick → Weak → Normal → Strong → Mute → Tick**
+**Tick → Soft → Medium → Strong → Mute → Tick**
 
 Slot 0 is the beat’s own place in the grid. It is drawn as an inert placeholder and cannot
 be set here, because the beat already sounds from its accent in the bar. In the stored

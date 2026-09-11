@@ -16,12 +16,12 @@ shape rather than as volume alone.
 | Level | Relative loudness | Where it sits |
 | --- | --- | --- |
 | **Strong** | 100% | Highest in pitch. |
-| **Normal** | 85% | |
-| **Weak** | 60% | |
-| **Tick** | 60% | As loud as **Weak**, and the lowest in pitch. |
+| **Medium** | 85% | |
+| **Soft** | 60% | |
+| **Tick** | 60% | As loud as **Soft**, and the lowest in pitch. |
 | **Mute** | Silent | Not sounded at all. |
 
-**Tick** and **Weak** carry the same gain deliberately. **Tick** is distinguished by
+**Tick** and **Soft** carry the same gain deliberately. **Tick** is distinguished by
 pitch, not by being quieter, which keeps a busy subdivision row audible instead of letting
 it fade under the beats.
 
@@ -42,8 +42,8 @@ The two run on separate pitch tables, so a level's tone changes with the timbre:
 | Level | Percussive | Tonal |
 | --- | --- | --- |
 | **Strong** | 1050 Hz | 1600 Hz |
-| **Normal** | 880 Hz | 1240 Hz |
-| **Weak** | 740 Hz | 960 Hz |
+| **Medium** | 880 Hz | 1240 Hz |
+| **Soft** | 740 Hz | 960 Hz |
 | **Tick** | 620 Hz | 720 Hz |
 
 The [alarm](/docs/timers) is the exception to all of this. It is always tonal — a short
@@ -58,5 +58,5 @@ is not a way to lose your level.
 
 Volume belongs to the **device, not the Groove**. It is not part of what a Groove saves,
 it does not change when you load one, and it is not in the [export
-file](/docs/export). A Groove that was loud on your phone is not loud by definition when
+file](/docs/export). A Groove that was loud on your device is not loud by definition when
 it lands somewhere else.

@@ -12,10 +12,10 @@ how hard each one lands.
 
 The row of vertical bars at the top of the Grooves screen is the bar itself. It holds
 **1 to 16 beats**. A new Groove starts at four, with the first beat **Strong** and the
-rest **Normal**.
+rest **Medium**.
 
 The **+** and **−** buttons at the ends add and remove beats. Beats are always added and
-removed at the **end** of the bar, and a beat added this way arrives at **Normal** —
+removed at the **end** of the bar, and a beat added this way arrives at **Medium** —
 adding a beat never disturbs the accents already drawn. The buttons disable themselves at
 1 and at 16 rather than refusing a press silently.
 
@@ -25,14 +25,14 @@ During playback the bar animates through each beat in turn.
 
 Tap any beat to advance it to the next level. The order wraps:
 
-**Strong → Normal → Weak → Tick → Mute → Strong**
+**Strong → Medium → Soft → Tick → Mute → Strong**
 
 | Level | Height | What it is |
 | --- | --- | --- |
 | **Strong** | 3 | The loudest and highest. Where a downbeat goes. |
-| **Normal** | 2 | The default for every beat but the first. |
-| **Weak** | 1 | Present but backgrounded. |
-| **Tick** | ½ | Half the height of Weak, and lower in pitch. |
+| **Medium** | 2 | The default for every beat but the first. |
+| **Soft** | 1 | Present but backgrounded. |
+| **Tick** | ½ | Half the height of Soft, and lower in pitch. |
 | **Mute** | ½ | Silent, and drawn hollow so you can still see the beat is there. |
 
 The levels differ in both loudness and pitch, so a bar has shape rather than one loud

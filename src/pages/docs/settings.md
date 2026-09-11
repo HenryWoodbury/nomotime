@@ -29,7 +29,7 @@ The last three are switches, and each one's label is part of its target: press t
 the switch.
 
 **Appearance** sets light or dark for the app. **System** — the default — follows whatever
-your phone is set to, including a scheduled switch at dusk.
+your device is set to, including a scheduled switch at dusk.
 
 Every preference here belongs to the device, not to a Groove. Loading a Groove changes
 none of them. Neither does importing a file.
