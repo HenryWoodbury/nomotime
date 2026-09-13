@@ -109,8 +109,7 @@ does not capture your audio output, and does not read anything outside the app.
 
 ### Remote configuration
 
-Metronomo may use PostHog to enable optional features on a case by case basis, using the app install
-ID when the app starts. Turning analytics off stops these requests, and optional features
+Metronomo may use PostHog to enable optional features on a case-by-case basis, using the Install ID when the app starts. Turning analytics off stops these requests, and optional features
 stay at their default setting.
 
 ### Turning analytics off

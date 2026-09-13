@@ -91,7 +91,7 @@ Switch it back on and the Groove's break is there again.
 field. Switching either on for the first time offers **1:00**. Both fields top out at
 **120:59**.
 
-Two edges worth knowing:
+Three edges worth knowing:
 
 - A **Pause** set to **0:00** switches itself off. A countdown with no time to run is not
   a countdown.

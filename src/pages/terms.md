@@ -53,7 +53,7 @@ Specifically, and importantly: **Metronomo is a practice and performance aid, no
 certified timing instrument.** Its timing depends on your device's hardware, operating
 system, audio configuration, background activity, and battery state, none of which are
 under our control. Do not rely on Metronomo where inaccurate timing could cause loss,
-injury, or liability — including synchronising recordings or live production you cannot
+injury, or liability, including synchronizing recordings or live production you cannot
 afford to have drift, or any safety-critical use. Verify anything that matters against an
 independent reference.
 

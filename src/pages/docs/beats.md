@@ -38,7 +38,7 @@ The levels differ in both loudness and pitch. What each level actually sounds li
 
 ## Meters without notation
 
-Beats per bar and an accent on each carries the same information as a time signature,
+Beats per bar and an accent on each carry the same information as a time signature,
 minus the notation. A 7/8 bar accented 3+2+2 is seven beats with **strong** on the first,
 fourth, and sixth. Compound meters are built by adding
-[subdivisions](/docs/subdivisions) and customizing that pattern.
+[subdivisions](/docs/subdivisions) and customizing the tick pattern.
