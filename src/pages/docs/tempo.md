@@ -1,65 +1,54 @@
 ---
 layout: ../../layouts/Doc.astro
 title: Tempo
-description: Set playback from 20 to 480 BPM using a windowed slider that makes it easy to locate and set a precise tempo.
+description: Set playback from 20 to 480 BPM using a windowed slider that makes it easy to navigate the entire scale to set the exact tempo you want
 ---
 
 Metronomo plays from **20 to 480 BPM**, in whole beats per minute. A new Groove starts at
-120.
+120 BPM.
 
 ## A window on the scale
 
-A slider that spanned the whole range would put four hundred and sixty values under one
-thumb, and no useful control over any of them. The tempo slider instead shows a **window**
-of the scale, and the two numbers printed under its ends are the window's bounds.
+The tempo slider shows a 20 to 60 BPM window of the full 460 BPM range. The current bounds
+of the window are annotated below the slider's navigation arrows.
 
-How wide that window is is a preference — **Settings → Preferences → BPM slider
-resolution** offers **20, 30, 40, 50, or 60 BPM**, and it starts at 40. A narrower window
-buys finer control over a shorter stretch of the scale.
+The width of the window is set via **Settings → Preferences → BPM slider resolution**. 
+The choice is **20, 30, 40, 50, or 60 BPM**, width a default of **40**. 
 
-Three things move you around inside and past it:
+To quickly set a desired tempo:
 
-- **Drag the thumb** to set any tempo inside the window.
-- **Hold past either end** to shift the window **10 BPM** at a time. The tempo rides the
-  leading edge as it goes, so the thumb holds still while the scale moves under it. The
-  hold stops against either end of 20–480.
-- **Tap a gutter** — the space past the track at either end — to nudge the tempo 10 BPM
-  without moving the window. If the nudge takes the tempo out of the window, the window
-  re-frames around it.
+- **Drag** or **tap** the slider to set any tempo inside the current window.
+- **Tap** the **left or right margin** of the slider to shift the window's bounds 10 BPM in the
+indicated direction. The selected tempo will not change. 
+- **Drag and hold** to either end of the slider to repeatedly shift the window's bounds **10 BPM** until you end the action.
 
-A window you arrived at by holding keeps its position as long as it still covers the
-tempo. It re-centers only when the tempo leaves it.
+The current tempo selection will move as the window's bounds change and eventually re-center when it falls outside the new bounds.
 
 ## When the tempo takes effect
 
-By default the new tempo reaches the metronome when you **let go** of the thumb. Under
-**Settings → Preferences → Tempo**, **Apply while sliding** changes that: while something
-is playing, the tempo commits during the drag.
+By default the tempo selection updates playback as you slide it. The tempo change always happens at the end of the current bar.
 
-It commits no more often than **once a bar**, and never less than a quarter-second apart —
-a bar being as long as its beat count makes it, not just its tempo. Nothing commits mid-drag
-while the metronome is stopped; there would be nothing to hear.
+Under **Settings → Preferences → Tempo**, **Apply while sliding** you can turn off this immediate
+playback change. Instead the tempo change will wait for you to end your drag action to take effect.
 
 ## Tempo markings
 
-The reading above the slider carries the conventional Italian marking for the tempo
-alongside the number, so *Andante* is findable where convention places it. Each marking
-applies from its own lower bound up to the next one:
+The conventional Italian tempo marking is presented above the slider adjacent to the BPM number.
+These labels align to the following ranges:
 
 | Marking | BPM |
 | --- | --- |
-| Larghissimo | 20–24 |
-| Grave | 25–39 |
-| Largo | 40–59 |
-| Larghetto | 60–65 |
-| Adagio | 66–75 |
-| Andante | 76–107 |
-| Moderato | 108–119 |
-| Allegro | 120–155 |
-| Vivace | 156–167 |
-| Presto | 168–199 |
-| Prestissimo | 200–480 |
+| *Larghissimo* | 20–24 |
+| *Grave* | 25–39 |
+| *Largo* | 40–59 |
+| *Larghetto* | 60–65 |
+| *Adagio* | 66–75 |
+| *Andante* | 76–107 |
+| *Moderato* | 108–119 |
+| *Allegro* | 120–155 |
+| *Vivace* | 156–167 |
+| *Presto* | 168–199 |
+| *Prestissimo* | 200–480 |
 
-The marking is a label on the tempo, not a control: it follows the number rather than
-setting it. It also appears on the lock screen card while the metronome is playing — see
-[Playing](/docs/playing).
+This presentation-only label on the tempo slider also appears on the lock screen while the 
+metronome is playing — see [Playing](/docs/playing).
