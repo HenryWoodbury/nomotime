@@ -1,6 +1,6 @@
 ---
 import Base from './Base.astro';
-import { DOC_PAGES } from '../site';
+import { loadDocPages } from '../pages/docs/_pages';
 
 interface Props {
   frontmatter: {
@@ -17,6 +17,7 @@ for (const [key, value] of Object.entries({ title, description })) {
   if (!value) throw new Error(`${Astro.url.pathname}: frontmatter is missing "${key}"`);
 }
 
+const DOC_PAGES = await loadDocPages();
 const path = Astro.routePattern;
 const index = DOC_PAGES.findIndex((item) => item.href === path);
 // A page absent from DOC_PAGES renders without prev/next rather than throwing;
@@ -34,8 +35,8 @@ const next = index >= 0 ? DOC_PAGES[index + 1] : undefined;
       {
         (previous || next) && (
           <nav class="doc-foot">
-            {previous ? <a rel="prev" href={previous.href}>&larr; {previous.label}</a> : <span />}
-            {next && <a rel="next" href={next.href}>{next.label} &rarr;</a>}
+            {previous ? <a rel="prev" href={previous.href}>&larr; {previous.title}</a> : <span />}
+            {next && <a rel="next" href={next.href}>{next.title} &rarr;</a>}
           </nav>
         )
       }
@@ -48,7 +49,7 @@ const next = index >= 0 ? DOC_PAGES[index + 1] : undefined;
           DOC_PAGES.map((item) => (
             <li>
               <a href={item.href} aria-current={path === item.href ? 'page' : undefined}>
-                {item.label}
+                {item.title}
               </a>
             </li>
           ))

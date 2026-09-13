@@ -147,15 +147,15 @@ changes:
 The last one is a guard on **Replace** more than on Merge: replacing against a file with
 no Grooves in it is a wipe, and nothing further down could tell it from a restore.
 
-## Editing the file by hand
+## What import repairs
 
-You can, and import repairs most of what you get wrong. A number outside its range is
+Import reads the file it is given, whatever wrote it. A number outside its range is
 clamped; a number that is missing or unreadable takes the app's default rather than the
-nearest bound, so deleting `"countIn"` gives you a four-bar count-in, not none, and
-deleting `"bpm"` gives you 120. An unrecognized accent level becomes `medium`, an
-`accents` array of the wrong length is trimmed or padded, and keys the app does not know
-are dropped rather than stored. A Groove that survives import is one the app could have
-created itself.
+nearest bound, so a file with no `countIn` imports with a four-bar count-in, not none, and
+one with no `bpm` imports at 120. An unrecognized accent level becomes `medium`, an
+`accents` array that does not match the beat count is trimmed or padded, and keys the app
+does not know are dropped rather than stored. A Groove that survives import is one the app
+could have created itself.
 
 Four things are not repaired that way.
 
@@ -172,4 +172,4 @@ Four things are not repaired that way.
   it is read.
 - An `alarm` or `pause` whose `seconds` is missing or unreadable is switched **off**, not
   set to a default. This is the one place the fallback goes to nothing rather than to the
-  app's own value, so deleting `"seconds"` from an enabled rule loses the rule.
+  app's own value, so a rule marked enabled with no usable `seconds` arrives off.

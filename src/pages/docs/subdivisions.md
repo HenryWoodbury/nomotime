@@ -1,59 +1,45 @@
 ---
 layout: ../../layouts/Doc.astro
 title: Subdivisions
-description: Up to 8 evenly spaced ticks per beat in Metronomo, the beat included, each independently accented, drawn per subdivision count.
+description: Insert a tick track between beats; customize it to generate specific rhythms
 ---
 
-A subdivision divides each beat into evenly spaced ticks. The **Subs** row sets how many,
-and holding a count opens the editor where you draw what each one sounds like.
+A subdivision divides each beat into evenly spaced ticks. The **Subs** row sets that count.
+**Tap** a count to immediately apply that number of ticks. **Press and hold** a count to set a custom accent pattern.
 
 ## Choosing a count
 
-**Subs** runs from **1 to 8** ticks, the beat itself included and always the first:
+**Subs** runs from **1 to 8** ticks, the beat itself included as the first:
 
 | Subs | What lands between beats |
 | --- | --- |
-| 1 | Nothing. The beat alone — the default for a new Groove. |
-| 2 | One tick, halfway. Eighths against a quarter-note pulse. |
+| 1 | Nothing. The beat alone (the default for a new Groove). |
+| 2 | One tick, halfway between beats. Eighths against a quarter-note. |
 | 3 | Two ticks. Triplets. |
 | 4 | Three ticks. Sixteenths. |
-| 5–8 | Four through seven ticks, evenly spaced. |
+| 5–8 | Four through seven ticks. |
 
-The ticks are spaced evenly across the beat. There is no swing setting; an uneven feel is
-made by muting them rather than by moving them.
+The ticks are spaced evenly across the beat. There is no swing setting; a swing rhythm is
+created by muting selected ticks and/or beats rather than by changing their timing.
 
-The row shows **five counts at a time**. The chevrons at either end scroll it by one, and
-holding a chevron jumps to that end of the scale. A chevron disables itself once the row
-is against an end.
+The row shows five counts at a time. **Tap** the arrow at either end of the row to advance 
+or retreat by one count, or **press and hold** an arrow to jump to that end of the scale. If the
+currently selected count has moved out of view, a dot above an arrow indicates in which direction it lies.
 
-## Drawing the ticks
+## Customizing the accents
 
-**Hold** a count in the **Subs** row to open **Edit Subdivisions**. Each slot in the
-dialog is tapped to advance it, and the order is its own — a subdivision rests at **Tick**
-where a beat rests at **Strong**:
+**Press and hold** a count in the **Subs** row to open the **Edit Subdivisions** dialog. 
+Except for the first, each tick in the subdivision can be tapped to advance it through 
+the same accent levels as beats:
 
 **Tick → Soft → Medium → Strong → Mute → Tick**
 
-The first tick — slot 0 in the stored pattern — is the beat’s own place in the grid. It is drawn as an inert placeholder and cannot
-be set here, because the beat already sounds from its accent in the bar. In the stored
-pattern that slot always reads `mute`, which is what keeps this layer silent on it.
+The first tick is the beat’s own place in the pattern. To change it, utilize [the bar](/docs/beats). 
 
-Changes apply live, so a pattern can be heard while it is drawn. **Cancel**, a tap on the
-backdrop, and leaving the dialog all put back the ticks as they stood when the hold
-landed — including the count the hold moved you off, and any drawing you made on a count
-you stepped onto while the dialog was open.
+Changes preview live, so a pattern can be heard while it is drawn. Select **Cancel**  
+to return to the previous pattern, **Save** to update.
 
 ## Every count keeps its own pattern
 
-A drawn pattern is tied to the number of slots it was drawn for, and a Groove saves one
-for **each** count. Draw your triplets one way and your sixteenths another: both are kept,
-and choosing a count in the **Subs** row brings that count’s drawing back rather than
-replacing the last one.
-
-The counts you are not on lie dormant, not lost. The row falls back to every slot at
-**Tick** for a count you have not drawn for, and the **Subs** row marks every count a
-pattern exists for, selected or not.
-
-Drawing every slot of a count back to **Tick** clears that count’s pattern rather than
-storing it, leaving the rest alone. An undrawn pattern is no pattern — it would mark the
-**Subs** row and leave the Groove looking edited when nothing about it had changed.
+A tick pattern is tied to the count it modified, and a Groove saves 
+each subdivision separately.

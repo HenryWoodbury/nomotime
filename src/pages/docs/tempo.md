@@ -1,7 +1,7 @@
 ---
 layout: ../../layouts/Doc.astro
 title: Tempo
-description: Metronomo’s 20 to 480 BPM range, the windowed slider that reaches it, and the tempo markings each range carries.
+description: Set playback from 20 to 480 BPM using a windowed slider that makes it easy to locate and set a precise tempo.
 ---
 
 Metronomo plays from **20 to 480 BPM**, in whole beats per minute. A new Groove starts at

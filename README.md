@@ -3,16 +3,17 @@
 The marketing and legal site for **Metronomo**, the iOS and Android metronome app
 (`com.nomotime.metronomo` on both stores). Astro, no runtime JavaScript, deployed to Netlify.
 
-`/docs` is a hub over one page per functional area of the app, ordered and
-described by `DOC_PAGES` in `src/site.ts` — which is also what the sidebar and the
-prev/next links are built from. Adding a section means adding the `.md` file and the
-`DOC_PAGES` entry, and nothing else.
+`/docs` is a hub over one page per functional area of the app, ordered by `DOC_ORDER` in
+`src/pages/docs/_pages.ts` — which is also what the sidebar and the prev/next links are
+built from. That list holds slugs and nothing else: each page's title and hub line are read
+from its own frontmatter, so they are written once, in the page. Adding a section means
+adding the `.md` file and its slug, and nothing else.
 
 | Path | Purpose |
 | --- | --- |
 | `/` | Landing page |
 | `/docs` | Documentation hub, and the one version stamp the docs set carries — the app version, from `met/app.json` at the tagged release |
-| `/docs/*` | One page per functional area — see `DOC_PAGES` for the list |
+| `/docs/*` | One page per functional area — see `DOC_ORDER` for the list |
 | `/privacy` | Privacy Policy — **the URL the Play Console requires** |
 | `/terms` | Terms of Use |
 | `/support` | Support, FAQ, and the data-deletion request process |
@@ -92,7 +93,7 @@ the shipping app. Both would be easy to write up from the source and wrong to pu
 - **Tap tempo.** `met/src/metronome/tapTempo.ts` and the `tap` action in
   `met/src/state/metronomeStore.ts` both exist, but no control calls it.
 
-**When either ships, it gets a page and a `DOC_PAGES` entry.** Until then, a docs page
+**When either ships, it gets a page and a `DOC_ORDER` entry.** Until then, a docs page
 that mentions them is a claim the app does not hold.
 
 ## Publishing checklist

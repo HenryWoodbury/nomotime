@@ -1,8 +1,9 @@
 ---
 import Base from '../../layouts/Base.astro';
-import { DOC_PAGES, DOCS_UPDATED, DOCS_VERSION } from '../../site';
+import { DOCS_UPDATED, DOCS_VERSION, loadDocPages } from './_pages';
 
 const title = 'Documentation';
+const DOC_PAGES = await loadDocPages();
 const description =
   'How Metronomo works — Grooves, beats, subdivisions, accents, tempo, and the settings behind them.';
 ---
@@ -13,17 +14,26 @@ const description =
       <h1>{title}</h1>
       <p class="stamp">Version {DOCS_VERSION} &middot; Last updated {DOCS_UPDATED}</p>
       <p>
-        Metronomo is designed to be customized. These pages cover what
+        Metronomo is designed to groove. These pages cover what
         each part of the app does and how the parts fit together.
       </p>
+
+      <blockquote>
+        <p>
+          <strong>Press and hold</strong>. While the Metronome UI is designed to be as
+          intuitive as possible, some features do require a <strong>press and hold</strong> action rather
+          than a simple <strong>tap</strong>. These are identified in each case in the docs below.
+        </p>
+      </blockquote>
+
       <dl class="doc-index">
         {
           DOC_PAGES.map((item) => (
             <div>
               <dt>
-                <a href={item.href}>{item.label}</a>
+                <a href={item.href}>{item.title}</a>
               </dt>
-              <dd>{item.blurb}</dd>
+              <dd>{item.description}</dd>
             </div>
           ))
         }
