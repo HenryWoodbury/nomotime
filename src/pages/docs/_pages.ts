@@ -10,7 +10,7 @@
 // release (`v1.0.0`), never a version of the docs themselves. DOCS_UPDATED is bumped
 // whenever the set changes.
 export const DOCS_VERSION = '1.0.0';
-export const DOCS_UPDATED = '11 September 2026';
+export const DOCS_UPDATED = '13 September 2026';
 
 export const DOC_ORDER = [
   'beats',
