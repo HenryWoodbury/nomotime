@@ -13,7 +13,7 @@ All optional timing settings are saved with a Groove.
 ## Elapsed Time
 
 The Elapsed Time clock is the practice stopwatch. **Tap** the **⟲** button to restart.
-This will restart all timers.
+This restarts all timers.
 
 ## Count in
 
@@ -40,12 +40,11 @@ The alarm's sound is a short rising spike, and it is always tonal regardless of 
 **tap** the **m:s** reading to open the **Set Time** dialog box. This allows you to set
 the pause timer from 0m, 0s to 120m, 59s.
 
-When a pause is active the **Pause Count** counts up to the chosen time. On an Elapsed Time
-reset the Pause Count also resets with the same count in.
+When a pause is active, the **Pause Count** counts up to the chosen time. On an Elapsed
+Time reset, the Pause Count also resets with the same count in.
 
-At any time you can **tap** the Pause Count **⟲** button to restart the pause
-timer. What that button does depends on the [Preferences](/docs/settings) setting **Play
-after rest**:
+At any time you can **tap** the Pause Count **⟲** button to restart the pause timer. What
+that button does depends on the [Preferences](/docs/settings) setting **Play after rest**:
 
 - **On**: Resets the pause timer and resumes play with count in.
 - **Off**: Resets the pause timer only. To resume play, **tap** the play button.
@@ -65,7 +64,7 @@ as follows:
 - **Forced Pause**: Set a forced break from **0s** to **60s**. This sets a countdown timer
   in the Alert Message dialog box.
 
-The Forced Pause timer disables closing the dialog box until its countdown reaches 0:0.
+The Forced Pause timer disables closing the dialog box until its countdown reaches 0:00.
 The countdown can be overridden manually.
 
 Closing the Alert Message dialog box does not restart play. That is done manually by a
@@ -73,7 +72,7 @@ Closing the Alert Message dialog box does not restart play. That is done manuall
 
 ## Handling zero durations
 
-Zero duration settings work as follows:
+Zero-duration settings work as follows:
 
 - A **Pause** set to **0:00** switches itself off. A countdown with no time to run is not
   a countdown.
