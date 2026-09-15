@@ -15,7 +15,7 @@ Voice and claims are Henry's. Mechanics are Claude's, and get a pass after any h
 
 Numbers, feature names, and negations are checked against `~/zzz/met` before they are
 written. Draft copy never carries an inferred fact. Product nouns match the app's own UI
-labels — the app says **count-in**, so the site says count-in.
+labels — the app says **Count in**, so the site says count in.
 
 ### The mechanics pass
 

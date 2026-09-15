@@ -22,8 +22,8 @@ the thing it affects; this is the map.
 | **Beat** | Percussive, Tonal | [Sound and volume](/docs/sound) |
 | **BPM slider resolution** | 20, 30, 40, 50, 60 | [Tempo](/docs/tempo) |
 | **Tempo: Apply while sliding** | On, off | [Tempo](/docs/tempo) |
-| **Pause: Play after rest** | On, off | [Count-in and timers](/docs/timers) |
-| **Pause: Customize alerts** | On, off — off by default | [Count-in and timers](/docs/timers) |
+| **Pause: Play after rest** | On, off | [Count in and timers](/docs/timers) |
+| **Pause: Customize alerts** | On, off — off by default | [Count in and timers](/docs/timers) |
 
 The last three are switches, and each one's label is part of its target: press the word or
 the switch.

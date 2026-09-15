@@ -14,7 +14,7 @@ position, not what an unnamed villain does.
 | Anonymous usage analytics are on by default | Yes to some anonymous analytics |
 
 **Second person, present, active.** The reader is a player with an instrument in their
-hands. Musician vocabulary — groove, syncopate, subdivision, count-in — is house language,
+hands. Musician vocabulary — groove, syncopate, subdivision, count in — is house language,
 not jargon to be explained.
 
 **Contrast without the sneer.** One neutral sentence about what other apps do is enough.
@@ -51,8 +51,8 @@ Every number, feature name, and negation in the copy is a factual assertion abou
 - what the app sends — the sources listed under **Keeping the privacy policy true** in `README.md`
 - the export file — the sources listed under **Keeping the export format true** in `README.md`
 
-Product nouns match the app's own UI labels. The app says **count-in**, so the site says
-count-in.
+Product nouns match the app's own UI labels. The app says **Count in**, so the site says
+count in.
 
 **Every negation survives a literal reading.** *No account* and *no network calls* are
 absolutes the app cannot hold; *no name, no email address* and *no outbound tracking* are.

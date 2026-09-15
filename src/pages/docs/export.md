@@ -94,7 +94,7 @@ Each entry in `grooves` is one saved Groove:
 | `accents` | array | One level per beat; the length matches `beats`. |
 | `subdivision` | number | Slots per beat, 1–8, the beat included and first. `1` is no subdivision. |
 | `subdivisionPatterns` | object | The tick patterns drawn, keyed by the subdivision count each was drawn for. A count with no key is undrawn — every subdivision at `tick`, slot 0 aside — and `{}` means nothing is drawn at all. Only the selected `subdivision`’s pattern sounds; the rest travel with the Groove and come back when you select their count. |
-| `countIn` | number | Bars counted in before the practice clock starts, 0–8. `0` is no count-in. |
+| `countIn` | number | Bars counted in before the practice clock starts, 0–8. `0` is no count in. |
 | `alarm` | object | `{ "enabled": false }`, or `enabled` with `seconds`. It repeats on every multiple of `seconds` of practice; there is no fire-once form. 0–7259, where 7259 is 120:59 and 0 is an alarm that stays on and never sounds. |
 | `pause` | object | `{ "enabled": false }`, or `enabled` with `seconds`, after which the transport stops itself. 1–7259: the same ceiling as `alarm`, but 0 switches it off rather than keeping it on. |
 | `createdAt` | number | Unix milliseconds. |
@@ -151,7 +151,7 @@ no Grooves in it is a wipe, and nothing further down could tell it from a restor
 
 Import reads the file it is given, whatever wrote it. A number outside its range is
 clamped; a number that is missing or unreadable takes the app's default rather than the
-nearest bound, so a file with no `countIn` imports with a four-bar count-in, not none, and
+nearest bound, so a file with no `countIn` imports with a four-bar count in, not none, and
 one with no `bpm` imports at 120. An unrecognized accent level becomes `medium`, an
 `accents` array that does not match the beat count is trimmed or padded, and keys the app
 does not know are dropped rather than stored. A Groove that survives import is one the app
