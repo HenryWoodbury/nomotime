@@ -12,7 +12,8 @@ All optional timing settings are saved with a Groove.
 
 ## Elapsed Time
 
-The Elapsed Time clock is the practice stopwatch. **Tap** the **⟲** button to restart.
+The Elapsed Time clock is the practice stopwatch. **Tap** the
+<span class="icon icon-reset" role="img" aria-label="reset"></span> button to restart.
 This restarts all timers.
 
 ## Count in
@@ -22,8 +23,8 @@ This restarts all timers.
 the range one number at a time in the indicated direction.
 
 The Elapsed Time clock starts at the negative value of the count in's calculated total,
-ensuring the first bar after the count in starts at 0:00. The alarm and pause timers also
-apply the negative count in.
+ensuring the first bar after the count in starts at 0:00. The alarm and pause timers sync
+with any Elapsed Time restart.
 
 ## Alarm
 
@@ -40,11 +41,12 @@ The alarm's sound is a short rising spike, and it is always tonal regardless of 
 **tap** the **m:s** reading to open the **Set Time** dialog box. This allows you to set
 the pause timer from 0m, 0s to 120m, 59s.
 
-When a pause is active, the **Pause Count** counts up to the chosen time. On an Elapsed
-Time reset, the Pause Count also resets with the same count in.
+When a pause is active, the **Pause Count** counts up to the chosen time then pauses play.
 
-At any time you can **tap** the Pause Count **⟲** button to restart the pause timer. What
-that button does depends on the [Preferences](/docs/settings) setting **Play after rest**:
+At any time you can **tap** the Pause Count
+<span class="icon icon-reset" role="img" aria-label="reset"></span> button to restart the
+pause timer. What that button does depends on the [Preferences](/docs/settings) setting
+**Play after rest**:
 
 - **On**: Resets the pause timer and resumes play with count in.
 - **Off**: Resets the pause timer only. To resume play, **tap** the play button.
@@ -67,8 +69,9 @@ as follows:
 The Forced Pause timer disables closing the dialog box until its countdown reaches 0:00.
 The countdown can be overridden manually.
 
-Closing the dialog box does not restart play. That is done manually by a
-**tap** on the play button or the Pause Count **⟲** button.
+Closing the dialog box does not restart play. That is done manually by a **tap** on the
+play button or the Pause Count
+<span class="icon icon-reset" role="img" aria-label="reset"></span> button.
 
 ## Handling zero durations
 
