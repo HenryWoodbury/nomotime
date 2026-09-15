@@ -10,7 +10,7 @@ choose; you set how many beats the bar holds, then set the accent level for each
 ## The bar
 
 The row of vertical elements at the top of the Grooves screen is the bar itself. It holds
-**1 to 16 beats**. A new Groove starts at four, with the first beat **strong** and the
+**1 to 16 beats**. A new Groove defaults to four, with the first beat **strong** and the
 rest **medium**.
 
 The <span class="icon icon-plus" role="img" aria-label="plus"></span> and

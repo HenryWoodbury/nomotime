@@ -4,15 +4,13 @@ title: Tempo
 description: Set playback from 20 to 480 BPM using a windowed slider that makes it easy to navigate the entire scale to set the exact tempo you want.
 ---
 
-Metronomo plays from **20 to 480 BPM**, in whole beats per minute. A new Groove starts at
+Metronomo plays from **20 to 480 BPM**, in whole beats per minute. A new Groove defaults to
 120 BPM.
 
 ## A window on the scale
 
 The tempo slider shows a 20 to 60 BPM window of the full 460 BPM range. The current bounds
-of the window are annotated below the slider's navigation arrows
-<span class="icon icon-arrow-left" aria-hidden="true"></span>
-<span class="icon icon-arrow-right" aria-hidden="true"></span>.
+of the window are annotated below the slider's navigation arrows.
 
 The width of the window is set via **Settings → Preferences → BPM slider resolution**.
 The choice is **20, 30, 40, 50, or 60 BPM**, with a default of **40**.
