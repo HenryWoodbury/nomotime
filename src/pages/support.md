@@ -27,16 +27,16 @@ For bug reports, include the following information to streamline corrective acti
 
 ### What does Metronomo run on?
 
-iPhone, iPad, and Android phones and tablets. It is the same app on both platforms, with the
-same features; where the two systems differ, the difference is in what the system asks of
-you rather than in what Metronomo does. On Android it asks for notification access so the
-click can keep playing with the screen locked. On iOS it asks for nothing.
+iPhone, iPad, and Android phones and tablets. It is the same app on both platforms, with
+the same features; where the two systems differ, the difference is in what the system asks
+of you rather than in what Metronomo does. On Android it asks for notification access so
+the click can keep playing with the screen locked. On iOS it asks for nothing.
 
 ### Why can't I set a time signature?
 
-Metronomo defines timing as **beats per bar** (1 to 16) and lets you accent each one independently.
-This is the same information a time signature carries, minus the notation. Compound meters are built by setting
-subdivisions and accenting the group heads.
+Metronomo defines timing as **beats per bar** (1 to 16) and lets you accent each one
+independently. This is the same information a time signature carries, minus the notation.
+Compound meters are built by setting subdivisions and accenting the group heads.
 
 ### What do the five accent levels do?
 
@@ -71,9 +71,9 @@ the app does. The only data it ever sends is optional anonymous analytics.
 
 ### How do I turn off analytics?
 
-**Settings** → **About** → **Analytics** → **Don't share.** Nothing further is sent from that point, including on the
-next launch. Every feature keeps working. See the [Privacy Policy](/privacy) for exactly
-what is collected while it is on.
+**Settings** → **About** → **Analytics** → **Don't share.** Nothing further is sent from
+that point, including on the next launch. Every feature keeps working. See the [Privacy
+Policy](/privacy) for exactly what is collected while it is on.
 
 ### Where are my Grooves stored, and can I back them up?
 
@@ -109,4 +109,5 @@ effect immediately and does not require emailing anyone.
 ## Reporting a security issue
 
 If you have found a security or privacy problem in Metronomo, email
-[support@nomotime.com](mailto:support@nomotime.com) with the details and you will get a response as quickly as possible.
+[support@nomotime.com](mailto:support@nomotime.com) with the details and you will get a
+response as quickly as possible.

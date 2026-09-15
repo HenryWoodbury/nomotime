@@ -62,12 +62,12 @@ as follows:
 
 - **Message**: Key in your own alert message. Two lines, 120 characters.
 - **Forced Pause**: Set a forced break from **0s** to **60s**. This sets a countdown timer
-  in the Alert Message dialog box.
+  in the Custom Alert dialog box.
 
 The Forced Pause timer disables closing the dialog box until its countdown reaches 0:00.
 The countdown can be overridden manually.
 
-Closing the Alert Message dialog box does not restart play. That is done manually by a
+Closing the dialog box does not restart play. That is done manually by a
 **tap** on the play button or the Pause Count **⟲** button.
 
 ## Handling zero durations

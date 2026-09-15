@@ -22,8 +22,8 @@ claim nothing over the music you make with it.
 
 You may not sell, rent, sublicense, or redistribute Metronomo itself; reverse-engineer,
 decompile, or disassemble it except where that right cannot lawfully be excluded; remove or
-obscure any attribution notices; or use it in violation of applicable law or of the terms of
-the store you obtained it from — Google Play or the Apple App Store.
+obscure any attribution notices; or use it in violation of applicable law or of the terms
+of the store you obtained it from — Google Play or the Apple App Store.
 
 ## 3. Your content
 
@@ -82,32 +82,33 @@ these terms.
 ## 8. Open-source components
 
 Metronomo is built on open-source software, including React Native, the Expo SDK, and other
-components, each licensed by its own authors under the MIT license or a comparable permissive
-license. Those licenses govern those components and nothing in these terms limits the rights
-they grant you. A list of components and their licenses is available on request from
-[support@nomotime.com](mailto:support@nomotime.com).
+components, each licensed by its own authors under the MIT license or a comparable
+permissive license. Those licenses govern those components and nothing in these terms
+limits the rights they grant you. A list of components and their licenses is available on
+request from [support@nomotime.com](mailto:support@nomotime.com).
 
 ## 9. Termination
 
-This license ends automatically if you breach these terms, and you may end it at any time by
-uninstalling Metronomo. Sections 5, 6, 10, and 12 survive termination.
+This license ends automatically if you breach these terms, and you may end it at any time
+by uninstalling Metronomo. Sections 5, 6, 10, and 12 survive termination.
 
 ## 10. Governing law
 
-These terms are governed by the laws of the **Commonwealth of Massachusetts, United States**,
-without regard to its conflict-of-laws rules, and the courts located there have exclusive
-jurisdiction over any dispute. If you are a consumer resident elsewhere, this does not
-deprive you of the protection of mandatory consumer-protection law in your country of
-residence.
+These terms are governed by the laws of the **Commonwealth of Massachusetts, United
+States**, without regard to its conflict-of-laws rules, and the courts located there have
+exclusive jurisdiction over any dispute. If you are a consumer resident elsewhere, this
+does not deprive you of the protection of mandatory consumer-protection law in your country
+of residence.
 
 ## 11. General
 
-If any provision of these terms is held unenforceable, the rest remain in force. Our failure
-to enforce a provision is not a waiver of it. These terms, together with the Privacy Policy,
-are the entire agreement between us regarding Metronomo, and supersede any earlier
-understanding. We may update them; material changes will be posted here with a new version
-number and date, and continuing to use Metronomo after that constitutes acceptance. We may
-assign these terms in connection with a transfer of the app; you may not assign them.
+If any provision of these terms is held unenforceable, the rest remain in force. Our
+failure to enforce a provision is not a waiver of it. These terms, together with the
+Privacy Policy, are the entire agreement between us regarding Metronomo, and supersede any
+earlier understanding. We may update them; material changes will be posted here with a new
+version number and date, and continuing to use Metronomo after that constitutes acceptance.
+We may assign these terms in connection with a transfer of the app; you may not assign
+them.
 
 ## 12. If you obtained Metronomo from the App Store
 

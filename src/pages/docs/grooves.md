@@ -86,9 +86,9 @@ Three actions on the Grooves screen would throw away unsaved edits: **Reset**, *
 Groove**, and **Let's Just Groove**. Each stops and asks first — **Abandon Unsaved
 Changes?** — and each asks only when there is something to abandon.
 
-The question is asked on the way *into* the library. The **Let's Just Groove** button on the
-library screen itself acts immediately, on the grounds that you already answered for it to
-get there.
+The question is asked on the way *into* the library. The **Let's Just Groove** button on
+the library screen itself acts immediately, on the grounds that you already answered for it
+to get there.
 
 Grooves live in Metronomo's private storage on your device. Uninstalling the app — or
 clearing its storage, on Android — deletes them permanently; there is no cloud copy.

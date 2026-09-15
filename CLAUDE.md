@@ -1,8 +1,8 @@
 # nomotime.com
 
 Astro marketing and legal site for **Metronomo**, the iOS and Android app in `~/zzz/met`.
-`README.md` covers the build, the deploy, and the two sourcing rules — one for the privacy policy,
-one for the export file format.
+`README.md` covers the build, the deploy, and the two sourcing rules — one for the privacy
+policy, one for the export file format.
 
 ## Copy
 
@@ -20,8 +20,8 @@ labels — the app says **Count in**, so the site says count in.
 ### The mechanics pass
 
 `src/pages/index.astro` is raw markup and gets no typographic substitution. The `.md` pages
-run through smartypants, so straight quotes in them are correct. HTML entities do not decode
-inside `.astro` expressions, so prose characters there are literal.
+run through smartypants, so straight quotes in them are correct. HTML entities do not
+decode inside `.astro` expressions, so prose characters there are literal.
 
 - Typographic quotes and apostrophes in `.astro`: `’`, `“ ”`
 - Literal – for ranges, — for asides

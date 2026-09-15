@@ -34,12 +34,13 @@ drifts. That explanation lives on `/support`.
 Charm concentrates at the entry point and drains out through the body.
 
 - **`h1`** — a phrase with sound in it. No terminal period.
-- **`h2`** — a plain claim, often an antithesis: *Built for making music, not for reading music*.
+- **`h2`** — a plain claim, often an antithesis: *Built for making music, not for reading
+  music*.
 - **`dt` (feature titles)** — flat labels. The conventional word beats the coined one:
   *Customizable subdivisions*, not *Drawable subdivisions*. They set the six cells of the
   feature strip, so a title that wraps to three lines is too long for the column.
-- **feature bodies** — one sentence, roughly fifteen words. A fact, not an argument. No
-  *so you can* clause unless the payoff is not obvious from the fact.
+- **feature bodies** — one sentence, roughly fifteen words. A fact, not an argument. No *so
+  you can* clause unless the payoff is not obvious from the fact.
 
 ## The claim layer
 
@@ -48,8 +49,10 @@ Every number, feature name, and negation in the copy is a factual assertion abou
 
 - tempo range — `met/src/metronome/tempoMarkings.ts` (`MIN_BPM`, `MAX_BPM`)
 - beats a bar, subdivision slots, accent levels — `met/src/metronome/`
-- what the app sends — the sources listed under **Keeping the privacy policy true** in `README.md`
-- the export file — the sources listed under **Keeping the export format true** in `README.md`
+- what the app sends — the sources listed under **Keeping the privacy policy true** in
+  `README.md`
+- the export file — the sources listed under **Keeping the export format true** in
+  `README.md`
 
 Product nouns match the app's own UI labels. The app says **Count in**, so the site says
 count in.
@@ -70,6 +73,6 @@ A promise that needs a qualifier gets the qualifier: *Free foundational engine*.
 
 ## Mechanics
 
-Typographic quotes and apostrophes throughout: `’`, `“ ”`. Ranges use a literal –, asides use
-an em dash. American spelling. No trailing whitespace. Source lines break at clause
+Typographic quotes and apostrophes throughout: `’`, `“ ”`. Ranges use a literal –, asides
+use an em dash. American spelling. No trailing whitespace. Source lines break at clause
 boundaries rather than at a fixed column.

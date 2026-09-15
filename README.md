@@ -1,7 +1,8 @@
 # nomotime.com
 
 The marketing and legal site for **Metronomo**, the iOS and Android metronome app
-(`com.nomotime.metronomo` on both stores). Astro, no runtime JavaScript, deployed to Netlify.
+(`com.nomotime.metronomo` on both stores). Astro, no runtime JavaScript, deployed to
+Netlify.
 
 `/docs` is a hub over one page per functional area of the app, ordered by `DOC_ORDER` in
 `src/pages/docs/_pages.ts` — which is also what the sidebar and the prev/next links are
@@ -58,8 +59,8 @@ The policy also claims what each platform asks of you, and that has its own auth
 
 **Any PR to `met` that changes the event list, adds an SDK, changes what a property
 contains, or adds a permission or usage string must update `src/pages/privacy.md` in this
-repo and bump the `version` and `updated` fields in its frontmatter.** `met/docs/build/analytics.md` carries a pointer back
-here.
+repo and bump the `version` and `updated` fields in its frontmatter.**
+`met/docs/build/analytics.md` carries a pointer back here.
 
 ## Keeping the export format true
 
@@ -74,8 +75,8 @@ against a file the app wrote. The authority is:
 
 **Any PR to `met` that adds or removes a `Groove` field, changes a range or default,
 changes what import repairs, or bumps `BACKUP_VERSION` must update
-`src/pages/docs/export.md`.** The JSON samples on that page are `JSON.stringify(_, null, 2)`
-output, not hand-written, and are regenerated rather than edited in place.
+`src/pages/docs/export.md`.** The JSON samples on that page are `JSON.stringify(_, null,
+2)` output, not hand-written, and are regenerated rather than edited in place.
 
 ## Keeping the docs true
 
@@ -100,11 +101,11 @@ that mentions them is a claim the app does not hold.
 
 - [ ] `support@nomotime.com` alias exists and forwards to a real inbox
 - [x] Governing-law jurisdiction filled in at `src/pages/terms.md` §10 — Massachusetts, US
-- [ ] `PLAY_BETA_URL` and `TESTFLIGHT_URL` in `src/site.ts` set to the tester opt-in links —
-      neither is a listing URL, and either left empty hides that store's CTA — `LAUNCH_PHASE`
-      moved from `'soon'` to `'beta'`, and the lead sentence in `src/pages/support.md` moved
-      from coming soon back to beta testing
-- [ ] At public launch: set `LAUNCH_PHASE` to `'live'` in `src/site.ts`, swap the CTA
-      to Google Play and App Store badges on the real listing URLs, and drop the beta note
+- [ ] `PLAY_BETA_URL` and `TESTFLIGHT_URL` in `src/site.ts` set to the tester opt-in links
+      — neither is a listing URL, and either left empty hides that store's CTA —
+      `LAUNCH_PHASE` moved from `'soon'` to `'beta'`, and the lead sentence in
+      `src/pages/support.md` moved from coming soon back to beta testing
+- [ ] At public launch: set `LAUNCH_PHASE` to `'live'` in `src/site.ts`, swap the CTA to
+      Google Play and App Store badges on the real listing URLs, and drop the beta note
       from `src/pages/support.md`
 - [ ] Screenshots in `public/screens/` replaced with real device captures

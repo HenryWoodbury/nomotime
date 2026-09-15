@@ -18,23 +18,27 @@ The choice is **20, 30, 40, 50, or 60 BPM**, with a default of **40**.
 To quickly set a desired tempo:
 
 - **Drag** or **tap** the slider to set any tempo inside the current window.
-- **Tap** the **left or right margin** of the slider to shift the window's bounds 10 BPM in the
-indicated direction. The selected tempo will not change.
-- **Drag and hold** to either end of the slider to repeatedly shift the window's bounds **10 BPM** until you end the action.
+- **Tap** the **left or right margin** of the slider to shift the window's bounds 10 BPM in
+the indicated direction. The selected tempo will not change.
+- **Drag and hold** to either end of the slider to repeatedly shift the window's bounds
+  **10 BPM** until you end the action.
 
-The current tempo selection will move as the window's bounds change and eventually re-center when it falls outside the new bounds.
+The current tempo selection will move as the window's bounds change and eventually
+re-center when it falls outside the new bounds.
 
 ## When the tempo takes effect
 
-By default the tempo selection updates playback as you slide it. The tempo change always happens at the end of the current bar.
+By default the tempo selection updates playback as you slide it. The tempo change always
+happens at the end of the current bar.
 
 Under **Settings → Preferences → Tempo**, **Apply while sliding** lets you turn off this
-immediate playback response. Instead the tempo change will wait for you to end your drag action to take effect.
+immediate playback response. Instead the tempo change will wait for you to end your drag
+action to take effect.
 
 ## Tempo markings
 
-The conventional Italian tempo marking is presented above the slider adjacent to the BPM number.
-These labels align to the following ranges:
+The conventional Italian tempo marking is presented above the slider adjacent to the BPM
+number. These labels align to the following ranges:
 
 | Marking | BPM |
 | --- | --- |

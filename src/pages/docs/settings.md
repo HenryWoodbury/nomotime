@@ -46,8 +46,8 @@ none of them. Neither does importing a file.
 launch after, and every feature keeps working. What is collected while it is on is
 itemized in the [Privacy Policy](/privacy).
 
-The **Install ID** is a meaningless string generated on your device at install — not a name,
-an email address, or any advertising or device serial ID. It is the only handle that ties
-analytics records to one installation, which makes it the thing to include both in a bug
-report and in a data-deletion request. Both are covered on [Support](/support), and the
+The **Install ID** is a meaningless string generated on your device at install — not a
+name, an email address, or any advertising or device serial ID. It is the only handle that
+ties analytics records to one installation, which makes it the thing to include both in a
+bug report and in a data-deletion request. Both are covered on [Support](/support), and the
 [Privacy Policy](/privacy) states exactly what it is and is not.

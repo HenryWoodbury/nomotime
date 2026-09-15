@@ -5,7 +5,8 @@ description: Insert a tick track between beats; customize it to generate specifi
 ---
 
 A subdivision divides each beat into evenly spaced ticks. The **Subs** row sets that count.
-**Tap** a count to immediately apply that number of ticks. **Press and hold** a count to set a custom accent pattern.
+**Tap** a count to immediately apply that number of ticks. **Press and hold** a count to
+set a custom accent pattern.
 
 ## Choosing a count
 
@@ -23,8 +24,9 @@ The ticks are spaced evenly across the beat. There is no swing setting; a swing 
 created by muting selected ticks and/or beats rather than by changing their timing.
 
 The row shows five counts at a time. **Tap** the arrow at either end of the row to advance
-or retreat by one count, or **press and hold** an arrow to jump to that end of the scale. If the
-currently selected count has moved out of view, a dot above an arrow indicates in which direction it lies.
+or retreat by one count, or **press and hold** an arrow to jump to that end of the scale.
+If the currently selected count has moved out of view, a dot above an arrow indicates in
+which direction it lies.
 
 ## Customizing the accents
 
@@ -34,7 +36,8 @@ the same accent levels as beats:
 
 **Tick → Soft → Medium → Strong → Mute → Tick**
 
-The first tick is the beat’s own place in the pattern. To change it, use [the bar](/docs/beats).
+The first tick is the beat’s own place in the pattern. To change it, use [the
+bar](/docs/beats).
 
 Changes preview live, so a pattern can be heard while it is drawn. Select **Cancel**
 to return to the previous pattern, **Save** to update.

@@ -21,7 +21,8 @@ During playback the bar animates through each beat in turn.
 
 ## The five accent levels
 
-**Tap** any beat to advance it to the next level; at **medium**, a tap advances to **strong**:
+**Tap** any beat to advance it to the next level; at **medium**, a tap advances to
+**strong**:
 
 **Strong → Mute → Tick → Soft → Medium → Strong**
 
@@ -33,8 +34,8 @@ During playback the bar animates through each beat in turn.
 | **Tick** | ½ | Half the height of soft, and lower in pitch. |
 | **Mute** | ½ | Silent. Drawn hollow as a placeholder. |
 
-The levels differ in both loudness and pitch. What each level actually sounds like is described in
-[Sound and volume](/docs/sound).
+The levels differ in both loudness and pitch. What each level actually sounds like is
+described in [Sound and volume](/docs/sound).
 
 ## Meters without notation
 
