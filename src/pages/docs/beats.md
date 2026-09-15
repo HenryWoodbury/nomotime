@@ -13,9 +13,11 @@ The row of vertical elements at the top of the Grooves screen is the bar itself.
 **1 to 16 beats**. A new Groove starts at four, with the first beat **strong** and the
 rest **medium**.
 
-The **+** and **−** buttons add and remove beats. Beats are always added and
-removed at the **end** of the bar. An added beat defaults to a **medium** accent.
-Removing a beat removes the last in the bar; the accent setting goes with it.
+The <span class="icon icon-plus" role="img" aria-label="plus"></span> and
+<span class="icon icon-minus" role="img" aria-label="minus"></span> buttons add and remove
+beats. Beats are always added and removed at the **end** of the bar. An added beat
+defaults to a **medium** accent. Removing a beat removes the last in the bar; the accent
+setting goes with it.
 
 During playback the bar animates through each beat in turn.
 
