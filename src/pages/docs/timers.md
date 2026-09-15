@@ -19,8 +19,10 @@ This restarts all timers.
 ## Count in
 
 **Count in** sets how many bars of the Groove play before the Elapsed Time clock reaches
-**0:00**. It runs **0 to 8 bars** with a default of **4**. Use the arrow buttons to advance
-the range one number at a time in the indicated direction.
+**0:00**. It runs **0 to 8 bars** with a default of **4**. Use the arrow buttons
+<span class="icon icon-arrow-left" aria-hidden="true"></span>
+<span class="icon icon-arrow-right" aria-hidden="true"></span> to advance the range one
+number at a time in the indicated direction.
 
 The Elapsed Time clock starts at the negative value of the count in's calculated total,
 ensuring the first bar after the count in starts at 0:00. The alarm and pause timers sync
