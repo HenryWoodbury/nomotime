@@ -26,7 +26,15 @@ npm install
 npm run dev      # http://localhost:4321
 npm run build    # → dist/
 npm run preview
+npm run lint     # Biome on the code, markdownlint on the prose
+npm run format   # the same, applying every safe fix
 ```
+
+`npm install` also installs a pre-commit hook (`simple-git-hooks`) that runs both tools on
+the staged files. Biome formats and lints the TypeScript, CSS, and JSON, and the script
+block of each `.astro` file. markdownlint strips trailing whitespace from the `.md` pages and
+refuses a prose line over 92 characters; it never reflows one, since source lines break at
+clause boundaries. `git diff --check` then catches whitespace in anything else.
 
 ## Deploy
 

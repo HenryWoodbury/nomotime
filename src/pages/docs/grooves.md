@@ -63,8 +63,8 @@ The menu on a loaded Groove provides the following options:
 
 ## Loading
 
-**Load Groove** opens your library and lists your saved Grooves. Each entry shows the Groove's name
-and a summary of its settings.
+**Load Groove** opens your library and lists your saved Grooves. Each entry shows the
+Groove's name and a summary of its settings.
 
 Use **Find** to filter the list by name. Find is a simple text search that matches any
 character sequence in a Groove name, ignoring case. For example, `huff` would
@@ -78,6 +78,6 @@ Three actions on the Grooves screen can throw away unsaved edits to a loaded Gro
 **Load Groove**, and **Let's Just Groove**. If there are unsaved edits, each of these actions
 requires confirmation before continuing.
 
-The Grooves library is saved in Metronomo's private storage on your device. Uninstalling the app
-or clearing its storage (on Android) deletes saved Grooves permanently; there is no cloud sync.
-Use [Export](/docs/export) to save a copy of your library any time you want.
+The Grooves library is saved in Metronomo's private storage on your device. Uninstalling the
+app or clearing its storage (on Android) deletes saved Grooves permanently; there is no
+cloud sync. Use [Export](/docs/export) to save a copy of your library any time you want.

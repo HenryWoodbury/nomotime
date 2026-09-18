@@ -7,7 +7,10 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "check": "astro check"
+    "check": "astro check",
+    "lint": "biome check . && markdownlint-cli2",
+    "format": "biome check --write . && markdownlint-cli2 --fix",
+    "prepare": "simple-git-hooks"
   },
   "dependencies": {
     "@astrojs/sitemap": "^3.7.4",
@@ -15,6 +18,17 @@
   },
   "devDependencies": {
     "@astrojs/check": "^0.9.10",
+    "@biomejs/biome": "^2.5.14",
+    "lint-staged": "^17.5.1",
+    "markdownlint-cli2": "^0.23.2",
+    "simple-git-hooks": "^2.14.0",
     "typescript": "^6.0.3"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "npx lint-staged && git diff --cached --check"
+  },
+  "lint-staged": {
+    "*.{ts,mjs,json,jsonc,css,astro}": "biome check --write --no-errors-on-unmatched",
+    "*.md": "markdownlint-cli2 --fix"
   }
 }

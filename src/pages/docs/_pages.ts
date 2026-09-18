@@ -41,11 +41,15 @@ export async function loadDocPages(): Promise<DocPage[]> {
     DOC_ORDER.map(async (slug) => {
       const load = sources[`./${slug}.md`];
       if (!load) {
-        throw new Error(`DOC_ORDER names "${slug}", which has no src/pages/docs/${slug}.md`);
+        throw new Error(
+          `DOC_ORDER names "${slug}", which has no src/pages/docs/${slug}.md`,
+        );
       }
       const { title, description } = (await load()).frontmatter;
       if (!title || !description) {
-        throw new Error(`src/pages/docs/${slug}.md: frontmatter is missing a title or description`);
+        throw new Error(
+          `src/pages/docs/${slug}.md: frontmatter is missing a title or description`,
+        );
       }
       return { href: `/docs/${slug}`, title, description };
     }),

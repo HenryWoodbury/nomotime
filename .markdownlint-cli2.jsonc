@@ -1,0 +1,17 @@
+{
+  // Prose pages under src/pages. Line length is a ceiling, not a wrap column: source lines
+  // break at clause boundaries (docs/copy.md), so nothing here reflows them.
+  "globs": ["src/**/*.md", "docs/*.md", "README.md", "CLAUDE.md"],
+  "config": {
+    "default": true,
+    "MD013": {
+      "line_length": 92,
+      "code_blocks": false,
+      "tables": false,
+      "headings": false
+    },
+    "MD033": false, // inline HTML: the icon spans and &middot;
+    "MD041": false, // pages take their h1 from the layout
+    "MD036": false // bold labels that open a paragraph are not headings
+  }
+}
