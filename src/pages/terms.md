@@ -2,8 +2,8 @@
 layout: ../layouts/Legal.astro
 title: Terms of Use
 description: The terms covering your use of the Metronomo app for iOS and Android.
-updated: 11 September 2026
-version: '1.0.0-beta.2'
+updated: 17 September 2026
+version: '1.0.0-beta.3'
 ---
 
 These terms are an agreement between you and **Henry Woodbury** ("we", "us") covering your
@@ -110,24 +110,42 @@ version number and date, and continuing to use Metronomo after that constitutes 
 We may assign these terms in connection with a transfer of the app; you may not assign
 them.
 
-## 12. If you obtained Metronomo from the App Store
+## 12. Store terms
+
+Metronomo is distributed through the Apple App Store, for iOS, and Google Play, for
+Android. Whichever store you obtained it from, these terms are between you and us. The
+store operator is not a party to them, is not responsible for Metronomo or its content, and
+has no obligation to provide maintenance or support for it. The store's own terms also
+apply to your download, as set out below for each store.
+
+Metronomo is subject to United States export law. You confirm that you are not located in
+a country subject to a United States Government embargo or designated by it as
+terrorist-supporting, and that you are not on any United States Government list of
+prohibited or restricted parties.
+
+### If you obtained Metronomo from the App Store
 
 Your license under section 1 is also subject to the Usage Rules in Apple's Media Services
 Terms and Conditions.
 
-These terms are between you and us. Apple is not a party to them, and is not responsible
-for Metronomo or its content. Apple has no obligation to provide maintenance or support for
-Metronomo. If Metronomo fails to conform to any warranty, you may notify Apple, and Apple
-will refund the purchase price, which, while the app is free, is nothing; to the maximum
-extent permitted by law, Apple has no other warranty obligation. Apple is not responsible
-for addressing any claim you or anyone else makes about Metronomo — product liability, a
+If Metronomo fails to conform to any warranty, you may notify Apple, and Apple will refund
+the purchase price, which, while the app is free, is nothing; to the maximum extent
+permitted by law, Apple has no other warranty obligation. Apple is not responsible for
+addressing any claim you or anyone else makes about Metronomo — product liability, a
 failure to meet a legal requirement, a claim under consumer-protection or privacy law, or a
-claim that Metronomo infringes intellectual property rights.
-
-You confirm that you are not located in a country subject to a United States Government
-embargo or designated by it as terrorist-supporting, and that you are not on any United
-States Government list of prohibited or restricted parties. Apple and its subsidiaries are
+claim that Metronomo infringes intellectual property rights. Apple and its subsidiaries are
 third-party beneficiaries of these terms and may enforce them against you.
+
+### If you obtained Metronomo from Google Play
+
+Your download is also subject to the Google Play Terms of Service, and any refund of a
+purchase made through Google Play — which, while the app is free, is nothing — is handled
+under Google Play's refund policy rather than by us.
+
+Google is not responsible for addressing any claim you or anyone else makes about
+Metronomo, including claims under consumer-protection, privacy, or intellectual property
+law. Android lets you clear an app's storage without uninstalling it; as section 3 notes,
+doing so deletes your Grooves permanently.
 
 ## Contact
 
