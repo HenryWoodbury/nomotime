@@ -55,4 +55,4 @@ number. These labels align to the following ranges:
 | *Prestissimo* | 200–480 |
 
 This presentation-only label on the tempo slider also appears on the lock screen while the
-metronome is playing — see [Playing](/docs/playing).
+metronome is playing — see [Playback](/docs/playback).

@@ -18,7 +18,7 @@ export const DOC_ORDER = [
   'tempo',
   'timers',
   'sound',
-  'playing',
+  'playback',
   'grooves',
   'export',
   'settings',
