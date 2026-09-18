@@ -547,24 +547,28 @@ h3 {
   color: var(--ink-muted);
   margin: 0 0 1rem;
 }
-.cta-list {
+/* A dash-bulleted list, muted. The hero and the privacy section each set their own
+   margin and measure on top of it. */
+.dash-list {
   list-style: none;
   padding: 0;
-  margin: 2rem 0 0;
-  font-size: var(--text-lg);
   color: var(--ink-muted);
 }
-.cta-list li {
+.dash-list li {
   position: relative;
   padding-left: 1.6rem;
 }
-.cta-list li + li {
+.dash-list li + li {
   margin-top: 0.4rem;
 }
-.cta-list li::before {
+.dash-list li::before {
   content: '—';
   position: absolute;
   left: 0;
+}
+.cta-list {
+  margin: 2rem 0 0;
+  font-size: var(--text-lg);
 }
 
 /* The feature strip: a rule-separated grid of cells, each a title over its gloss. The
@@ -621,23 +625,8 @@ h3 {
 }
 
 .privacy-list {
-  list-style: none;
-  padding: 0;
   margin: 1rem 0 0;
   max-width: var(--measure);
-  color: var(--ink-muted);
-}
-.privacy-list li {
-  position: relative;
-  padding-left: 1.6rem;
-}
-.privacy-list li + li {
-  margin-top: 0.4rem;
-}
-.privacy-list li::before {
-  content: '—';
-  position: absolute;
-  left: 0;
 }
 
 @media (max-width: 46rem) {
