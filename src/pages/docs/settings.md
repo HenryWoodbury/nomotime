@@ -20,7 +20,7 @@ the thing it affects; this is the map.
 | --- | --- | --- |
 | **Appearance** | System, Light, Dark | Below. |
 | **Beat** | Percussive, Tonal | [Sound and volume](/docs/sound) |
-| **BPM slider resolution** | 20, 30, 40, 50, 60 | [Tempo](/docs/tempo) |
+| **BPM slider resolution** | 20, 30, 40, 50, 60, 80, 100 | [Tempo](/docs/tempo) |
 | **Tempo: Apply while sliding** | On, off | [Tempo](/docs/tempo) |
 | **Pause: Play after rest** | On, off | [Count in and timers](/docs/timers) |
 | **Pause: Customize alerts** | On, off — off by default | [Count in and timers](/docs/timers) |

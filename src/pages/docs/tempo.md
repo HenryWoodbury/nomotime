@@ -9,11 +9,11 @@ Metronomo plays from **20 to 480 BPM**, in whole beats per minute. A new Groove 
 
 ## A window on the scale
 
-The tempo slider shows a 20 to 60 BPM window of the full 460 BPM range. The current bounds
+The tempo slider shows a 20â100 BPM window of the full 460 BPM range. The current bounds
 of the window are annotated below the slider's navigation arrows.
 
 The width of the window is set via **Settings → Preferences → BPM slider resolution**.
-The choice is **20, 30, 40, 50, or 60 BPM**, with a default of **40**.
+The choice is **20, 30, 40, 50, 60, 80, or 100 BPM**, with a default of **40**.
 
 To quickly set a desired tempo:
 
