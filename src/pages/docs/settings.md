@@ -4,50 +4,36 @@ title: Settings
 description: Personalize Metronomo's presentation and specific interface behaviors.
 ---
 
-Settings is one screen with three tabs. Most of what it holds is explained on the page for
-the thing it affects; this is the map.
+Settings is one screen with tabbed entries to access app-level utilities, preferences, and
+information.
+
+App-level preferences apply across all Grooves. They will be reset on new app installs.
 
 ## Utilities
 
-| Control | What it does |
-| --- | --- |
-| **Export data** | Writes your saved Grooves to a file. Disabled while you have none. See [Export and import](/docs/export). |
-| **Import data** | Reads a Metronomo export file back, merging or replacing. |
+| Control | What it does | Explanation |
+| --- | --- | --- |
+| **Export data** | Writes your saved Grooves to a file. | [Export and import](/docs/export) |
+| **Import data** | Reads a Metronomo export file into your app library. | [Export and import](/docs/export) |
 
 ## Preferences
 
-| Control | Options | Explained on |
+| Control | Options | Explanation |
 | --- | --- | --- |
-| **Appearance** | System, Light, Dark | Below. |
+| **Appearance** | System, Light, Dark | See below |
 | **Beat** | Percussive, Tonal | [Sound and volume](/docs/sound) |
 | **BPM slider resolution** | 20, 30, 40, 50, 60, 80, 100 | [Tempo](/docs/tempo) |
 | **Tempo: Apply while sliding** | On, off | [Tempo](/docs/tempo) |
 | **Pause: Play after rest** | On, off | [Count in and timers](/docs/timers) |
-| **Pause: Customize alerts** | On, off — off by default | [Count in and timers](/docs/timers) |
+| **Pause: Customize alerts** | On, off | [Count in and timers](/docs/timers) |
 
-The last three are switches, and each one's label is part of its target: press the word or
-the switch.
-
-**Appearance** sets light or dark for the app. **System** — the default — follows whatever
-your device is set to, including a scheduled switch at dusk.
-
-Every preference here belongs to the device, not to a Groove. Loading a Groove changes
-none of them. Neither does importing a file.
+**Appearance** sets light or dark for the app. **System** is the default and follows
+whatever your device is set to, including a scheduled switch at dusk.
 
 ## About
 
-| Control | What it does |
-| --- | --- |
-| **Analytics** | Share anonymous usage data, or **Don't share**. |
-| **App version** | The version and build you are running. Tap and hold to copy. |
-| **Install ID** | The anonymous string that identifies this installation. Tap and hold to copy. |
-
-**Analytics** starts switched on. Turning it off stops collection immediately and on every
-launch after, and every feature keeps working. What is collected while it is on is
-itemized in the [Privacy Policy](/privacy).
-
-The **Install ID** is a meaningless string generated on your device at install — not a
-name, an email address, or any advertising or device serial ID. It is the only handle that
-ties analytics records to one installation, which makes it the thing to include both in a
-bug report and in a data-deletion request. Both are covered on [Support](/support), and the
-[Privacy Policy](/privacy) states exactly what it is and is not.
+| Control | What it does | Explanation |
+| --- | --- | --- |
+| **Analytics** | Share or **Don't share** anonymous usage data. | [Privacy Policy](/privacy) |
+| **App version** | The version and build you are running. | [Support](/support) |
+| **Install ID** | The anonymous string that identifies a specific app installation. | [Support](/support) |
