@@ -63,12 +63,12 @@ const features = [
         {!IS_SOON && (PLAY_BETA_URL || TESTFLIGHT_URL) && (
           <div class="cta-row">
             {PLAY_BETA_URL && (
-              <a class="cta" href={PLAY_BETA_URL}>
+              <a class="cta" href={PLAY_BETA_URL} target="_blank" rel="noopener">
                 Join the Android beta
               </a>
             )}
             {TESTFLIGHT_URL && (
-              <a class="cta" href={TESTFLIGHT_URL}>
+              <a class="cta" href={TESTFLIGHT_URL} target="_blank" rel="noopener">
                 Join the iOS beta
               </a>
             )}
