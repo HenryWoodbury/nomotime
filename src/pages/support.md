@@ -10,6 +10,21 @@ version: '1.0.0-beta.3'
 **[support@nomotime.com](mailto:support@nomotime.com)** with bug reports and feature
 requests.
 
+## Joining the beta
+
+**iOS** — open the [TestFlight link](https://testflight.apple.com/join/hE9W1tnd) on your
+iPhone or iPad. It walks you through installing the TestFlight app if you do not have it,
+and Metronomo through that.
+
+**Android** — two steps, both with the Google account that is signed in to the Play Store on
+your device:
+
+1. Join the [Metronomo beta testers](https://groups.google.com/g/metronomo-beta-testers)
+   group. It sends no mail; it is only the list Google Play checks.
+2. Open the [opt-in page](https://play.google.com/apps/testing/com.nomotime.metronomo) and
+   tap **Become a tester**. Play then lists Metronomo for you to install. If the page says
+   you are not eligible, the group has not caught up yet — give it a few minutes and reload.
+
 ## Before you write
 
 For bug reports, include the following information to streamline corrective action:

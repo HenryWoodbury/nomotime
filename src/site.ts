@@ -16,15 +16,11 @@ export const LAUNCH_PHASE = 'beta' as LaunchPhase;
 export const IS_SOON = LAUNCH_PHASE === 'soon';
 export const IS_BETA = LAUNCH_PHASE === 'beta';
 
-// The tester opt-in links: Play's open-testing URL and TestFlight's public link.
-// Neither is a listing URL. An empty string hides the iOS CTA; for Android it swaps the
-// CTA to an email request, since Play's internal track has no public link and a tester
-// is added to it by hand.
-export const PLAY_BETA_URL = '';
+// The tester links: the Google Group that is Play's closed-testing list, and
+// TestFlight's public link. Neither is a listing URL. An empty string hides that store's
+// CTA. The Play opt-in page itself is linked from support.md, as the second step.
+export const PLAY_BETA_URL = 'https://groups.google.com/g/metronomo-beta-testers';
 export const TESTFLIGHT_URL = 'https://testflight.apple.com/join/hE9W1tnd';
-export const PLAY_REQUEST_URL = `mailto:${SUPPORT_EMAIL}?subject=${encodeURIComponent(
-  'Metronomo Android beta',
-)}&body=${encodeURIComponent('Please add this Google account to the Android beta: ')}`;
 
 export const LEGAL_PAGES = [
   { href: '/docs', label: 'Docs' },
