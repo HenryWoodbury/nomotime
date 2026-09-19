@@ -1,7 +1,7 @@
 ---
 layout: ../../layouts/Doc.astro
 title: Grooves
-description: Save your rhythms to named assets you can replay, modify, and export
+description: Save your rhythms to named assets you can replay, modify, and export.
 ---
 
 A **Groove** is literally the rhythm track on the Metronomo screen. Under the "let's groove"

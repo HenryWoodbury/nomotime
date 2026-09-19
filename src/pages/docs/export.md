@@ -1,7 +1,7 @@
 ---
 layout: ../../layouts/Doc.astro
 title: Export and import
-description: Metronomo’s backup file, field by field — what Export writes, how Import merges or replaces, and what it refuses.
+description: Save your Grooves to an external file for backup, transfer, restore.
 ---
 
 ## Exporting

@@ -1,7 +1,7 @@
 ---
 layout: ../../layouts/Doc.astro
 title: Settings
-description: Every control on Metronomo’s Settings screen, and which part of these docs explains what it does.
+description: Personalize Metronomo's presentation and specific interface behaviors.
 ---
 
 Settings is one screen with three tabs. Most of what it holds is explained on the page for
