@@ -6,8 +6,8 @@ updated: 11 September 2026
 version: '1.0.0-beta.3'
 ---
 
-**Metronomo is coming soon.** Some rough edges are expected, and feedback is appreciated.
-Email **[support@nomotime.com](mailto:support@nomotime.com)** with bug reports and feature
+**Metronomo is in beta.** Some rough edges are expected, and feedback is appreciated. Email
+**[support@nomotime.com](mailto:support@nomotime.com)** with bug reports and feature
 requests.
 
 ## Before you write
