@@ -32,9 +32,10 @@ npm run format   # the same, applying every safe fix
 
 `npm install` also installs a pre-commit hook (`simple-git-hooks`) that runs both tools on
 the staged files. Biome formats and lints the TypeScript, CSS, and JSON, and the script
-block of each `.astro` file. markdownlint strips trailing whitespace from the `.md` pages and
-refuses a prose line over 92 characters; it never reflows one, since source lines break at
-clause boundaries. `git diff --check` then catches whitespace in anything else.
+block of each `.astro` file. `scripts/wrap-long-lines.mjs` refills every prose paragraph and
+list item in the `.md` pages to 92 columns, breaking at word boundaries; headings, tables,
+code blocks, and front matter are left as written. markdownlint then strips trailing
+whitespace, and `git diff --check` catches whitespace in anything else.
 
 ## Deploy
 
@@ -75,16 +76,16 @@ repo and bump the `version` and `updated` fields in its frontmatter.**
 `src/pages/docs/export.md` documents the backup file field by field, and a reader checks it
 against a file the app wrote. The authority is:
 
-- `met/src/storage/backup.ts` — `BACKUP_FORMAT`, `BACKUP_VERSION`, the `Backup` shape,
-  what `parseBackup` rejects, and what `repairGroove` repairs rather than skips
+- `met/src/storage/backup.ts` — `BACKUP_FORMAT`, `BACKUP_VERSION`, the `Backup` shape, what
+  `parseBackup` rejects, and what `repairGroove` repairs rather than skips
 - `met/src/storage/backupFile.ts` — the filename and its collision rule
 - `met/src/metronome/types.ts`, `defaults.ts`, `accents.ts`, `subdivisions.ts`,
   `subLevels.ts` — every field's type, range, and default
 
-**Any PR to `met` that adds or removes a `Groove` field, changes a range or default,
-changes what import repairs, or bumps `BACKUP_VERSION` must update
-`src/pages/docs/export.md`.** The JSON samples on that page are `JSON.stringify(_, null,
-2)` output, not hand-written, and are regenerated rather than edited in place.
+**Any PR to `met` that adds or removes a `Groove` field, changes a range or default, changes
+what import repairs, or bumps `BACKUP_VERSION` must update `src/pages/docs/export.md`.** The
+JSON samples on that page are `JSON.stringify(_, null, 2)` output, not hand-written, and are
+regenerated rather than edited in place.
 
 ## Keeping the docs true
 
@@ -102,18 +103,18 @@ the shipping app. Both would be easy to write up from the source and wrong to pu
 - **Tap tempo.** `met/src/metronome/tapTempo.ts` and the `tap` action in
   `met/src/state/metronomeStore.ts` both exist, but no control calls it.
 
-**When either ships, it gets a page and a `DOC_ORDER` entry.** Until then, a docs page
-that mentions them is a claim the app does not hold.
+**When either ships, it gets a page and a `DOC_ORDER` entry.** Until then, a docs page that
+mentions them is a claim the app does not hold.
 
 ## Publishing checklist
 
 - [ ] `support@nomotime.com` alias exists and forwards to a real inbox
 - [x] Governing-law jurisdiction filled in at `src/pages/terms.md` §10 — Massachusetts, US
-- [ ] `PLAY_BETA_URL` and `TESTFLIGHT_URL` in `src/site.ts` set to the tester opt-in links
-      — neither is a listing URL, and either left empty hides that store's CTA —
-      `LAUNCH_PHASE` moved from `'soon'` to `'beta'`, and the lead sentence in
-      `src/pages/support.md` moved from coming soon back to beta testing
+- [ ] `PLAY_BETA_URL` and `TESTFLIGHT_URL` in `src/site.ts` set to the tester opt-in links —
+  neither is a listing URL, and either left empty hides that store's CTA — `LAUNCH_PHASE`
+  moved from `'soon'` to `'beta'`, and the lead sentence in `src/pages/support.md` moved
+  from coming soon back to beta testing
 - [ ] At public launch: set `LAUNCH_PHASE` to `'live'` in `src/site.ts`, swap the CTA to
-      Google Play and App Store badges on the real listing URLs, and drop the beta note
-      from `src/pages/support.md`
+  Google Play and App Store badges on the real listing URLs, and drop the beta note from
+  `src/pages/support.md`
 - [ ] Screenshots in `public/screens/` replaced with real device captures

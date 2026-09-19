@@ -26,17 +26,17 @@ Metronomo never collects, and has no technical means of collecting:
 Regarding **audio**:
 
 - Metronomo produces sound; it does not record it
-- The app never asks for microphone access, and no recording code exists in it. iOS
-  carries a microphone usage string only because the audio engine links Apple's audio
-  APIs; Metronomo never calls them to listen
+- The app never asks for microphone access, and no recording code exists in it. iOS carries
+  a microphone usage string only because the audio engine links Apple's audio APIs;
+  Metronomo never calls them to listen
 
 Regarding **files**:
 
 - Metronomo may export or import "Groove" files, only when instructed by you
 
 Metronomo does not sell your data, does not share it with data brokers, and does not use it
-for advertising or for tracking you across other apps or websites.
-There are no ads and no advertising SDKs in Metronomo.
+for advertising or for tracking you across other apps or websites. There are no ads and no
+advertising SDKs in Metronomo.
 
 ## What stays on your device
 
@@ -51,34 +51,34 @@ never uploaded:
 
 The names and settings you give your Grooves are **never transmitted without your
 permission**. They leave your device only if you export them yourself (described below).
-Metronomo does write a small temporary image to your device's cache folder to draw the
-tempo marking on the lock-screen player. The system may clear it at any time as cache.
+Metronomo does write a small temporary image to your device's cache folder to draw the tempo
+marking on the lock-screen player. The system may clear it at any time as cache.
 
-Local data is removed when you uninstall the app; on Android you can also clear it in
-place, via Settings. Metronomo has no cloud backup and no sync.
+Local data is removed when you uninstall the app; on Android you can also clear it in place,
+via Settings. Metronomo has no cloud backup and no sync.
 
 ### Exporting and importing your Grooves
 
 **Settings** → **Utilities** lets you save your Grooves to a file, and read one back. This
 is how you move a Groove library to a new device, or keep a copy before clearing the app.
 
-The file holds your saved Grooves and nothing else. It does **not** contain your settings
-or Install ID, and will not overwrite settings when imported into a new or existing app
+The file holds your saved Grooves and nothing else. It does **not** contain your settings or
+Install ID, and will not overwrite settings when imported into a new or existing app
 install.
 
 Metronomo does not upload the file, and has nowhere to upload it to.
 
 Once written, the Grooves file is **no longer under Metronomo's control**. It contains your
 Groove names and settings in readable form. It is not removed when you uninstall Metronomo
-or clear the app's storage, and where you copy or back it up is your choice. Note that
-other services will have their own privacy policies.
+or clear the app's storage, and where you copy or back it up is your choice. Note that other
+services will have their own privacy policies.
 
 ## Anonymous usage analytics
 
 Metronomo sends anonymous usage analytics to **PostHog**, a product-analytics service
 operated by PostHog, Inc. in the United States. This provides insight into which features
-musicians most use and thus where to target product improvements. You can turn analytics
-off at any time in **Settings** → **About** → **Analytics.**
+musicians most use and thus where to target product improvements. You can turn analytics off
+at any time in **Settings** → **About** → **Analytics.**
 
 ### What is sent
 
@@ -86,8 +86,8 @@ off at any time in **Settings** → **About** → **Analytics.**
   Settings, along with the name of the screen you came from
 - **Which actions you trigger** — metronome start and stop; Groove save, load, rename, and
   delete; data export and import; changes to settings
-- **Musical settings as plain numbers** — the tempo, beat count, and subdivision in use
-  when you start the metronome or save or load a Groove
+- **Musical settings as plain numbers** — the tempo, beat count, and subdivision in use when
+  you start the metronome or save or load a Groove
 - **A random Groove ID** — a meaningless string the app generates for each Groove you save,
   to count repeated use. This ID carries no information about the Groove itself
 - **Export and import** — analytics track a count of export and import actions and a count
@@ -105,10 +105,9 @@ The **Install ID** is never connected to a real identity. You can see yours in *
 
 ### What is never sent
 
-The names of your Grooves, your saved Grooves themselves, beat and subdivision patterns,
-and anything else you enter or select are **deliberately excluded**. Metronomo does not
-record your screen, does not capture your audio output, and does not read anything outside
-the app.
+The names of your Grooves, your saved Grooves themselves, beat and subdivision patterns, and
+anything else you enter or select are **deliberately excluded**. Metronomo does not record
+your screen, does not capture your audio output, and does not read anything outside the app.
 
 ### Remote configuration
 
@@ -118,20 +117,20 @@ features stay at their default setting.
 
 ### Turning analytics off
 
-To turn off analytics, open **Settings** → **About** in Metronomo and choose **Don't
-share** under **Analytics**. Nothing further is sent from that point, including when you
-next open the app. Metronomo continues to work as expected; analytics is not required for
-any feature to function.
+To turn off analytics, open **Settings** → **About** in Metronomo and choose **Don't share**
+under **Analytics**. Nothing further is sent from that point, including when you next open
+the app. Metronomo continues to work as expected; analytics is not required for any feature
+to function.
 
 ## Permissions Metronomo requests, and why
 
-**On iOS, Metronomo asks you for nothing.** Playing in the background and showing the
-player on your lock screen and in Control Center come from the audio session the app
-declares, which needs no permission from you. Nothing else in the app has a permission to
-ask for, so iOS never prompts you at all.
+**On iOS, Metronomo asks you for nothing.** Playing in the background and showing the player
+on your lock screen and in Control Center come from the audio session the app declares,
+which needs no permission from you. Nothing else in the app has a permission to ask for, so
+iOS never prompts you at all.
 
-On Android, Metronomo declares the permissions below. Notification access is the only one
-it ever asks you to grant:
+On Android, Metronomo declares the permissions below. Notification access is the only one it
+ever asks you to grant:
 
 | Permission | Why |
 | --- | --- |

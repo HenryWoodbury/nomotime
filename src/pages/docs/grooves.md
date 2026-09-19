@@ -24,8 +24,8 @@ For exporting and importing Grooves, see [Export and import](/docs/export).
 ## What belongs to the app
 
 Some settings are either stored as device state or as your personal preferences. Loading a
-Groove does not change them and none of them appear in an [export file](/docs/export).
-These include:
+Groove does not change them and none of them appear in an [export file](/docs/export). These
+include:
 
 - **Volume and mute**, maintained as device state
 - **Timbre**, percussive or tonal
@@ -42,7 +42,8 @@ open the app. Closing Metronomo mid-session does not lose the rhythm you were bu
 
 ## Saved Grooves
 
-**Save Groove** asks for a name. A name already in your library is refused, case insensitive.
+**Save Groove** asks for a name. A name already in your library is refused, case
+insensitive.
 
 Once a Groove is saved and loaded, the header carries its name and two buttons appear:
 
@@ -67,16 +68,16 @@ The menu on a loaded Groove provides the following options:
 Groove's name and a summary of its settings.
 
 Use **Find** to filter the list by name. Find is a simple text search that matches any
-character sequence in a Groove name, ignoring case. For example, `huff` would
-find both *Slow Shuffle* and *Huff the Haptic Dragon*.
+character sequence in a Groove name, ignoring case. For example, `huff` would find both
+*Slow Shuffle* and *Huff the Haptic Dragon*.
 
 The same screen offers **Let's Just Groove** at the top as a route to the ad hoc experience.
 
 ## Losing work
 
-Three actions on the Grooves screen can throw away unsaved edits to a loaded Groove: **Reset**,
-**Load Groove**, and **Let's Just Groove**. If there are unsaved edits, each of these actions
-requires confirmation before continuing.
+Three actions on the Grooves screen can throw away unsaved edits to a loaded Groove:
+**Reset**, **Load Groove**, and **Let's Just Groove**. If there are unsaved edits, each of
+these actions requires confirmation before continuing.
 
 The Grooves library is saved in Metronomo's private storage on your device. Uninstalling the
 app or clearing its storage (on Android) deletes saved Grooves permanently; there is no

@@ -12,18 +12,18 @@ Metronomo, you accept them. If you do not accept them, do not use the app.
 
 ## 1. Your license
 
-Metronomo is licensed to you, not sold. You get a personal, non-exclusive,
-non-transferable, revocable license to install and use Metronomo on devices you own or
-control, for any purpose, personal or professional. Playing along to Metronomo in a
-rehearsal, lesson, session, or paid performance is exactly what it is for, and we
-claim nothing over the music you make with it.
+Metronomo is licensed to you, not sold. You get a personal, non-exclusive, non-transferable,
+revocable license to install and use Metronomo on devices you own or control, for any
+purpose, personal or professional. Playing along to Metronomo in a rehearsal, lesson,
+session, or paid performance is exactly what it is for, and we claim nothing over the music
+you make with it.
 
 ## 2. What you may not do
 
 You may not sell, rent, sublicense, or redistribute Metronomo itself; reverse-engineer,
 decompile, or disassemble it except where that right cannot lawfully be excluded; remove or
-obscure any attribution notices; or use it in violation of applicable law or of the terms
-of the store you obtained it from — Google Play or the Apple App Store.
+obscure any attribution notices; or use it in violation of applicable law or of the terms of
+the store you obtained it from — Google Play or the Apple App Store.
 
 ## 3. Your content
 
@@ -51,11 +51,11 @@ purpose, accuracy, or non-infringement.
 
 Specifically, and importantly: **Metronomo is a practice and performance aid, not a
 certified timing instrument.** Its timing depends on your device's hardware, operating
-system, audio configuration, background activity, and battery state, none of which are
-under our control. Do not rely on Metronomo where inaccurate timing could cause loss,
-injury, or liability, including synchronizing recordings or live production you cannot
-afford to have drift, or any safety-critical use. Verify anything that matters against an
-independent reference.
+system, audio configuration, background activity, and battery state, none of which are under
+our control. Do not rely on Metronomo where inaccurate timing could cause loss, injury, or
+liability, including synchronizing recordings or live production you cannot afford to have
+drift, or any safety-critical use. Verify anything that matters against an independent
+reference.
 
 ## 6. Limitation of liability
 
@@ -83,43 +83,42 @@ these terms.
 
 Metronomo is built on open-source software, including React Native, the Expo SDK, and other
 components, each licensed by its own authors under the MIT license or a comparable
-permissive license. Those licenses govern those components and nothing in these terms
-limits the rights they grant you. A list of components and their licenses is available on
-request from [support@nomotime.com](mailto:support@nomotime.com).
+permissive license. Those licenses govern those components and nothing in these terms limits
+the rights they grant you. A list of components and their licenses is available on request
+from [support@nomotime.com](mailto:support@nomotime.com).
 
 ## 9. Termination
 
-This license ends automatically if you breach these terms, and you may end it at any time
-by uninstalling Metronomo. Sections 5, 6, 10, and 12 survive termination.
+This license ends automatically if you breach these terms, and you may end it at any time by
+uninstalling Metronomo. Sections 5, 6, 10, and 12 survive termination.
 
 ## 10. Governing law
 
 These terms are governed by the laws of the **Commonwealth of Massachusetts, United
 States**, without regard to its conflict-of-laws rules, and the courts located there have
-exclusive jurisdiction over any dispute. If you are a consumer resident elsewhere, this
-does not deprive you of the protection of mandatory consumer-protection law in your country
-of residence.
+exclusive jurisdiction over any dispute. If you are a consumer resident elsewhere, this does
+not deprive you of the protection of mandatory consumer-protection law in your country of
+residence.
 
 ## 11. General
 
-If any provision of these terms is held unenforceable, the rest remain in force. Our
-failure to enforce a provision is not a waiver of it. These terms, together with the
-Privacy Policy, are the entire agreement between us regarding Metronomo, and supersede any
-earlier understanding. We may update them; material changes will be posted here with a new
-version number and date, and continuing to use Metronomo after that constitutes acceptance.
-We may assign these terms in connection with a transfer of the app; you may not assign
-them.
+If any provision of these terms is held unenforceable, the rest remain in force. Our failure
+to enforce a provision is not a waiver of it. These terms, together with the Privacy Policy,
+are the entire agreement between us regarding Metronomo, and supersede any earlier
+understanding. We may update them; material changes will be posted here with a new version
+number and date, and continuing to use Metronomo after that constitutes acceptance. We may
+assign these terms in connection with a transfer of the app; you may not assign them.
 
 ## 12. Store terms
 
-Metronomo is distributed through the Apple App Store, for iOS, and Google Play, for
-Android. Whichever store you obtained it from, these terms are between you and us. The
-store operator is not a party to them, is not responsible for Metronomo or its content, and
-has no obligation to provide maintenance or support for it. The store's own terms also
-apply to your download, as set out below for each store.
+Metronomo is distributed through the Apple App Store, for iOS, and Google Play, for Android.
+Whichever store you obtained it from, these terms are between you and us. The store operator
+is not a party to them, is not responsible for Metronomo or its content, and has no
+obligation to provide maintenance or support for it. The store's own terms also apply to
+your download, as set out below for each store.
 
-Metronomo is subject to United States export law. You confirm that you are not located in
-a country subject to a United States Government embargo or designated by it as
+Metronomo is subject to United States export law. You confirm that you are not located in a
+country subject to a United States Government embargo or designated by it as
 terrorist-supporting, and that you are not on any United States Government list of
 prohibited or restricted parties.
 
@@ -131,9 +130,9 @@ Terms and Conditions.
 If Metronomo fails to conform to any warranty, you may notify Apple, and Apple will refund
 the purchase price, which, while the app is free, is nothing; to the maximum extent
 permitted by law, Apple has no other warranty obligation. Apple is not responsible for
-addressing any claim you or anyone else makes about Metronomo — product liability, a
-failure to meet a legal requirement, a claim under consumer-protection or privacy law, or a
-claim that Metronomo infringes intellectual property rights. Apple and its subsidiaries are
+addressing any claim you or anyone else makes about Metronomo — product liability, a failure
+to meet a legal requirement, a claim under consumer-protection or privacy law, or a claim
+that Metronomo infringes intellectual property rights. Apple and its subsidiaries are
 third-party beneficiaries of these terms and may enforce them against you.
 
 ### If you obtained Metronomo from Google Play
@@ -142,10 +141,10 @@ Your download is also subject to the Google Play Terms of Service, and any refun
 purchase made through Google Play — which, while the app is free, is nothing — is handled
 under Google Play's refund policy rather than by us.
 
-Google is not responsible for addressing any claim you or anyone else makes about
-Metronomo, including claims under consumer-protection, privacy, or intellectual property
-law. Android lets you clear an app's storage without uninstalling it; as section 3 notes,
-doing so deletes your Grooves permanently.
+Google is not responsible for addressing any claim you or anyone else makes about Metronomo,
+including claims under consumer-protection, privacy, or intellectual property law. Android
+lets you clear an app's storage without uninstalling it; as section 3 notes, doing so
+deletes your Grooves permanently.
 
 ## Contact
 

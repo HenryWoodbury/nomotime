@@ -4,8 +4,8 @@ title: Beats and accents
 description: Build a bar from one to sixteen beats, each set to one of five accent levels.
 ---
 
-A bar in Metronomo is a count of beats. There is no time signature to
-choose; you set how many beats the bar holds, then set the accent level for each.
+A bar in Metronomo is a count of beats. There is no time signature to choose; you set how
+many beats the bar holds, then set the accent level for each.
 
 ## The bar
 
@@ -15,9 +15,9 @@ rest **medium**.
 
 The <span class="icon icon-plus" role="img" aria-label="plus"></span> and
 <span class="icon icon-minus" role="img" aria-label="minus"></span> buttons add and remove
-beats. Beats are always added and removed at the **end** of the bar. An added beat
-defaults to a **medium** accent. Removing a beat removes the last in the bar; the accent
-setting goes with it.
+beats. Beats are always added and removed at the **end** of the bar. An added beat defaults
+to a **medium** accent. Removing a beat removes the last in the bar; the accent setting goes
+with it.
 
 During playback the bar animates through each beat in turn.
 
@@ -41,7 +41,7 @@ described in [Sound and volume](/docs/sound).
 
 ## Meters without notation
 
-Beats per bar and an accent on each carry the same information as a time signature,
-minus the notation. A 7/8 bar accented 3+2+2 is seven beats with **strong** on the first,
-fourth, and sixth. Compound meters are built by adding
-[subdivisions](/docs/subdivisions) and customizing the tick pattern.
+Beats per bar and an accent on each carry the same information as a time signature, minus
+the notation. A 7/8 bar accented 3+2+2 is seven beats with **strong** on the first, fourth,
+and sixth. Compound meters are built by adding [subdivisions](/docs/subdivisions) and
+customizing the tick pattern.

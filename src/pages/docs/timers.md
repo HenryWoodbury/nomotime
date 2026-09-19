@@ -13,8 +13,8 @@ All optional timing settings are saved with a Groove.
 ## Elapsed Time
 
 The Elapsed Time clock is the practice stopwatch. **Tap** the
-<span class="icon icon-reset" role="img" aria-label="reset"></span> button to restart.
-This restarts all timers.
+<span class="icon icon-reset" role="img" aria-label="reset"></span> button to restart. This
+restarts all timers.
 
 ## Count in
 
@@ -28,18 +28,18 @@ with any Elapsed Time restart.
 
 ## Alarm
 
-**Tap** the Alarm **every** selection to enable a repeating alarm. Once enabled, **tap**
-the **m:s** reading to open the **Set Time** dialog box. This allows you to set the alarm
-timer from 0m, 0s to 120m, 59s.
+**Tap** the Alarm **every** selection to enable a repeating alarm. Once enabled, **tap** the
+**m:s** reading to open the **Set Time** dialog box. This allows you to set the alarm timer
+from 0m, 0s to 120m, 59s.
 
-The alarm's sound is a short rising spike, and it is always tonal regardless of the
-**Beat** preference (see [Sound and volume](/docs/sound)).
+The alarm's sound is a short rising spike, and it is always tonal regardless of the **Beat**
+preference (see [Sound and volume](/docs/sound)).
 
 ## Pause
 
 **Tap** the Pause **every** selection to enable a forced pause in playback. Once enabled,
-**tap** the **m:s** reading to open the **Set Time** dialog box. This allows you to set
-the pause timer from 0m, 0s to 120m, 59s.
+**tap** the **m:s** reading to open the **Set Time** dialog box. This allows you to set the
+pause timer from 0m, 0s to 120m, 59s.
 
 When a pause is active, the **Pause Count** counts up to the chosen time then pauses play.
 
@@ -53,9 +53,9 @@ pause timer. What that button does depends on the [Preferences](/docs/settings) 
 
 ## Breaks
 
-A pause event may be augmented with alert messaging and an enforced break. This option
-is turned off by default. Use the [Preferences](/docs/settings) setting **Customize
-alerts** to enable it.
+A pause event may be augmented with alert messaging and an enforced break. This option is
+turned off by default. Use the [Preferences](/docs/settings) setting **Customize alerts** to
+enable it.
 
 When turned on, the **Set Time** dialog box for Pause includes a **Custom Alert** checkbox.
 
@@ -66,20 +66,20 @@ as follows:
 - **Forced Pause**: Set a forced break from **0s** to **60s**. This sets a countdown timer
   in the Custom Alert dialog box.
 
-The Forced Pause timer disables closing the dialog box until its countdown reaches 0:00.
-The countdown can be overridden manually.
+The Forced Pause timer disables closing the dialog box until its countdown reaches 0:00. The
+countdown can be overridden manually.
 
-Closing the dialog box does not restart play. That is done manually by a **tap** on the
-play button or the Pause Count
+Closing the dialog box does not restart play. That is done manually by a **tap** on the play
+button or the Pause Count
 <span class="icon icon-reset" role="img" aria-label="reset"></span> button.
 
 ## Handling zero durations
 
 Zero-duration settings work as follows:
 
-- A **Pause** set to **0:00** switches itself off. A countdown with no time to run is not
-  a countdown.
-- An **Alarm** set to **0:00** never sounds. It is stored as an enabled rule with nothing
-  to fire on.
+- A **Pause** set to **0:00** switches itself off. A countdown with no time to run is not a
+  countdown.
+- An **Alarm** set to **0:00** never sounds. It is stored as an enabled rule with nothing to
+  fire on.
 - A **Custom Alert** saved with no message and no forced wait switches itself off. A break
   with nothing to say and nothing to hold is not a break.

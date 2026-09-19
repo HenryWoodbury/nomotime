@@ -9,7 +9,7 @@
     "preview": "astro preview",
     "check": "astro check",
     "lint": "biome check . && markdownlint-cli2",
-    "format": "biome check --write . && markdownlint-cli2 --fix",
+    "format": "biome check --write . && node scripts/wrap-long-lines.mjs && markdownlint-cli2 --fix",
     "prepare": "simple-git-hooks"
   },
   "dependencies": {
@@ -29,6 +29,9 @@
   },
   "lint-staged": {
     "*.{ts,mjs,json,jsonc,css,astro}": "biome check --write --no-errors-on-unmatched",
-    "*.md": "markdownlint-cli2 --fix"
+    "*.md": [
+      "node scripts/wrap-long-lines.mjs",
+      "markdownlint-cli2 --fix"
+    ]
   }
 }

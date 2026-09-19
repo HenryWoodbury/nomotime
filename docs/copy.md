@@ -58,8 +58,8 @@ Product nouns match the app's own UI labels. The app says **Count in**, so the s
 count in.
 
 **Every negation survives a literal reading.** *No account* and *no network calls* are
-absolutes the app cannot hold; *no name, no email address* and *no outbound tracking* are.
-A promise that needs a qualifier gets the qualifier: *Free foundational engine*.
+absolutes the app cannot hold; *no name, no email address* and *no outbound tracking* are. A
+promise that needs a qualifier gets the qualifier: *Free foundational engine*.
 
 ## Register by page
 
@@ -74,5 +74,5 @@ A promise that needs a qualifier gets the qualifier: *Free foundational engine*.
 ## Mechanics
 
 Typographic quotes and apostrophes throughout: `’`, `“ ”`. Ranges use a literal –, asides
-use an em dash. American spelling. No trailing whitespace. Source lines break at clause
-boundaries rather than at a fixed column.
+use an em dash. American spelling. No trailing whitespace. Paragraphs are filled to 92
+columns on commit; line breaks inside a paragraph are not preserved.
