@@ -13,16 +13,18 @@ const BLOCK =
   /^\s*(?:[#|>]|([-*_])(?:\s*\1){2,}\s*$|\[[^\]]+\]:|<(?:!--|\/?(?:div|p|pre|table|ul|ol|li|details|summary|section|figure|br|hr)\b))/;
 // A trailing double space or backslash is a hard break and stays a line end.
 const HARD_BREAK = /(?: {2,}|\\)$/;
+// One word. An inline code span or HTML tag is a single word, so no break lands inside.
+const WORD = /`[^`]*`\S*|<\/?[A-Za-z][^<>]*>\S*|\S+/g;
+
+const wordsOf = (text) => text.match(WORD) ?? [];
 
 // Refills one paragraph, word by word, to the ceiling.
 function fill(para) {
   const prefix = ITEM.exec(para[0])?.[0] ?? /^\s*/.exec(para[0])[0];
   const indent = ' '.repeat(prefix.length);
-  // An inline code span or HTML tag is one word: no break lands inside either.
-  const words =
-    [para[0].slice(prefix.length), ...para.slice(1).map((l) => l.trim())]
-      .join(' ')
-      .match(/`[^`]*`\S*|<\/?[A-Za-z][^<>]*>\S*|\S+/g) ?? [];
+  const words = wordsOf(
+    [para[0].slice(prefix.length), ...para.slice(1).map((l) => l.trim())].join(' '),
+  );
   const out = [];
   let line = prefix;
   let empty = true;
@@ -37,10 +39,16 @@ function fill(para) {
   }
   // A double-space hard break belongs to the last line, however the words fall.
   out.push(/ {2,}$/.test(para.at(-1)) ? `${line}  ` : line);
+  // Every word, whole and in order, each on one line: the fill moves breaks and nothing else.
+  const before = words.join('\n');
+  const after = [out[0].slice(prefix.length), ...out.slice(1)]
+    .flatMap(wordsOf)
+    .join('\n');
+  if (after !== before) throw new Error(`fill changed a paragraph:\n${para.join('\n')}`);
   return out;
 }
 
-function fillFile(text) {
+export function fillFile(text) {
   const lines = text.split('\n');
   const out = [];
   let para = [];
@@ -70,10 +78,12 @@ function fillFile(text) {
   return out.join('\n');
 }
 
-const files =
-  process.argv.length > 2 ? process.argv.slice(2) : GLOBS.flatMap((g) => globSync(g));
-for (const file of files) {
-  const text = readFileSync(file, 'utf8');
-  const filled = fillFile(text);
-  if (filled !== text) writeFileSync(file, filled);
+if (import.meta.main) {
+  const files =
+    process.argv.length > 2 ? process.argv.slice(2) : GLOBS.flatMap((g) => globSync(g));
+  for (const file of files) {
+    const text = readFileSync(file, 'utf8');
+    const filled = fillFile(text);
+    if (filled !== text) writeFileSync(file, filled);
+  }
 }

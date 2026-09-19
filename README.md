@@ -28,6 +28,7 @@ npm run build    # → dist/
 npm run preview
 npm run lint     # Biome on the code, markdownlint on the prose
 npm run format   # the same, applying every safe fix
+npm test         # the paragraph filler
 ```
 
 `npm install` also installs a pre-commit hook (`simple-git-hooks`) that runs both tools on
