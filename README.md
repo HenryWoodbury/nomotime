@@ -31,6 +31,10 @@ npm run format   # the same, applying every safe fix
 npm test         # the paragraph filler
 ```
 
+A hast plugin in `astro.config.mjs` gives every off-site link in the `.md` pages
+`target="_blank" rel="noopener"`. Same-site and `mailto:` links are left alone, and the
+`.astro` pages carry their own attributes.
+
 `npm install` also installs a pre-commit hook (`simple-git-hooks`) that runs both tools on
 the staged files. Biome formats and lints the TypeScript, CSS, and JSON, and the script
 block of each `.astro` file. `scripts/wrap-long-lines.mjs` refills every prose paragraph and
