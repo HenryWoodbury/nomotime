@@ -38,10 +38,8 @@ Metronomo is currently free with no advertising and no in-app purchases. We may 
 in the future. Any change will apply to new purchases or new versions, not retroactively to
 software already installed on your device.
 
-Metronomo is under active development. Features may be added, changed, or withdrawn, and
-some optional features are controlled by remote configuration, which means they may become
-available or unavailable without you installing an update. We are under no obligation to
-provide updates, support, or continued availability of the app.
+Metronomo is under active development. Features may be added, changed, or withdrawn. We are
+under no obligation to provide updates, support, or continued availability of the app.
 
 ## 5. No warranty
 
