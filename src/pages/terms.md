@@ -2,8 +2,8 @@
 layout: ../layouts/Legal.astro
 title: Terms of Use
 description: The terms covering your use of the Metronomo app for iOS and Android.
-updated: 17 September 2026
-version: '1.0.0-beta.3'
+updated: 2 October 2026
+version: '1.0.0-beta.4'
 ---
 
 These terms are an agreement between you and **Henry Woodbury** ("we", "us") covering your
