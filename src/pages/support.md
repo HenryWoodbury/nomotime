@@ -2,8 +2,8 @@
 layout: ../layouts/Legal.astro
 title: Support
 description: How to get help with Metronomo, report a bug, request a feature, or have your analytics data deleted.
-updated: 11 September 2026
-version: '1.0.0-beta.3'
+updated: 2 October 2026
+version: '1.0.0-beta.4'
 ---
 
 **Metronomo is in beta.** Some rough edges are expected, and feedback is appreciated. Email
