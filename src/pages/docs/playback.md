@@ -20,6 +20,19 @@ is drawn from the playback position as reported by the audio engine.
 Metronomo cannot promise absolute accuracy. Timing still depends on your device and its
 audio configuration.
 
+## Changing a Groove while it plays
+
+A change to **Tempo**, **Beats**, or **Subs** changes the length of the bar. **Settings →
+Preferences → Apply changes** sets when you hear it:
+
+- **Restart measure** (default): Immediately starts a new bar with the change.
+- **Apply at end of measure**: Allows the current bar to finish, then applies the change to
+  the next.
+
+Neither option touches the Elapsed Time clock, the alarm, or the pause timer.
+
+During a count in, a change restarts the count in.
+
 ## When the screen sleeps
 
 Playback continues when you leave Metronomo or your screen goes dark.
@@ -34,9 +47,9 @@ While it plays, a card appears on your lock screen:
 
 | Line | What it shows |
 | --- | --- |
-| Title | The Groove's name, or **Metronome** if the rhythm you are playing has not been named. |
+| Title | The Groove's name, or **Metronomo** if the rhythm you are playing has not been named. |
 | Subtitle | The Groove's profile — for example, `4 beats · 120 BPM`. |
-| Description | The [tempo marking](/docs/tempo) for that tempo, such as *Allegro*. |
+| Description | The tempo marking for that tempo, such as *Allegro* (see [tempo marking](/docs/tempo)). |
 
 ## Permissions
 

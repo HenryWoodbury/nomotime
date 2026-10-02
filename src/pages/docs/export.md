@@ -11,10 +11,10 @@ Grooves programmatically accessible, for whatever possibilities that opens up.
 
 ## Exporting
 
-**Settings** → **Utilities** → **Export** writes your **saved Groove library** to a file.
-The file is named `metronomo-yyyy-mm-dd-hhmmss.json`, stamped in UTC to the second so a
-folder of export files sorts chronologically. If the default name is taken, the new file
-appends a count, e.g. `metronomo-yyyy-mm-dd-hhmmss (2).json`.
+**Utilities** → **Export** writes your **saved Groove library** to a file. The file is named
+`metronomo-yyyy-mm-dd-hhmmss.json`, stamped in UTC to the second so a folder of export files
+sorts chronologically. If the default name is taken, the new file appends a count, e.g.
+`metronomo-yyyy-mm-dd-hhmmss (2).json`.
 
 ## The export file
 
@@ -104,8 +104,7 @@ grid and is always `mute`.
 
 ## Importing
 
-**Settings** → **Utilities** → **Import** imports any UTF-8 file that observes the Grooves
-JSON schema.
+**Utilities** → **Import** imports any UTF-8 file that observes the Grooves JSON schema.
 
 A file that parses opens a dialog with two modes:
 

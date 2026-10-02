@@ -30,39 +30,49 @@ include:
 - **Volume and mute**, maintained as device state
 - **Timbre**, percussive or tonal
 - **Appearance**, system, light, or dark
-- **BPM slider resolution**, a 20â100 BPM window
-- **Tempo feedback**, as in does it apply while sliding
-- **Pause reset** behavior
-- Your **anonymous analytics** choice
+- **BPM slider resolution**, a 20–100 BPM window
+- **Apply changes**, when an edit reaches playback
+- **Pause** behaviors: restart, alerts, and pause clear
+- **Anonymous analytics** opt-out
 
 ## The working Groove
 
-Edits apply immediately. The working Groove is stored as you go and restored when you next
-open the app. Closing Metronomo mid-session does not lose the rhythm you were building.
+The working Groove is stored as you go and restored when you next open the app. Closing
+Metronomo mid-session does not lose the rhythm you were building.
 
 ## Saved Grooves
+
+Save a Groove via the <span class="icon icon-menu" role="img" aria-label="menu"></span>
+button menu. On an unsaved Groove the menu offers **Load Groove** and **Save Groove**.
 
 **Save Groove** asks for a name. A name already in your library is refused, case
 insensitive.
 
-Once a Groove is saved and loaded, the header carries its name and two buttons appear:
-
-- **Save Groove** writes your edits over the saved copy
-- **Reset** discards any edits and restores the Groove as it was last saved
-
-Both stay disabled until there is actually an unsaved edit to make them meaningful.
-
-The menu on a loaded Groove provides the following options:
+Once a Groove is saved and loaded, the header carries its name and the menu provides the
+following options:
 
 | Option | What it does |
 | --- | --- |
-| **Rename Groove** | Opens a dialog box that allows you to edit and save the name of the loaded Groove. |
-| **Save as New Groove** | Saves the current Groove, including edits, under a new name, leaving the original as it was. |
-| **Delete Groove** | Removes the loaded Groove from the Groove library. Requires confirmation. |
-| **Load Groove** | Opens the Groove library to select a saved Groove. |
-| **Let's Just Groove** | Returns to the unloaded Groove state. Requires confirmation if there are working edits to a loaded Groove. |
+| **Save&nbsp;Groove** | Opens the Save dialog box. |
+| **Rename&nbsp;Groove** | Renames the loaded Groove. Unsaved edits stay unsaved. |
+| **Revert&nbsp;Groove** | Discards your edits and restores the Groove as it was last saved. Requires confirmation. Disabled until there is an edit. |
+| **Delete&nbsp;Groove** | Removes the loaded Groove from the Groove library. Requires confirmation. |
+| **Load&nbsp;Groove** | Opens the Groove library to select a saved Groove. |
+| **Let's&nbsp;Just&nbsp;Groove** | Returns to the unloaded Groove state. Requires confirmation if there are working edits to a loaded Groove. |
 
-## Loading
+### Saving a loaded Groove
+
+**Save Groove** on a loaded Groove opens on the Groove's name and two choices:
+
+- **Update** writes your edits over the saved Groove. Edit the name field to rename the
+  Groove, with edits, or just as an overwrite.
+- **Save as new Groove** saves the Groove, with or without edits, under a new name and loads
+  it. The new name defaults to the old, plus an appended number, for example: *Waltz (1)*.
+  This can be edited.
+
+Either way, the name must be unique in your library.
+
+## Loading a Groove
 
 **Load Groove** opens your library and lists your saved Grooves. Each entry shows the
 Groove's name and a summary of its settings.
@@ -75,9 +85,9 @@ The same screen offers **Let's Just Groove** at the top as a route to the ad hoc
 
 ## Losing work
 
-Three actions on the Grooves screen can throw away unsaved edits to a loaded Groove:
-**Reset**, **Load Groove**, and **Let's Just Groove**. If there are unsaved edits, each of
-these actions requires confirmation before continuing.
+Three menu options can throw away unsaved edits to a loaded Groove: **Revert Groove**,
+**Load Groove**, and **Let's Just Groove**. If there are unsaved edits, each of these
+actions requires confirmation before continuing.
 
 The Grooves library is saved in Metronomo's private storage on your device. Uninstalling the
 app or clearing its storage (on Android) deletes saved Grooves permanently; there is no

@@ -99,17 +99,14 @@ range on those pages is checked against `~/zzz/met` rather than against an earli
 the site. The per-page authorities are the same ones the claim-layer list in `docs/copy.md`
 names.
 
-Two things in `met` are deliberately **not** documented, because they are not reachable in
-the shipping app. Both would be easy to write up from the source and wrong to publish:
+One thing in `met` is deliberately **not** documented, because it is not reachable in the
+shipping app. It would be easy to write up from the source and wrong to publish:
 
-- **Sessions.** Gated on the `sessions_enabled` PostHog flag (`met/src/featureFlags.ts`);
-  `met/app/sessions.tsx` redirects to `/` when the flag is off, and the tab bar in
-  `met/src/components/AppFrame.tsx` holds two destinations, not three.
 - **Tap tempo.** `met/src/metronome/tapTempo.ts` and the `tap` action in
   `met/src/state/metronomeStore.ts` both exist, but no control calls it.
 
-**When either ships, it gets a page and a `DOC_ORDER` entry.** Until then, a docs page that
-mentions them is a claim the app does not hold.
+**When it ships, it gets a page and a `DOC_ORDER` entry.** Until then, a docs page that
+mentions it is a claim the app does not hold.
 
 ## Publishing checklist
 

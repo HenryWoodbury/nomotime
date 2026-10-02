@@ -93,10 +93,10 @@ Policy](/privacy) for exactly what is collected while it is on.
 ### Where are my Grooves stored, and can I back them up?
 
 On your device, in Metronomo's private storage. There is no cloud backup, so uninstalling
-the app deletes your Grooves permanently. **Settings** → **Utilities** → **Export** writes
-your saved library to a file, in a folder you choose, and **Import** reads one back — that
-is how you move a library to a new device or keep a copy before clearing the app. See
-[Export and import](/docs/export) for what the file holds.
+the app deletes your Grooves permanently. **Utilities** → **Export** writes your saved
+library to a file, in a folder you choose, and **Import** reads one back — that is how you
+move a library to a new device or keep a copy before clearing the app. See [Export and
+import](/docs/export) for what the file holds.
 
 ### Does Metronomo use my microphone?
 

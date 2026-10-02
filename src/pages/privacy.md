@@ -59,8 +59,8 @@ via Settings. Metronomo has no cloud backup and no sync.
 
 ### Exporting and importing your Grooves
 
-**Settings** → **Utilities** lets you save your Grooves to a file, and read one back. This
-is how you move a Groove library to a new device, or keep a copy before clearing the app.
+The **Utilities** tab lets you save your Grooves to a file, and read one back. This is how
+you move a Groove library to a new device, or keep a copy before clearing the app.
 
 The file holds your saved Grooves and nothing else. It does **not** contain your settings or
 Install ID, and will not overwrite settings when imported into a new or existing app
