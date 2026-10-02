@@ -2,14 +2,14 @@
 layout: ../layouts/Legal.astro
 title: Privacy Policy
 description: What Metronomo stores on your device, what data you can export, what anonymous usage data it collects, and how to opt out.
-updated: 11 September 2026
-version: '1.0.0-beta.3'
+updated: 2 October 2026
+version: '1.0.0-beta.4'
 ---
 
 > **The short version.** Metronomo is a metronome. It works entirely offline. It requires
 > no account, no login, and asks for no personal information. Your Grooves and settings
 > stay on your device unless you export them to a file yourself. It does collect anonymous
-> usage analytics, which you can switch off with **Don't share** in **Settings** →
+> usage analytics, which you can opt out of with **Don't share** in **Settings** →
 > **About** → **Analytics**.
 
 This policy covers the Metronomo mobile app for iOS and Android — `com.nomotime.metronomo`
@@ -109,12 +109,6 @@ The names of your Grooves, your saved Grooves themselves, beat and subdivision p
 anything else you enter or select are **deliberately excluded**. Metronomo does not record
 your screen, does not capture your audio output, and does not read anything outside the app.
 
-### Remote configuration
-
-Metronomo may use PostHog to enable optional features on a case-by-case basis, using the
-Install ID when the app starts. Turning analytics off stops these requests, and optional
-features stay at their default setting.
-
 ### Opting out of analytics
 
 To opt out of analytics, open **Settings** → **About** in Metronomo and choose **Don't
@@ -151,7 +145,7 @@ child has somehow provided personal information through Metronomo, email
 
 ## Your choices and your rights
 
-- **Turn analytics off** — Settings → About → Analytics; the complete opt-out
+- **Opt out of analytics** — Settings → About → Analytics; the complete opt-out
 - **Delete everything local** — uninstall Metronomo, which on iOS removes its data with it;
   on Android you can instead use Settings → Apps → Metronomo → Storage → Clear storage.
   Exported files are outside this scope; delete them yourself if you no longer want them

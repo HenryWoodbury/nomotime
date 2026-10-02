@@ -28,7 +28,7 @@ Groove does not change them, and none of them appear in an [export file](/docs/e
 These include:
 
 - **Volume and mute**, maintained as device state
-- **Timbre**, percussive or tonal
+- **Beat**, percussive or tonal
 - **Appearance**, system, light, or dark
 - **BPM slider resolution**, a 20–100 BPM window
 - **Apply changes**, when an edit reaches playback
@@ -44,6 +44,7 @@ Metronomo mid-session does not lose the rhythm you were building.
 
 Save a Groove via the <span class="icon icon-menu" role="img" aria-label="menu"></span>
 button menu. On an unsaved Groove the menu offers **Load Groove** and **Save Groove**.
+**Load Groove** is disabled until your library holds a saved Groove.
 
 **Save Groove** asks for a name. A name already in your library is refused, case
 insensitive.

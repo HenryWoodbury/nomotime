@@ -22,7 +22,7 @@ audio configuration.
 
 ## Changing a Groove while it plays
 
-A change to **Tempo**, **Beats**, or **Subs** changes the length of the bar. **Settings →
+A change to **Tempo**, **Beats**, or **Subs** changes the shape of the bar. **Settings →
 Preferences → Apply changes** sets when you hear it:
 
 - **Restart measure** (default): Immediately starts a new bar with the change.
@@ -31,7 +31,7 @@ Preferences → Apply changes** sets when you hear it:
 
 Neither option touches the Elapsed Time clock, the alarm, or the pause timer.
 
-During a count in, a change restarts the count in.
+During a count in, a change to **Tempo** or **Beats** restarts the count in.
 
 ## When the screen sleeps
 

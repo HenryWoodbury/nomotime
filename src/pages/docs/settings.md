@@ -27,6 +27,6 @@ whatever your device is set to, including a scheduled switch at dusk.
 
 | Control | What it does | Explanation |
 | --- | --- | --- |
-| **Analytics** | Accept or opt out of anonymous usage data. | [Privacy Policy](/privacy) |
+| **Analytics** | **Share anonymous usage data** or **Don't share**. | [Privacy Policy](/privacy) |
 | **App version** | The version and build you are running. | [Support](/support) |
 | **Install ID** | The anonymous string that identifies a specific app installation. | [Support](/support) |
