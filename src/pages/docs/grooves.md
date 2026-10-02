@@ -63,13 +63,18 @@ following options:
 
 ### Saving a loaded Groove
 
-**Save Groove** on a loaded Groove opens on the Groove's name and two choices:
+**Save Groove** on a loaded Groove offers two choices. For a Groove named *Waltz*:
 
-- **Update** writes your edits over the saved Groove. Edit the name field to rename the
-  Groove, with edits, or just as an overwrite.
+- **Update Waltz** writes your edits over the saved Groove. Change the name field to rename
+  it at the same time. If there are no edits, this choice is disabled until you change the
+  name, and then it only renames the Groove.
 - **Save as new Groove** saves the Groove, with or without edits, under a new name and loads
   it. The new name defaults to the old, plus an appended number, for example: *Waltz (1)*.
   This can be edited.
+
+A Groove with edits opens the dialog box on **Update Waltz**, with *Waltz* in the name
+field. A Groove without edits opens on **Save as new Groove**, with *Waltz (1)* in the name
+field.
 
 Either way, the name must be unique in your library.
 
