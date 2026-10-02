@@ -22,7 +22,7 @@
     "@astrojs/markdown-satteri": "^0.4.1",
     "@biomejs/biome": "^2.5.14",
     "lint-staged": "^17.5.1",
-    "markdownlint-cli2": "^0.23.2",
+    "markdownlint-cli2": "^0.23.3",
     "satteri": "^0.10.5",
     "simple-git-hooks": "^2.14.0",
     "typescript": "^6.0.3"
