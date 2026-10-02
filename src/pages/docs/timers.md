@@ -46,18 +46,18 @@ When a pause is active, the **Pause Count** counts up to the chosen time then pa
 At any time you can **tap** the Pause Count
 <span class="icon icon-reset" role="img" aria-label="reset"></span> button to restart the
 pause timer. What that button does depends on the [Preferences](/docs/settings) setting
-**Play after rest**:
+**Restart using count in**:
 
-- **On**: Resets the pause timer and resumes play with count in.
+- **On** (default): Resets the pause timer and resumes play with count in.
 - **Off**: Resets the pause timer only. To resume play, **tap** the play button.
 
 ## Breaks
 
 A pause event may be augmented with alert messaging and an enforced break. This option is
-turned off by default. Use the [Preferences](/docs/settings) setting **Customize alerts** to
+disabled by default. Use the [Preferences](/docs/settings) setting **Customize alerts** to
 enable it.
 
-When turned on, the **Set Time** dialog box for Pause includes a **Custom Alert** checkbox.
+When enabled, the **Set Time** dialog box for Pause includes a **Custom Alert** checkbox.
 
 **Tap** the checkbox to enable a **Message** field and a **Forced Pause** timer. These work
 as follows:
@@ -66,12 +66,17 @@ as follows:
 - **Forced Pause**: Set a forced break from **0s** to **60s**. This sets a countdown timer
   in the Custom Alert dialog box.
 
-The Forced Pause timer disables closing the dialog box until its countdown reaches 0:00. The
-countdown can be overridden manually.
+**Continue** is the only way to close the dialog box. It stays disabled until the Forced
+Pause countdown reaches 0:00. **Tapping** outside the dialog box or pressing back does
+nothing.
 
-Closing the dialog box does not restart play. That is done manually by a **tap** on the play
-button or the Pause Count
-<span class="icon icon-reset" role="img" aria-label="reset"></span> button.
+To skip the wait, enable the [Preferences](/docs/settings) setting **Allow pause clear**.
+This adds a <span class="icon icon-clear" role="img" aria-label="clear"></span> button
+beside the countdown. **Tap** it to drop the countdown to 0:00 and enable **Continue**.
+Allow pause clear is off by default, and disabled while **Customize alerts** is off.
+
+Closing the dialog box does not restart play. To resume, **tap** the play button or the
+Pause Count <span class="icon icon-reset" role="img" aria-label="reset"></span> button.
 
 ## Handling zero durations
 

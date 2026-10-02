@@ -1,7 +1,7 @@
 ---
 layout: ../../layouts/Doc.astro
 title: Export and import
-description: Save your Grooves to an external file for backup, transfer, restore.
+description: Save your Grooves to an external file for backup, transfer, and restore.
 ---
 
 Metronomo does not sync to the cloud, but it does provide **Export** and **Import**
@@ -11,10 +11,10 @@ Grooves programmatically accessible, for whatever possibilities that opens up.
 
 ## Exporting
 
-**Settings** → **Utilities** → **Export** writes your **saved Groove library** to a file.
-The file is named `metronomo-yyyy-mm-dd-hhmmss.json`, stamped in UTC to the second so a
-folder of export files sorts chronologically. If the default name is taken, the new file
-appends a count, e.g. `metronomo-yyyy-mm-dd-hhmmss (2).json`.
+**Utilities** → **Export** writes your **saved Groove library** to a file. The file is named
+`metronomo-yyyy-mm-dd-hhmmss.json`, stamped in UTC to the second so a folder of export files
+sorts chronologically. If the default name is taken, the new file appends a count, e.g.
+`metronomo-yyyy-mm-dd-hhmmss (2).json`.
 
 ## The export file
 
@@ -93,7 +93,7 @@ Each entry in the `grooves` array defines a Groove:
 | `subdivision` | number | Slots per beat, 1–8. |
 | `subdivisionPatterns` | object | The tick patterns for each subdivision count. |
 | `countIn` | number | Bars counted in before the practice clock starts, 0–8. `0` is no count in. |
-| `alarm` | object | `{ "enabled": false }`, or `enabled` with `seconds`. 0–7259 in seconds. |
+| `alarm` | object | `{ "enabled": false }`, or `enabled` with `seconds`, 0–7259 in seconds. |
 | `pause` | object | `{ "enabled": false }`, or `enabled` with `seconds`, 1–7259 in seconds. |
 | `createdAt` | number | Unix milliseconds. |
 | `updatedAt` | number | Unix milliseconds. |
@@ -104,10 +104,9 @@ grid and is always `mute`.
 
 ## Importing
 
-**Settings** → **Utilities** → **Import** imports any UTF-8 file that observes the Grooves
-JSON schema.
+**Utilities** → **Import** imports any UTF-8 file that observes the Grooves JSON schema.
 
-A file that parses opens a dialog with two modes:
+A file that parses opens a dialog box with two modes:
 
 - **Merge** adds the file's Grooves to your library. Nothing you have already saved is
   changed or dropped.
@@ -138,8 +137,8 @@ changes:
 | That backup was written by a newer version of Metronomo. | `version` is above the format version for your app install. |
 | That backup has no Grooves in it. | `grooves` was empty, or every Groove in it was skipped. |
 
-The last one is a guard on **Replace** more than Merge; it prevents you from replacing your
-Groove library with an empty set.
+The last one is a guard on **Replace** more than **Merge**; it prevents you from replacing
+your Groove library with an empty set.
 
 ## Import repairs
 

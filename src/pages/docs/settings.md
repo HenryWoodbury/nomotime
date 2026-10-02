@@ -4,17 +4,9 @@ title: Settings
 description: Personalize Metronomo's presentation and specific interface behaviors.
 ---
 
-Settings is one screen with tabbed entries to access app-level utilities, preferences, and
-information.
+Settings is one screen with two tabs: **Preferences** and **About**.
 
-App-level preferences apply across all Grooves. They will be reset on new app installs.
-
-## Utilities
-
-| Control | What it does | Explanation |
-| --- | --- | --- |
-| **Export data** | Writes your saved Grooves to a file. | [Export and import](/docs/export) |
-| **Import data** | Reads a Metronomo export file into your app library. | [Export and import](/docs/export) |
+App-level preferences apply across all Grooves. They reset on new app installs.
 
 ## Preferences
 
@@ -23,9 +15,10 @@ App-level preferences apply across all Grooves. They will be reset on new app in
 | **Appearance** | System, Light, Dark | See below |
 | **Beat** | Percussive, Tonal | [Sound and volume](/docs/sound) |
 | **BPM slider resolution** | 20, 30, 40, 50, 60, 80, 100 | [Tempo](/docs/tempo) |
-| **Tempo: Apply while sliding** | On, off | [Tempo](/docs/tempo) |
-| **Pause: Play after rest** | On, off | [Count in and timers](/docs/timers) |
+| **Apply changes** | Restart measure, Apply at end of measure | [Playback](/docs/playback) |
+| **Pause: Restart using count in** | On, off | [Count in and timers](/docs/timers) |
 | **Pause: Customize alerts** | On, off | [Count in and timers](/docs/timers) |
+| **Pause: Allow pause clear** | On, off | [Count in and timers](/docs/timers) |
 
 **Appearance** sets light or dark for the app. **System** is the default and follows
 whatever your device is set to, including a scheduled switch at dusk.
@@ -34,6 +27,6 @@ whatever your device is set to, including a scheduled switch at dusk.
 
 | Control | What it does | Explanation |
 | --- | --- | --- |
-| **Analytics** | Share or **Don't share** anonymous usage data. | [Privacy Policy](/privacy) |
+| **Analytics** | **Share anonymous usage data** or **Don't share**. | [Privacy Policy](/privacy) |
 | **App version** | The version and build you are running. | [Support](/support) |
 | **Install ID** | The anonymous string that identifies a specific app installation. | [Support](/support) |

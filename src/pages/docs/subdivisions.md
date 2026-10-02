@@ -15,7 +15,7 @@ a custom accent pattern.
 | Subs | What lands between beats |
 | --- | --- |
 | 1 | Nothing. The beat alone (the default for a new Groove). |
-| 2 | One tick, halfway between beats. Eighths against a quarter-note. |
+| 2 | One tick, halfway between beats. Eighths against a quarter note. |
 | 3 | Two ticks. Triplets. |
 | 4 | Three ticks. Sixteenths. |
 | 5–8 | Four through seven ticks. |
@@ -30,19 +30,19 @@ direction it lies.
 
 ## Customizing the accents
 
-**Press and hold** a count in the **Subs** row to open the **Edit Subdivisions** dialog.
-Except for the first, each tick in the subdivision can be tapped to advance it through the
-same accent levels as beats:
+**Press and hold** a count in the **Subs** row to open the **Edit Subdivisions** dialog box.
+Except for the first, **tap** any tick in the subdivision to advance it through the same
+accent levels as beats:
 
 **Tick → Soft → Medium → Strong → Mute → Tick**
 
-The first tick is the beat’s own place in the pattern. To change it, use [the
+The first tick is the beat's own place in the pattern. To change it, use [the
 bar](/docs/beats).
 
-Changes preview live, so a pattern can be heard while it is drawn. Select **Cancel** to
+Changes preview live, so a pattern can be heard while it is drawn. **Tap** **Cancel** to
 return to the previous pattern, **Save** to update.
 
 ## Every count keeps its own pattern
 
-A tick pattern is tied to the count it modified, and a Groove saves each subdivision
+A tick pattern is tied to the count it modifies, and a Groove saves each subdivision
 separately.
