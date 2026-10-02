@@ -32,9 +32,9 @@ For bug reports, include the following information to streamline corrective acti
 1. **Metronomo version** — shown in **Settings** → **About** → **App version**.
 2. **Your device and its system version** — for example, "Pixel 8, Android 15" or "iPhone
    15, iOS 26".
-3. **Your Install ID** — in **Settings** → **About** → **Install ID**. Tap and hold to copy
-   it. It is an anonymous string, not personal information, and it lets a report be matched
-   to what actually happened.
+3. **Your Install ID** — in **Settings** → **About** → **Install ID**. **Press and hold** to
+   copy it. It is an anonymous string, not personal information, and it lets a report be
+   matched to what actually happened.
 4. **What you expected, and what happened instead** — including the tempo, beat count, and
    subdivision you were using, if the problem is about timing or sound.
 
@@ -84,7 +84,7 @@ does not promise.
 Completely. There is no account, no login, and no network connection required for anything
 the app does. The only data it ever sends is optional anonymous analytics.
 
-### How do I turn off analytics?
+### How do I opt out of analytics?
 
 **Settings** → **About** → **Analytics** → **Don't share.** Nothing further is sent from
 that point, including on the next launch. Every feature keeps working. See the [Privacy

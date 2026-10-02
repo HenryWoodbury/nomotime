@@ -23,9 +23,9 @@ For exporting and importing Grooves, see [Export and import](/docs/export).
 
 ## What belongs to the app
 
-Some settings are either stored as device state or as your personal preferences. Loading a
-Groove does not change them and none of them appear in an [export file](/docs/export). These
-include:
+Some settings are stored either as device state or as your personal preferences. Loading a
+Groove does not change them, and none of them appear in an [export file](/docs/export).
+These include:
 
 - **Volume and mute**, maintained as device state
 - **Timbre**, percussive or tonal
@@ -89,6 +89,6 @@ Three menu options can throw away unsaved edits to a loaded Groove: **Revert Gro
 **Load Groove**, and **Let's Just Groove**. If there are unsaved edits, each of these
 actions requires confirmation before continuing.
 
-The Grooves library is saved in Metronomo's private storage on your device. Uninstalling the
+The Groove library is saved in Metronomo's private storage on your device. Uninstalling the
 app or clearing its storage (on Android) deletes saved Grooves permanently; there is no
 cloud sync. Use [Export](/docs/export) to save a copy of your library any time you want.

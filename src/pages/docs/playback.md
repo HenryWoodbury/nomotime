@@ -1,17 +1,17 @@
 ---
 layout: ../../layouts/Doc.astro
 title: Playback
-description: Press Play and Pause to start and stop like any other player.
+description: Tap Play and Pause to start and stop like any other player.
 ---
 
-Press the <span class="icon icon-play" role="img" aria-label="play"></span> button to start.
-Once it shows <span class="icon icon-pause" role="img" aria-label="pause"></span>, press it
-again to stop.
+**Tap** the <span class="icon icon-play" role="img" aria-label="play"></span> button to
+start. Once it shows <span class="icon icon-pause" role="img" aria-label="pause"></span>,
+**tap** it again to stop.
 
 ## How the click is timed
 
-When you press play, Metronomo renders one whole bar of the Groove into an audio buffer, and
-hands that buffer to the audio engine to loop. This avoids the drift and misfires of a
+When you tap **Play**, Metronomo renders one whole bar of the Groove into an audio buffer
+and hands that buffer to the audio engine to loop. This avoids the drift and misfires of a
 per-click timer.
 
 The visual animation across the bar follows the audio rather than leading it: the highlight

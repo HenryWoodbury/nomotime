@@ -54,10 +54,10 @@ pause timer. What that button does depends on the [Preferences](/docs/settings) 
 ## Breaks
 
 A pause event may be augmented with alert messaging and an enforced break. This option is
-turned off by default. Use the [Preferences](/docs/settings) setting **Customize alerts** to
+disabled by default. Use the [Preferences](/docs/settings) setting **Customize alerts** to
 enable it.
 
-When turned on, the **Set Time** dialog box for Pause includes a **Custom Alert** checkbox.
+When enabled, the **Set Time** dialog box for Pause includes a **Custom Alert** checkbox.
 
 **Tap** the checkbox to enable a **Message** field and a **Forced Pause** timer. These work
 as follows:
@@ -67,16 +67,16 @@ as follows:
   in the Custom Alert dialog box.
 
 **Continue** is the only way to close the dialog box. It stays disabled until the Forced
-Pause countdown reaches 0:00. Tapping outside the dialog box or pressing back does nothing.
+Pause countdown reaches 0:00. **Tapping** outside the dialog box or pressing back does
+nothing.
 
-To skip the wait, turn on the [Preferences](/docs/settings) setting **Allow pause clear**.
+To skip the wait, enable the [Preferences](/docs/settings) setting **Allow pause clear**.
 This adds a <span class="icon icon-clear" role="img" aria-label="clear"></span> button
 beside the countdown. **Tap** it to drop the countdown to 0:00 and enable **Continue**.
 Allow pause clear is off by default, and disabled while **Customize alerts** is off.
 
-Closing the dialog box does not restart play. That is done manually by a **tap** on the play
-button or the Pause Count
-<span class="icon icon-reset" role="img" aria-label="reset"></span> button.
+Closing the dialog box does not restart play. To resume, **tap** the play button or the
+Pause Count <span class="icon icon-reset" role="img" aria-label="reset"></span> button.
 
 ## Handling zero durations
 

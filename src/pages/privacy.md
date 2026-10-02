@@ -1,7 +1,7 @@
 ---
 layout: ../layouts/Legal.astro
 title: Privacy Policy
-description: What Metronomo stores on your device, what data you can export, what anonymous usage data it collects, and how to turn that off.
+description: What Metronomo stores on your device, what data you can export, what anonymous usage data it collects, and how to opt out.
 updated: 11 September 2026
 version: '1.0.0-beta.3'
 ---
@@ -77,8 +77,8 @@ services will have their own privacy policies.
 
 Metronomo sends anonymous usage analytics to **PostHog**, a product-analytics service
 operated by PostHog, Inc. in the United States. This provides insight into which features
-musicians most use and thus where to target product improvements. You can turn analytics off
-at any time in **Settings** → **About** → **Analytics.**
+musicians most use and thus where to target product improvements. You can opt out of
+analytics at any time in **Settings** → **About** → **Analytics.**
 
 ### What is sent
 
@@ -115,12 +115,12 @@ Metronomo may use PostHog to enable optional features on a case-by-case basis, u
 Install ID when the app starts. Turning analytics off stops these requests, and optional
 features stay at their default setting.
 
-### Turning analytics off
+### Opting out of analytics
 
-To turn off analytics, open **Settings** → **About** in Metronomo and choose **Don't share**
-under **Analytics**. Nothing further is sent from that point, including when you next open
-the app. Metronomo continues to work as expected; analytics is not required for any feature
-to function.
+To opt out of analytics, open **Settings** → **About** in Metronomo and choose **Don't
+share** under **Analytics**. Nothing further is sent from that point, including when you
+next open the app. Metronomo continues to work as expected; analytics is not required for
+any feature to function.
 
 ## Permissions Metronomo requests, and why
 

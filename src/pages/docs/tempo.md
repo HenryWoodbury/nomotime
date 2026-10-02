@@ -20,8 +20,8 @@ To quickly set a desired tempo:
 - **Drag** or **tap** the slider to set any tempo inside the current window.
 - **Tap** the **left or right margin** of the slider to shift the window's bounds 10 BPM in
   the indicated direction. The selected tempo will not change.
-- **Drag and hold** to either end of the slider to repeatedly shift the window's bounds **10
-  BPM** until you end the action.
+- **Drag** to either end of the slider and **hold** to repeatedly shift the window's bounds
+  **10 BPM** until you end the action.
 
 The current tempo selection will move as the window's bounds change and eventually re-center
 when it falls outside the new bounds.
